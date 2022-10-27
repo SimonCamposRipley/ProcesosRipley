@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="EXCEL - MKP"
   DTS:PackageType="5"
-  DTS:VersionBuild="294"
-  DTS:VersionGUID="{70688809-09B6-490F-BE72-87C00C2DAF68}">
+  DTS:VersionBuild="295"
+  DTS:VersionGUID="{EB895A3C-554B-42E9-A1C8-61908FFCA8CF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACeiq+9tJbaG1CoXfDvK2NKD+Z8SigYGFr8S5fEk2/epgAAAAAOgAAAAAIAACAAAABpcgb1EMDxybAJY7FSOVzQ4gXbVGupCI95immD1TUrbyAAAADngVV9r+1fXEpigW5MKT4lrpVe31aI12tdmAljNCsUE0AAAADiM6cmhBoOqmy+KNs6Xmr6LlcbV2u7YF91gOIWWxG/dovIGuPE1tjQH3lWMi2rbI5YVABesmBYhXw07Pgh+5hr</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABdHAGfoIY2WkzWWpfgjTpSUgvNGyj2daqdODYVTSRLSgAAAAAOgAAAAAIAACAAAAAMOaaamxpWWSmILwNlBUgydOQpMxzXDTlKjqAMtEMHzyAAAADANaLIdcNXmxEfzrfb481dPinxdd2b28rtb5D9mVmGUkAAAAAqz6VJKUMv6wi3XeqwpiKzpRQVLMVgw/+HHtPwf6OMoSuslnYdf3XTKdIBiz4s15KTMJtME53d+c2TKcNiVNnT</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3470,6 +3470,10 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
           Id="Package\Crea tickets\Actualiza campos fijos"
           TopLeft="133.99999993188,394.964706877606" />
         <NodeLayout
+          Size="216,42"
+          Id="Package\Crea tickets\Actualiza RUT en caso de K"
+          TopLeft="78.2,191.4" />
+        <NodeLayout
           Size="319,42"
           Id="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero"
           TopLeft="60.99999993188,313.964706877606" />
@@ -3481,10 +3485,6 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
           Size="263,42"
           Id="Package\Crea tickets\Limpia tablas para proceso (truncate)"
           TopLeft="69,2" />
-        <NodeLayout
-          Size="216,42"
-          Id="Package\Crea tickets\Actualiza RUT en caso de K"
-          TopLeft="78.2,191.4" />
         <EdgeLayout
           Id="Package\Crea tickets.PrecedenceConstraints[Restricción]"
           TopLeft="119,129">
