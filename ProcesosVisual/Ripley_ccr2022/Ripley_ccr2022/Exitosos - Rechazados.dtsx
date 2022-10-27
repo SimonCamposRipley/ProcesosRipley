@@ -11,16 +11,16 @@
   DTS:LocaleID="13322"
   DTS:ObjectName="Exitosos - Rechazados"
   DTS:PackageType="5"
-  DTS:VersionBuild="76"
-  DTS:VersionGUID="{6A6F57D1-6BFE-4529-9AA2-DCD5B57BA795}">
+  DTS:VersionBuild="77"
+  DTS:VersionGUID="{3F2519A3-DA99-4C45-BE01-25A4AC0FFA59}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[10.5.56.109.pagos_wp.analistas]"
+      DTS:refId="Package.ConnectionManagers[10.5.56.110.pagos_wp.analistas]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{2DEB1004-AA24-47D5-9C64-E1B9640B598A}"
-      DTS:ObjectName="10.5.56.109.pagos_wp.analistas">
+      DTS:ObjectName="10.5.56.110.pagos_wp.analistas">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACF4Bf57JdpiVf4+JXI0dd/hpjf1vslzZ0la8CrZTE1qgAAAAAOgAAAAAIAACAAAAAeIYngQ189nay99CRGSNWThnQNpU2/ucnNVDlAHs27bCAAAABfoBUhdJecl1K+lUTI8mNBpoZUmvH4QQ7mr3TD8V3Io0AAAAB1sgwAIF44ThaxdBMNVmcaytcpwP3sjMUfjZ53M6vidAfIXb8cKtzxjX4COsolAMsu79E1qDFx4cDyRheG/zbV</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACNAaStPduJ+gxUj+i+KuOFAlYnty8LYl4PjDxDDfBF1gAAAAAOgAAAAAIAACAAAABJFp8CkrayM1aPNVSnm1HUzEKFKa8W9rRt+OGIgSm/riAAAAByMu+vZwn2oATtT8tFYvYXraJNjjagtu1NFIESJS56nUAAAAAgZNt7BeVNjx6lESv8ILOLjqSKn2GvwZjB9CevCZLmpE0N+uBX6jfDrs9F/9KlwU7vRgbKNyNa98RcYMJlwgp4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -790,8 +790,8 @@
               <connections>
                 <connection
                   refId="Package\Tarea Flujo de datos\Destino de OLE DB.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[10.5.56.109.pagos_wp.analistas]"
-                  connectionManagerRefId="Package.ConnectionManagers[10.5.56.109.pagos_wp.analistas]"
+                  connectionManagerID="Package.ConnectionManagers[10.5.56.110.pagos_wp.analistas]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.5.56.110.pagos_wp.analistas]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
@@ -1033,8 +1033,8 @@
               <connections>
                 <connection
                   refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[10.5.56.109.pagos_wp.analistas]"
-                  connectionManagerRefId="Package.ConnectionManagers[10.5.56.109.pagos_wp.analistas]"
+                  connectionManagerID="Package.ConnectionManagers[10.5.56.110.pagos_wp.analistas]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.5.56.110.pagos_wp.analistas]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
