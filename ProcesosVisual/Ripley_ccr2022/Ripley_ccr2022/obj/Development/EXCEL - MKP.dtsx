@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="EXCEL - MKP"
   DTS:PackageType="5"
-  DTS:VersionBuild="293"
-  DTS:VersionGUID="{5E8424D5-F38F-467D-8ECF-190A1A99794F}">
+  DTS:VersionBuild="295"
+  DTS:VersionGUID="{EB895A3C-554B-42E9-A1C8-61908FFCA8CF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAjumep9VPJy2RIqSfUsaQrRTMlrEHK7xwGGS3KdxhZ6gAAAAAOgAAAAAIAACAAAABMK1+IHboYXFlvxTauN/pZcl87uTiAs+HhZYEWJxjqbSAAAABgGDbV67aMp+N+wZQa1v1r0yMH9wupxCkZx0kKl1JFsUAAAADPkOvJTdwMQ4Yx8CDPTcu4ePZ+I5GspTOeWLwuBgshnCVUP3HNzbnPP3ktSYdTchvKD4hzDRHM2xXddLLcbuUJ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACBcaXG1c79qPA2T1JtN9g3CDy2ap3A5YWTaZ+KMXq5zQAAAAAOgAAAAAIAACAAAAB00XMHMLrjeTPngKhPUl/5yqcNq21e+fbEAb+iIOsHFyAAAAArTn3lvJjGGErKhSjluFs/zHtOwuzdBvIcvPxpiX9Un0AAAADWNsmhR1/kDiT2dkZKJFR4c51fCjI0m6hYhb4/q+8zTIhzvIeDBsIS8WGetS97CsxSMcQTn8xZNGDh9dmCCzRb</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3470,6 +3470,10 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
           Id="Package\Crea tickets\Actualiza campos fijos"
           TopLeft="133.99999993188,394.964706877606" />
         <NodeLayout
+          Size="216,42"
+          Id="Package\Crea tickets\Actualiza RUT en caso de K"
+          TopLeft="78.2,191.4" />
+        <NodeLayout
           Size="319,42"
           Id="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero"
           TopLeft="60.99999993188,313.964706877606" />
@@ -3481,10 +3485,6 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
           Size="263,42"
           Id="Package\Crea tickets\Limpia tablas para proceso (truncate)"
           TopLeft="69,2" />
-        <NodeLayout
-          Size="216,42"
-          Id="Package\Crea tickets\Actualiza RUT en caso de K"
-          TopLeft="78.2,191.4" />
         <EdgeLayout
           Id="Package\Crea tickets.PrecedenceConstraints[Restricción]"
           TopLeft="119,129">
@@ -3625,39 +3625,27 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="498,491"
-          Size="498,43"
+          Size="160,43"
           Id="Package\Crea tickets"
-          TopLeft="217,154" />
+          TopLeft="213,157" />
         <NodeLayout
           Size="263,42"
           Id="Package\Limpia tablas para proceso (truncate)"
           TopLeft="161,66" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="292.5,108">
+          TopLeft="292.75,108">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="173.5,46"
+              EndConnector="0,49"
               Start="0,0"
-              End="173.5,38.5">
+              End="0,41.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19"
-                    Point2="0,23"
-                    Point3="4,23" />
-                  <mssgle:LineSegment
-                    End="169.5,23" />
-                  <mssgle:CubicBezierSegment
-                    Point1="169.5,23"
-                    Point2="173.5,23"
-                    Point3="173.5,27" />
-                  <mssgle:LineSegment
-                    End="173.5,38.5" />
+                    End="0,41.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3668,30 +3656,18 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="466,197">
+          TopLeft="294,200">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-171,40"
+              EndConnector="0,37"
               Start="0,0"
-              End="-171,32.5">
+              End="0,29.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16"
-                    Point2="0,20"
-                    Point3="-4,20" />
-                  <mssgle:LineSegment
-                    End="-167,20" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-167,20"
-                    Point2="-171,20"
-                    Point3="-171,24" />
-                  <mssgle:LineSegment
-                    End="-171,32.5" />
+                    End="0,29.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

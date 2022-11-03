@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ProcesosVisual",
+    "\\ProcesosVisual\\Ripley_ccr2022"
   ],
-  "SelectedNode": "\\Ripley_ccr2022.sln",
+  "SelectedNode": "\\ProcesosVisual\\Ripley_ccr2022\\Ripley_ccr2022.sln",
   "PreviewInSolutionExplorer": false
 }

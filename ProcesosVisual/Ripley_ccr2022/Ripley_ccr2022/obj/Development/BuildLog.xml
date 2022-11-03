@@ -2,83 +2,83 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Ripley_ccr2022</Name>
-    <LastWriteTime>2022-10-27T11:23:51.1381031Z</LastWriteTime>
+    <LastWriteTime>2022-11-01T11:30:54.493182Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Informar_Carga_Tienda.dtsx</Name>
-      <LastWriteTime>2022-10-18T14:42:44.8045173Z</LastWriteTime>
+      <LastWriteTime>2022-10-27T14:47:11.842263Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Carga_CDR.dtsx</Name>
-      <LastWriteTime>2022-10-18T14:42:44.7900509Z</LastWriteTime>
+      <LastWriteTime>2022-10-27T14:47:11.8274512Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>EXCEL - GESTION RETAIL.dtsx</Name>
-      <LastWriteTime>2022-10-27T12:02:35.0960736Z</LastWriteTime>
+      <LastWriteTime>2022-11-03T12:07:55.3397269Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Informar_Gestion_Retail - Excel.dtsx</Name>
-      <LastWriteTime>2022-10-18T14:42:44.8055136Z</LastWriteTime>
+      <LastWriteTime>2022-10-27T14:47:11.842263Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CARGA_TIENDA.dtsx</Name>
-      <LastWriteTime>2022-10-18T14:42:44.7891059Z</LastWriteTime>
+      <LastWriteTime>2022-10-27T14:47:11.8264824Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Derivar.dtsx</Name>
-      <LastWriteTime>2022-10-18T14:42:44.7934921Z</LastWriteTime>
+      <LastWriteTime>2022-10-27T14:47:11.8309472Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Cierre.dtsx</Name>
-      <LastWriteTime>2022-10-18T14:42:44.7925248Z</LastWriteTime>
+      <LastWriteTime>2022-10-27T14:47:11.8304429Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Cierre - CONSULTA.dtsx</Name>
-      <LastWriteTime>2022-10-18T14:42:44.7914979Z</LastWriteTime>
+      <LastWriteTime>2022-10-27T14:47:11.828448Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>EXCEL - MKP.dtsx</Name>
-      <LastWriteTime>2022-10-27T14:04:25.5270704Z</LastWriteTime>
+      <LastWriteTime>2022-10-27T14:48:03.7128858Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Exitosos - Rechazados.dtsx</Name>
-      <LastWriteTime>2022-10-18T14:42:44.8005213Z</LastWriteTime>
+      <LastWriteTime>2022-10-27T14:51:53.6906323Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Informar_Carga_Masiva_Formulario.dtsx</Name>
-      <LastWriteTime>2022-10-18T18:33:44.3405564Z</LastWriteTime>
+      <LastWriteTime>2022-11-03T13:56:01.1467846Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Informar_MKP - Excel.dtsx</Name>
-      <LastWriteTime>2022-10-18T14:42:44.8065111Z</LastWriteTime>
+      <LastWriteTime>2022-10-27T14:47:11.8432923Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Reasignaciones Portal.dtsx</Name>
-      <LastWriteTime>2022-10-18T14:42:44.8090151Z</LastWriteTime>
+      <LastWriteTime>2022-10-27T14:47:11.8462804Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Actualizar.dtsx</Name>
-      <LastWriteTime>2022-10-18T14:42:44.7741149Z</LastWriteTime>
+      <LastWriteTime>2022-10-27T14:47:11.8105526Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CARGA_MASIVA_FORMULARIO.dtsx</Name>
-      <LastWriteTime>2022-10-19T15:14:28.166827Z</LastWriteTime>
+      <LastWriteTime>2022-11-03T18:25:42.2896709Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

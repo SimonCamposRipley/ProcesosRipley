@@ -7,29 +7,29 @@
   DTS:CreatorName="DESKTOP-QEERJC5\Simon Campos"
   DTS:DTSID="{C3255330-248D-4ACE-87A5-6027B25C67F7}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LastModifiedProductVersion="16.0.694.0"
   DTS:LocaleID="13322"
   DTS:ObjectName="Exitosos - Rechazados"
   DTS:PackageType="5"
-  DTS:VersionBuild="75"
-  DTS:VersionGUID="{9D12F7E5-341C-44F3-96C5-7C550B483F04}">
+  DTS:VersionBuild="77"
+  DTS:VersionGUID="{3F2519A3-DA99-4C45-BE01-25A4AC0FFA59}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[10.5.56.109.pagos_wp.analistas]"
+      DTS:refId="Package.ConnectionManagers[10.5.56.110.pagos_wp.analistas]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{2DEB1004-AA24-47D5-9C64-E1B9640B598A}"
-      DTS:ObjectName="10.5.56.109.pagos_wp.analistas">
+      DTS:ObjectName="10.5.56.110.pagos_wp.analistas">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=10.5.60.109;User ID=analistas;Initial Catalog=pagos_wp;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=10.5.60.110;User ID=analistas;Initial Catalog=pagos_wp;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Exitosos - Rechazados-{2DEB1004-AA24-47D5-9C64-E1B9640B598A}10.5.56.109.pagos_wp.analistas;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQk8QGP2ztkiDRQe5hHSV8QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACwnX0BIQlDMwqL5CFEf3uA/pEXPOaZKZt5OV7g7qfqSwAAAAAOgAAAAAIAACAAAACfnvP0foSxYdtdNgfpGbT6UPm2Tt8Fx3rFY4ezmWaVBiAAAADiq/LEAlNFgVNsKk6TU8Kt4l311urKlhNMT8Av7kX3jEAAAACWLnqCEBvNaEp5+9cI4DLWjQhISqbwJB2xJ+yPRjskxglLKFGJiH++PQn9juMWHem2Y2fqDa+/mdPILjFDW71Z</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADoJ+E0Mctt67xht1G1YDjdS2QNYKmA3uUbmjvixykq3wAAAAAOgAAAAAIAACAAAABY4YLOcTC9JU/7R0HOt7aUSXYxcTF89QGoZ7qzS9No7CAAAAAXZ3aLysXjb+e/qGYo5bYltf19pyUiIjoj/asV26sL2kAAAADHJsj5552EqkGPspw4oQakc0131ZJawUQiBwTjM/W6RIz/wf2LVndaAFTkV9IopibZ0RsKiOxHEbckL40Ha2oX</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -756,7 +756,7 @@
                   dataType="System.String"
                   description="Comando SQL para ejecutar."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
@@ -790,8 +790,8 @@
               <connections>
                 <connection
                   refId="Package\Tarea Flujo de datos\Destino de OLE DB.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[10.5.56.109.pagos_wp.analistas]"
-                  connectionManagerRefId="Package.ConnectionManagers[10.5.56.109.pagos_wp.analistas]"
+                  connectionManagerID="Package.ConnectionManagers[10.5.56.110.pagos_wp.analistas]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.5.56.110.pagos_wp.analistas]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
@@ -999,7 +999,7 @@
                   dataType="System.String"
                   description="Comando SQL para ejecutar."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
@@ -1033,8 +1033,8 @@
               <connections>
                 <connection
                   refId="Package\Tarea Flujo de datos\Destino de OLE DB 1.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[10.5.56.109.pagos_wp.analistas]"
-                  connectionManagerRefId="Package.ConnectionManagers[10.5.56.109.pagos_wp.analistas]"
+                  connectionManagerID="Package.ConnectionManagers[10.5.56.110.pagos_wp.analistas]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.5.56.110.pagos_wp.analistas]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
@@ -1248,7 +1248,7 @@
                   dataType="System.String"
                   description="Comando SQL para ejecutar."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.String"
                   description="Variable que contiene el comando SQL para ejecutar."
@@ -1532,7 +1532,7 @@
                   dataType="System.String"
                   description="Comando SQL para ejecutar."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.String"
                   description="Variable que contiene el comando SQL para ejecutar."
@@ -1822,12 +1822,12 @@
     </DTS:Executable>
   </DTS:Executables>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
-<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
-<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
-<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
 <Objects
   Version="8">
-  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
   <Package
     design-time-name="Package">
     <LayoutInfo>

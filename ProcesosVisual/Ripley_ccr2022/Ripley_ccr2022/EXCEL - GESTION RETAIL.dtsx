@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="76"
-  DTS:VersionGUID="{731DFBBE-DB6D-4987-BF11-0A6BEA336E3B}">
+  DTS:VersionBuild="83"
+  DTS:VersionGUID="{6F64BBE3-C8A2-471F-8AEA-7EA2C316D7CC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADNcTxYEPw5Dwu0U/WMh16OznNL4EDEVS9dKxMVMtzYPAAAAAAOgAAAAAIAACAAAACHqpfz900wbst7K4LHVgtj5doVvi20gc8mguF2wrTnnCAAAAAAZ9aFVqSbXtbP3w+r3Znw9uGWmJ55RI03Gmba3oGA6kAAAABZph/ZQMY9oR2rHEVuBJJw8zyw5rKBpeRYJ+xlsW7dkwhMvrq2Fi9gwD3XgJ+zdcFz53ud/XlfnqVYTTBThuCs</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAwRUB8su/vfN0cuUEYR6pWD/NhmsytmWeyYe8bO4nQIAAAAAAOgAAAAAIAACAAAADAonUDo+N5onIso9u/jbJHBKAxHbH3wCJeuw/m39c5mSAAAADlm7Hz+dhUBiiK3B3CLjkU/CYD85bzWOwY2QG86v1GRUAAAADzpVhpS5zF6Z/NKjiuJ6vsny7is3sosxPGj/fSY/SNkFggUg5P20VqMb6UQRaMDZ2vkQksW6DzBgXL0MWUdffF</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADlDdDQpjFyk6d4VHHBuxP1kQCsn0ZYdg6TedI53ievJwAAAAAOgAAAAAIAACAAAABXqHBocLUqLounDJFJvYfeqty5I0vZ0lU3KfKun/YSvyAAAADIN2P3/qCy+S/YFDSlvVFqoz3KdDXWEP0d1sXVgX1U9EAAAAAWwSXHKv9xrhApEJF6k+jB3BFGLSi6/TF/Cl7Sa6CRFbhcYZw6G4sXK1UvCMIgehHlUpMU1kGIcuyMKcSw/YDm</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACEpjuJQjnDsR/wfpUlZpTQ16cOrEgylTEH0WJkHa/xYgAAAAAOgAAAAAIAACAAAADhHoBONn/aupkQHz/MF9a9m/8HTqXjNVVn3eRpSlL8WCAAAACnxErBE3VT5WdrCQTmviEaLALND4PLTO+cjegoVgj83kAAAAD8SsRAFqOG/8ahJnsOxQX5YX3HK93VxWOw3ETRfN85pvI3n5DUUoElaiIofgqPcwLIBiqFtkj7kaocyeRf0WCN</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -4435,7 +4435,7 @@ where base.[MOTIVO1]=motivo.[mot_desmot1] collate SQL_Latin1_General_CP1_CI_AS
     design-time-name="Package\CRUZA Y ORDENA DATOS">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="170,42"
           Id="Package\CRUZA Y ORDENA DATOS\Origen de OLE DB"
@@ -4479,9 +4479,7 @@ where base.[MOTIVO1]=motivo.[mot_desmot1] collate SQL_Latin1_General_CP1_CI_AS
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4515,9 +4513,7 @@ where base.[MOTIVO1]=motivo.[mot_desmot1] collate SQL_Latin1_General_CP1_CI_AS
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
