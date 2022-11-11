@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="83"
-  DTS:VersionGUID="{6F64BBE3-C8A2-471F-8AEA-7EA2C316D7CC}">
+  DTS:VersionBuild="91"
+  DTS:VersionGUID="{A099F1F0-AAF8-4AE3-A3D6-D92BFF2F3769}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAwRUB8su/vfN0cuUEYR6pWD/NhmsytmWeyYe8bO4nQIAAAAAAOgAAAAAIAACAAAADAonUDo+N5onIso9u/jbJHBKAxHbH3wCJeuw/m39c5mSAAAADlm7Hz+dhUBiiK3B3CLjkU/CYD85bzWOwY2QG86v1GRUAAAADzpVhpS5zF6Z/NKjiuJ6vsny7is3sosxPGj/fSY/SNkFggUg5P20VqMb6UQRaMDZ2vkQksW6DzBgXL0MWUdffF</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAIRr55QkNL+5lzmF37/k3SJ0+eg9XYL/9CHFMxwQo/VwAAAAAOgAAAAAIAACAAAAAAOiGowDi7g7qly+CfJnpGPUZExKJPsVu8mro+6hhwACAAAADLr9aJmIcmz6xoCl+pkpzBrudtZFbXVA2y0x7z+tQ0UkAAAAC1KJ3h4ePdDdssopRP/O3ouHPFxW9UYe3mBAdqVyw1YWKxqG+PVp00ZhOrdMNXDCjqy5R9lMGydgFE2Xj1a8n2</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,11 +42,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=10.5.60.100;User ID=analistas;Initial Catalog=cierre_creacion_auris;Provider=MSOLEDBSQL.1;Auto Translate=False;">
+          DTS:ConnectionString="Data Source=10.5.60.100;User ID=analistas;Initial Catalog=cierre_creacion_auris;Provider=MSOLEDBSQL.1;Auto Translate=False;Application Name=SSIS-Package1-{C81C5645-8FE7-41E8-9B5B-5650E600797B}10.5.60.100.cierre_creacion_auris.analistas 1;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACEpjuJQjnDsR/wfpUlZpTQ16cOrEgylTEH0WJkHa/xYgAAAAAOgAAAAAIAACAAAADhHoBONn/aupkQHz/MF9a9m/8HTqXjNVVn3eRpSlL8WCAAAACnxErBE3VT5WdrCQTmviEaLALND4PLTO+cjegoVgj83kAAAAD8SsRAFqOG/8ahJnsOxQX5YX3HK93VxWOw3ETRfN85pvI3n5DUUoElaiIofgqPcwLIBiqFtkj7kaocyeRf0WCN</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAy0g9gN+1aC3J0dDNHSaFZCXvkp6cVZCarwjDJ4bj3+QAAAAAOgAAAAAIAACAAAADwEyvFM3/p/EaIVeEzX5B+XGD6TqV9OypBekAuR9Cc4iAAAABdPS+fKOCmkE6E1PYBbMUFBVuzKqgZIvw2ilDIlbQOBEAAAAB0Hh5jI3NI22mhE39Xl62cRcFrr6MMmIEfnrF6NZgNXNC5+61/UVXz2fvCYE+vSfdLOfOA9Q/edq7Eg2x0p6t3</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -110,7 +110,8 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\CARGA EXCEL\Conversión de datos.Inputs[Entrada de conversión de datos].Columns[GLOSA]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="1000"
                       cachedName="GLOSA"
                       lineageId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de origen de Excel].Columns[GLOSA]" />
                   </inputColumns>
@@ -778,10 +779,11 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de origen de Excel].Columns[GLOSA]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[GLOSA]"
+                      length="1000"
                       lineageId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de origen de Excel].Columns[GLOSA]"
                       name="GLOSA"
                       truncationRowDisposition="FailComponent" />
@@ -1045,8 +1047,7 @@
                       name="RUT" />
                     <externalMetadataColumn
                       refId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[TELEFONO]"
-                      dataType="wstr"
-                      length="255"
+                      dataType="r8"
                       name="TELEFONO" />
                     <externalMetadataColumn
                       refId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[EMAIL]"
@@ -1070,12 +1071,12 @@
                       name="MOTIVO3" />
                     <externalMetadataColumn
                       refId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[GLOSA]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="255"
                       name="GLOSA" />
                     <externalMetadataColumn
                       refId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[OC]"
-                      dataType="wstr"
-                      length="255"
+                      dataType="r8"
                       name="OC" />
                     <externalMetadataColumn
                       refId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[CUD]"
@@ -1084,8 +1085,7 @@
                       name="CUD" />
                     <externalMetadataColumn
                       refId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[SKU]"
-                      dataType="wstr"
-                      length="255"
+                      dataType="r8"
                       name="SKU" />
                     <externalMetadataColumn
                       refId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Fecha Ret/Cam]"
@@ -1219,8 +1219,7 @@
                       name="RUT" />
                     <outputColumn
                       refId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[TELEFONO]"
-                      dataType="wstr"
-                      length="255"
+                      dataType="r8"
                       lineageId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[TELEFONO]"
                       name="TELEFONO" />
                     <outputColumn
@@ -1249,13 +1248,13 @@
                       name="MOTIVO3" />
                     <outputColumn
                       refId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[GLOSA]"
-                      dataType="nText"
+                      dataType="wstr"
+                      length="255"
                       lineageId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[GLOSA]"
                       name="GLOSA" />
                     <outputColumn
                       refId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[OC]"
-                      dataType="wstr"
-                      length="255"
+                      dataType="r8"
                       lineageId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[OC]"
                       name="OC" />
                     <outputColumn
@@ -1266,8 +1265,7 @@
                       name="CUD" />
                     <outputColumn
                       refId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[SKU]"
-                      dataType="wstr"
-                      length="255"
+                      dataType="r8"
                       lineageId="Package\CARGA EXCEL\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[SKU]"
                       name="SKU" />
                     <outputColumn
@@ -4435,7 +4433,7 @@ where base.[MOTIVO1]=motivo.[mot_desmot1] collate SQL_Latin1_General_CP1_CI_AS
     design-time-name="Package\CRUZA Y ORDENA DATOS">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="170,42"
           Id="Package\CRUZA Y ORDENA DATOS\Origen de OLE DB"
@@ -4479,7 +4477,9 @@ where base.[MOTIVO1]=motivo.[mot_desmot1] collate SQL_Latin1_General_CP1_CI_AS
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4513,7 +4513,9 @@ where base.[MOTIVO1]=motivo.[mot_desmot1] collate SQL_Latin1_General_CP1_CI_AS
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Informar_Carga_Masiva_Formulario"
   DTS:PackageType="5"
-  DTS:VersionBuild="299"
-  DTS:VersionGUID="{0C641C0B-2115-40B4-AF46-45D7698105BB}">
+  DTS:VersionBuild="302"
+  DTS:VersionGUID="{D9019714-D9EF-4B3E-AAD0-D09E72303CD9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAh/VXS2U5qbdpBXr9DPSlxHHDMbO5G2ZpdYWTFLVcDPAAAAAAOgAAAAAIAACAAAAC4iedOEKpaornMfJm2Un+PWF7hd9QX25pT2SIQ4CJOJCAAAAC5EBVKWOC/GRSsFTce/72qSklMFfUNRsDrKvH3e6IjOUAAAAA3grtwmyCUevn04pRZvkZuYO02oISDj+Uj2Qp4V+QLy6q6Xkl+Ts9T3Upeg4c6R4MZ/z99pc3JWC3O6BzYRI1P</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADWCHhaxCEEWF3OwfdoWhDBP/8Lmc8cpW875c0wqhd21wAAAAAOgAAAAAIAACAAAAB1XgpwhzEzZZb0QovkH6eUtqHQ8NyuQj3Uc6GygLvSYyAAAAAd8GMGRjlftJ7hWzLPOSWqmomNBb882+60TSJx6tsw00AAAABnGiyyTSmSkc4ryzt3BYZuiI6Yvqtcf7zxT78V1kUUM73yMX7MXYgMp0PxFfKXwqhO+04M6mtP+3SXzE4CWHyZ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1614,14 +1614,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37.1333331198163"
+              EndConnector="0,37.133333119816"
               Start="0,0"
-              End="0,29.6333331198163">
+              End="0,29.633333119816">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.6333331198163" />
+                    End="0,29.633333119816" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
