@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="EXCEL - MKP"
   DTS:PackageType="5"
-  DTS:VersionBuild="295"
-  DTS:VersionGUID="{EB895A3C-554B-42E9-A1C8-61908FFCA8CF}">
+  DTS:VersionBuild="298"
+  DTS:VersionGUID="{AF131684-83A1-4121-8DA2-DE65F83BE132}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACBcaXG1c79qPA2T1JtN9g3CDy2ap3A5YWTaZ+KMXq5zQAAAAAOgAAAAAIAACAAAAB00XMHMLrjeTPngKhPUl/5yqcNq21e+fbEAb+iIOsHFyAAAAArTn3lvJjGGErKhSjluFs/zHtOwuzdBvIcvPxpiX9Un0AAAADWNsmhR1/kDiT2dkZKJFR4c51fCjI0m6hYhb4/q+8zTIhzvIeDBsIS8WGetS97CsxSMcQTn8xZNGDh9dmCCzRb</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACh04jWWhlHsLWldoh4OUUvZ2YtpdJa1VYSHlw+5dbffAAAAAAOgAAAAAIAACAAAAAIyHh1jX2F/wGid5jlhjYEYikrhSxyFC+jU9B3+ktPtCAAAAD2DtR1k5xHxjcHLShn/HlEzmoMJa1Bh5guCzOPYEc5+EAAAABvRHiXpR8pe3CBOVzFNtBCkJkpZVvL2mMwknYjfiv4mDxtoW7YkrE7E15vK9EVvjnsBlhG0IeUVH3PeACCKAm1</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2794,10 +2794,11 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           truncationRowDisposition="FailComponent" />
                         <outputColumn
                           refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Nº OC]"
-                          dataType="r8"
+                          dataType="wstr"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].ExternalColumns[Nº OC]"
+                          length="255"
                           lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Nº OC]"
                           name="Nº OC"
                           truncationRowDisposition="FailComponent" />
@@ -2830,6 +2831,15 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           length="255"
                           lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[SKU]"
                           name="SKU"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[F16]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].ExternalColumns[F16]"
+                          lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[F16]"
+                          name="F16"
                           truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
@@ -2896,7 +2906,8 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           name="Digito_verificador" />
                         <externalMetadataColumn
                           refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].ExternalColumns[Nº OC]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           name="Nº OC" />
                         <externalMetadataColumn
                           refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].ExternalColumns[Letra_OC]"
@@ -2908,6 +2919,10 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           dataType="wstr"
                           length="255"
                           name="SKU" />
+                        <externalMetadataColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].ExternalColumns[F16]"
+                          dataType="r8"
+                          name="F16" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -2965,7 +2980,8 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           name="M1" />
                         <outputColumn
                           refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[Nº OC]"
-                          dataType="r8"
+                          dataType="wstr"
+                          length="255"
                           lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[Nº OC]"
                           name="Nº OC" />
                         <outputColumn
@@ -3004,6 +3020,11 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           length="255"
                           lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[SKU]"
                           name="SKU" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[F16]"
+                          dataType="r8"
+                          lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[F16]"
+                          name="F16" />
                         <outputColumn
                           refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[ErrorColumn]"
                           dataType="i4"
@@ -3151,7 +3172,8 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Email 1]" />
                         <inputColumn
                           refId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].Columns[Nº OC]"
-                          cachedDataType="r8"
+                          cachedDataType="wstr"
+                          cachedLength="255"
                           cachedName="Nº OC"
                           externalMetadataColumnId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].ExternalColumns[OC]"
                           lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Nº OC]" />
@@ -3464,7 +3486,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
           PanelSize="202,306"
           Size="182,43"
           Id="Package\Actualiza glosas"
-          TopLeft="204,237" />
+          TopLeft="202,262" />
         <NodeLayout
           Size="191,42"
           Id="Package\Crea tickets\Actualiza campos fijos"
@@ -3627,25 +3649,25 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
           PanelSize="498,491"
           Size="160,43"
           Id="Package\Crea tickets"
-          TopLeft="213,157" />
+          TopLeft="215,166" />
         <NodeLayout
           Size="263,42"
           Id="Package\Limpia tablas para proceso (truncate)"
           TopLeft="161,66" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="292.75,108">
+          TopLeft="293.75,108">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,49"
+              EndConnector="0,58"
               Start="0,0"
-              End="0,41.5">
+              End="0,50.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,41.5" />
+                    End="0,50.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3656,18 +3678,18 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="294,200">
+          TopLeft="294,209">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37"
+              EndConnector="0,53"
               Start="0,0"
-              End="0,29.5">
+              End="0,45.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.5" />
+                    End="0,45.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3834,7 +3856,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
     design-time-name="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="172,42"
           Id="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce"
@@ -3874,7 +3896,9 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3912,13 +3936,13 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="145,42"
-          Id="Package\Crea tickets\Importa Datos Excel\Archivo MKP"
-          TopLeft="254,129" />
-        <NodeLayout
           Size="164,42"
           Id="Package\Crea tickets\Importa Datos Excel\base_mkp_excel"
           TopLeft="450,229" />
+        <NodeLayout
+          Size="145,42"
+          Id="Package\Crea tickets\Importa Datos Excel\Archivo MKP"
+          TopLeft="254,129" />
         <EdgeLayout
           Id="Package\Crea tickets\Importa Datos Excel.Paths[Salida de origen de Excel]"
           TopLeft="326.4,170.6">

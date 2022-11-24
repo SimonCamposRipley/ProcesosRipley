@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Carga_CDR"
   DTS:PackageType="5"
-  DTS:VersionBuild="38"
-  DTS:VersionGUID="{AD8C67D8-FFD6-4414-B3DF-CFB465893538}">
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{9637B634-CF7A-4A64-9704-69DFC4AD6614}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVb3teJmCESKdqsABIKhqwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAbTXgns2g+qhXyF8tlFpEQsU0yo4uj1mwUy8d4gxniCQAAAAAOgAAAAAIAACAAAABiosExss1f29av9e1+/KSXftUhwr8iNVq7s/FgkV2sgCAAAAAStlpYoB6pTa+YRlmlWVZyqF4oh4EF3geS09buHL/JFkAAAACLUgrTAKi+u5ba5xrzoOho96j1iL4ptlKfMnifzLfzbcc420K8VCbHUK78TYvUZUMDlc70C3yI+mSI1Tq5daIo</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABAdehbVFQMO4JceQWP9TeitkQMON+zKbCzsgwcmvq9RAAAAAAOgAAAAAIAACAAAADwcbPSl8sYDa/60/5aWWeftIKDQ3Jhcpu8HXF96Ppo/yAAAACbn/VcNIYpFOP2TjRDN3kCI4t7JQneEn0WdK82XGEUDEAAAAD2UtZYMBa7CZbVIAJO0n3+caCeeklKIn5zzHNz9sc29OKbH4FYrq9R3SqNRYlv8DDjGrMKmAB1rwfciv0vsj7O</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -272,6 +272,22 @@
           SendMailTask:From="carga_CDR@ripley.com"
           SendMailTask:To="scamposm@ripley.com;gvegac@ripley.com;joyanaderb@ripley.com;fbritov@ripley.com;cwymanf@ripley.com"
           SendMailTask:Subject="Base CDR Cargada" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Corrije numeros cortos"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{98E9E88D-BE6E-4896-859C-CB16174AAD88}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Corrije numeros cortos"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{95D85FDD-A8EA-41C6-BF5F-9C8E4E95CFEA}"
+          SQLTask:SqlStatementSource=" &#xA;  update [CDR_EXPORT] set [calleeNumber]=[callerNumber]  where len([calleeNumber]) &lt;= '5' and calleeNumber &lt;&gt; '' and [callerNumber] like '%569%' and len([callerNumber]) &gt;= 5" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -973,6 +989,22 @@
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{B2BC068A-E67C-4E1D-A839-45E87613665F}"
+      DTS:From="Package\Limpia Dobles Comillas"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Corrije numeros cortos" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{5E7D06EB-9AE2-4FB8-913B-8EB3DF3F8C72}"
+      DTS:From="Package\Corrije numeros cortos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\LIMPIA PERSONAS NO PERTENCEN A CCR" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción]"
       DTS:CreationName=""
       DTS:DTSID="{AC4BA396-56D7-497B-8C2A-2AF1CFB34676}"
@@ -980,14 +1012,6 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
       DTS:To="Package\Limpia Dobles Comillas" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
-      DTS:CreationName=""
-      DTS:DTSID="{A00E402B-61BC-4A81-A0E6-603F6521D547}"
-      DTS:From="Package\Limpia Dobles Comillas"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Restricción 1"
-      DTS:To="Package\LIMPIA PERSONAS NO PERTENCEN A CCR" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
       DTS:CreationName=""
@@ -1008,11 +1032,11 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="145,42"
           Id="Package\Base Cargada"
-          TopLeft="144.999994238218,370.066669607693" />
+          TopLeft="144.999994238218,439.066669607693" />
         <NodeLayout
           Size="197,42"
           Id="Package\IMPORTAR DATOS CDR"
@@ -1024,7 +1048,7 @@
         <NodeLayout
           Size="294,42"
           Id="Package\LIMPIA PERSONAS NO PERTENCEN A CCR"
-          TopLeft="74.999997019768,280.666668905153" />
+          TopLeft="73.999997019768,353.666668905153" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
           TopLeft="218.416661782398,154.666667562061">
@@ -1048,19 +1072,45 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="218.916662726138,240.466668243938">
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="219.249995628993,395.666668905153">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,40.200000661215"
+              EndConnector="0,43.40000070254"
               Start="0,0"
-              End="0,32.700000661215">
+              End="0,35.90000070254">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.700000661215" />
+                    End="0,35.90000070254" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="190,42"
+          Id="Package\Corrije numeros cortos"
+          TopLeft="125,269" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="217.916664216254,240.466668243938">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28.533331756062"
+              Start="0,0"
+              End="0,21.033331756062">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.033331756062" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1070,19 +1120,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="219.749995628993,322.666668905153">
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="220.499998509884,311">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,47.40000070254"
+              EndConnector="0,42.666668905153"
               Start="0,0"
-              End="0,39.90000070254">
+              End="0,35.166668905153">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,39.90000070254" />
+                    End="0,35.166668905153" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1098,11 +1148,11 @@
     design-time-name="Package\IMPORTAR DATOS CDR">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="171,42"
+          Size="177,42"
           Id="Package\IMPORTAR DATOS CDR\OLE DB Destination"
-          TopLeft="353.166652593348,325.866669256422" />
+          TopLeft="349.166652593348,324.866669256422" />
         <NodeLayout
           Size="151,42"
           Id="Package\IMPORTAR DATOS CDR\Flat File Source"
@@ -1113,34 +1163,32 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="145.666661236021,140.86666811996"
+              EndConnector="144.666661236021,139.86666811996"
               Start="0,0"
-              End="145.666661236021,133.36666811996">
+              End="144.666661236021,132.36666811996">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,66.43333405998" />
+                    End="0,65.93333405998" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,66.43333405998"
-                    Point2="0,70.43333405998"
-                    Point3="4,70.43333405998" />
+                    Point1="0,65.93333405998"
+                    Point2="0,69.93333405998"
+                    Point3="4,69.93333405998" />
                   <mssgle:LineSegment
-                    End="141.666661236021,70.43333405998" />
+                    End="140.666661236021,69.93333405998" />
                   <mssgle:CubicBezierSegment
-                    Point1="141.666661236021,70.43333405998"
-                    Point2="145.666661236021,70.43333405998"
-                    Point3="145.666661236021,74.43333405998" />
+                    Point1="140.666661236021,69.93333405998"
+                    Point2="144.666661236021,69.93333405998"
+                    Point3="144.666661236021,73.93333405998" />
                   <mssgle:LineSegment
-                    End="145.666661236021,133.36666811996" />
+                    End="144.666661236021,132.36666811996" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

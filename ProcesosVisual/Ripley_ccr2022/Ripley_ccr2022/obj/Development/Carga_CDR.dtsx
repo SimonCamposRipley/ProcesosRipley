@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Carga_CDR"
   DTS:PackageType="5"
-  DTS:VersionBuild="38"
-  DTS:VersionGUID="{AD8C67D8-FFD6-4414-B3DF-CFB465893538}">
+  DTS:VersionBuild="40"
+  DTS:VersionGUID="{DC971A2D-55C9-4627-B26A-58D9039F7817}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA9TdLBCHJiemkBfNgkvxrk2YnSiFjpKDOl9zBRVVU8pAAAAAAOgAAAAAIAACAAAAAC83eC0MWHIuzLjLBQd7RioKnB6kLUb+8iw7S07m2OyCAAAACLfkffNnF3FDT3PN5maStOBHQ+TmOw3qcYtUlnqIUC10AAAAAw4MhYuFsmjeH3xV7AjIlJrKLppEBKHkWhgTUwc9YGrPQUQv4CDp5VoJdWYsM6oYmpUmuf1PZspyfzWlGZJgyg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADzyUQlOhtn7whAh6f2K8TI5e+1k0xVkiqKLt95DYzpTwAAAAAOgAAAAAIAACAAAAAbNerC5fPzrPzMlq5t+W0n1gOwLVHqFBDEj3PAdI1cFCAAAAAk/6IXyuZnoIHyTn4zMCUeY/6cTMJVRlkbu3hYgIbXnUAAAADMDaZZx5qzgr+lKuep2XmoRB/PgLL6XPWJMFx5/GfaN2wFzHH54fsWQZ7eNgfPzZeE4kWmkqq2HApGwnvH3v2D</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1098,11 +1098,11 @@
     design-time-name="Package\IMPORTAR DATOS CDR">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="171,42"
+          Size="177,42"
           Id="Package\IMPORTAR DATOS CDR\OLE DB Destination"
-          TopLeft="353.166652593348,325.866669256422" />
+          TopLeft="349.166652593348,324.866669256422" />
         <NodeLayout
           Size="151,42"
           Id="Package\IMPORTAR DATOS CDR\Flat File Source"
@@ -1113,34 +1113,32 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="145.666661236021,140.86666811996"
+              EndConnector="144.666661236021,139.86666811996"
               Start="0,0"
-              End="145.666661236021,133.36666811996">
+              End="144.666661236021,132.36666811996">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,66.43333405998" />
+                    End="0,65.93333405998" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,66.43333405998"
-                    Point2="0,70.43333405998"
-                    Point3="4,70.43333405998" />
+                    Point1="0,65.93333405998"
+                    Point2="0,69.93333405998"
+                    Point3="4,69.93333405998" />
                   <mssgle:LineSegment
-                    End="141.666661236021,70.43333405998" />
+                    End="140.666661236021,69.93333405998" />
                   <mssgle:CubicBezierSegment
-                    Point1="141.666661236021,70.43333405998"
-                    Point2="145.666661236021,70.43333405998"
-                    Point3="145.666661236021,74.43333405998" />
+                    Point1="140.666661236021,69.93333405998"
+                    Point2="144.666661236021,69.93333405998"
+                    Point3="144.666661236021,73.93333405998" />
                   <mssgle:LineSegment
-                    End="145.666661236021,133.36666811996" />
+                    End="144.666661236021,132.36666811996" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Ripley_ccr2022</Name>
-    <LastWriteTime>2022-11-10T14:25:57.2707664Z</LastWriteTime>
+    <LastWriteTime>2022-11-21T12:00:20.1708479Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,7 +13,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Carga_CDR.dtsx</Name>
-      <LastWriteTime>2022-11-09T11:31:30.6164941Z</LastWriteTime>
+      <LastWriteTime>2022-11-23T11:19:15.3224158Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -28,7 +28,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CARGA_TIENDA.dtsx</Name>
-      <LastWriteTime>2022-10-27T14:47:11.8264824Z</LastWriteTime>
+      <LastWriteTime>2022-11-16T14:51:47.4237643Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -48,7 +48,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>EXCEL - MKP.dtsx</Name>
-      <LastWriteTime>2022-10-27T14:48:03.7128858Z</LastWriteTime>
+      <LastWriteTime>2022-11-21T11:52:27.7567079Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -58,7 +58,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Informar_Carga_Masiva_Formulario.dtsx</Name>
-      <LastWriteTime>2022-11-10T15:17:31.1878999Z</LastWriteTime>
+      <LastWriteTime>2022-11-22T18:31:32.962255Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -78,12 +78,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CARGA_MASIVA_FORMULARIO.dtsx</Name>
-      <LastWriteTime>2022-11-03T18:25:42.2896709Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>Package1.dtsx</Name>
-      <LastWriteTime>2022-11-10T13:23:09.4723504Z</LastWriteTime>
+      <LastWriteTime>2022-11-23T13:04:50.9329715Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
