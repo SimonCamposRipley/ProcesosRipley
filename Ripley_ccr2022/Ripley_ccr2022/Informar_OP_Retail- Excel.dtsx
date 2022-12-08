@@ -1,0 +1,75 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/16/2020 1:59:50 PM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="P-CCR-19478C"
+  DTS:CreatorName="RIPLEY-MAIN\scamposm"
+  DTS:DTSID="{FB0DB5DB-4C90-4844-BA27-D26B7BE4F133}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="15.0.2000.132"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="Informar_OP_Retail- Excel"
+  DTS:PackageType="5"
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{CBB1848A-50CF-4954-9CBA-CB2840A45486}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[W1273P.cierre_creacion_auris.analistas]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{22235D4B-466A-4945-96C4-FA1DEC7B1134}"
+      DTS:ObjectName="W1273P.cierre_creacion_auris.analistas">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=10.5.56.225;User ID=analistas;Initial Catalog=cierre_creacion_auris;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh/8aKpoIvUOPkGGA9/PvhQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACmF1sJy1HCN2dq5/K7GnY3KpKNbnRCY6ZpMEnVgLA/WwAAAAAOgAAAAAIAACAAAABwaRaZGmgQhHMgWgWZf42GR3vlekLvLC1GrF1Dfjb3/SAAAACLY17QrZ353ke5ITFIjZ8bVFzbHJsbuydVPqO1fzx3ukAAAAD9maITEauViVAMkpEnQuWbIqkwbdgkEFGd7lLAXT/kbfZ0uckWqiNf3nu3NHsjF7yL/fCFHZzZsh0LQ6HrTveV</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Crear tabla de informe"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{5EEC5FA5-1AFC-417A-AF09-2CFA6AF62BB7}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Crear tabla de informe"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{22235D4B-466A-4945-96C4-FA1DEC7B1134}"
+          SQLTask:SqlStatementSource="drop table informar_operaciones_retail&#xA;&#xA;declare @carga nvarchar(10);&#xA;set @carga = (select top 1 [edge_data35] from [dbo].[base_carga_op_retail])&#xA;&#xA;SELECT&#xA;campana.cam_codcam as Campaña,&#xA;a.dge_numcon as Numero_Ticket,&#xA;b.ges_idclie as Rut_Cliente,&#xA;b.ges_nomcli as Nombre_Cliente,&#xA;motivo.mot_desmot1 as Motivo1,&#xA;motivo.mot_desmot2 as Motivo2,&#xA;motivo.mot_desmot3 as Motivo3,&#xA;b.ges_telcom1 as Fono&#xA;&#xA;&#xA;into informar_operaciones_retail&#xA;FROM [10.0.149.23].[AurisRip].[dbo].[DATOS_GESTION] as a&#xA;left join [10.0.149.23].[AurisRip].[dbo].[GESTION] as b on a.dge_numcon=b.ges_numcon&#xA;left join [10.0.149.23].[AurisRip].[dbo].[campana] as campana on b.ges_numcag=campana.cam_numcam&#xA;left join [10.0.149.23].[AurisRip].[dbo].[motivo] as motivo on campana.cam_numcam=motivo.mot_numcam&#xA;&#xA;where&#x9;b.[ges_nummot1]=motivo.[mot_nummot1] and&#x9;b.[ges_nummot2]=motivo.[mot_nummot2] &#xA;&#x9;and b.[ges_nummot3]=motivo.[mot_nummot3] and a.[dge_data37] like 'CargaMasiva%' and a.dge_data35 = @carga and b.ges_numcag = 186" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="sql11">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="184,42"
+          Id="Package\Crear tabla de informe"
+          TopLeft="62,36" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
