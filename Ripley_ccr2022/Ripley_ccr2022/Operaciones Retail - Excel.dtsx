@@ -1,0 +1,2853 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/22/2020 4:10:27 PM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="P-CCR-19478B"
+  DTS:CreatorName="RIPLEY-MAIN\scamposm"
+  DTS:DTSID="{1651901B-592C-4147-8AEC-05970B97D520}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="15.0.2000.132"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="Operaciones Retail - Excel"
+  DTS:PackageType="5"
+  DTS:VersionBuild="201"
+  DTS:VersionGUID="{3F64939A-33CE-4DDB-A6DC-D886CC769EF1}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[10.5.56.225.cierre_creacion_auris.analistas]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7C51F9B0-6975-4CA7-9D5F-01178F59E2DC}"
+      DTS:ObjectName="10.5.56.225.cierre_creacion_auris.analistas">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=10.5.56.225;User ID=analistas;Initial Catalog=cierre_creacion_auris;Provider=MSOLEDBSQL.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh/8aKpoIvUOPkGGA9/PvhQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABpWuXIPj5EYAZosL4EhyrVfTkjlpq5MtOqP9Har29LIAAAAAAOgAAAAAIAACAAAAAZwl1gdoQtpEDgaSjL8rlovuly2wZhL5gNpjfa76ixJSAAAAD8Jsx+YgwWN0C9hYWLBf2zFiJcyx9Y7IX18q3Q/+flwUAAAABMxWyS5m5pOsxUM/a1YFeM9S9gQa4COcFcvjuJujhxaqmRiWdAzwoATQrxCChBcKG0t5m1VWmvpWPbSDqXBoqB</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{CFA51708-4C23-4408-BF52-784C996A5E44}"
+      DTS:ObjectName="Administrador de conexiones con Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Simon Campos\Desktop\Cargas\Proyecto\Proyecto de Integration Services3\Proyecto de Integration Services3\Archivos\carga_operaciones_retail.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[W1273P.cierre_creacion_auris.analistas]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8F05884E-8208-4767-A058-93CED141E85E}"
+      DTS:ObjectName="W1273P.cierre_creacion_auris.analistas">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=10.5.56.225;User ID=analistas;Initial Catalog=cierre_creacion_auris;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh/8aKpoIvUOPkGGA9/PvhQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABbF/XIW4QT5uk2otSTnjPWt6sTYDILm7qaQgDQiqEk7gAAAAAOgAAAAAIAACAAAAAccLNPRXwVAkE/i1uVH5hM2uEa99sturtOIwqAqYZCMiAAAACW2rnqyyvJvYzdOAGp3FiQrKvSUMgSoIWvrbllM/Y5ZkAAAABzBqeUi4HDLgV9ylF2IAXVLvS5y3Id6ssPMsUCEh+fsiH0Epb4NOAuhGud4B3BX4CDiiICrlfqsiTNcZnvxt0j</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Actualiza Campañas y Motivos"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{24471A1F-FBFF-46E3-8D8F-4B98D19EE01D}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Actualiza Campañas y Motivos"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{8F05884E-8208-4767-A058-93CED141E85E}"
+          SQLTask:SqlStatementSource="drop table [dbo].[campana]&#xA;drop table [dbo].[motivos]&#xA;drop table recursos&#xA;&#xA;select&#xA;*&#xA;into campana&#xA;from [10.0.149.23].[AurisRip].[dbo].[CAMPANA]&#xA;&#xA;select&#xA;*&#xA;into motivos&#xA;from [10.0.149.23].[AurisRip].[dbo].[MOTIVO]&#xA;&#xA;&#xA;SELECT *&#xA;into recursos&#xA;  FROM [10.0.149.23].[AurisRip].[dbo].[RECURSO]&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Actualiza campos fijos"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{706F2C7F-79AB-428E-B6F6-052F8356F337}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Actualiza campos fijos"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{8F05884E-8208-4767-A058-93CED141E85E}"
+          SQLTask:SqlStatementSource="DECLARE @carga int;&#xA;DECLARE @registros int;&#xA;&#xA;&#xA;&#xA;set @carga = (select max([Numero_Carga]) from [dbo].[cargas] where [Campana] = 'OPERACIONES RETAIL');&#xA;set @registros = (select count(*) from [base_carga_op_retail])&#xA;&#xA;&#xA;&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_op_retail] SET   [ges_numrec1] = [ges_numrec]&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_op_retail] SET   [CodigoAccion] = 'CREAR'&#xA;&#xA;&#xA;&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_op_retail] SET   [ges_numplg] = '30'&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_op_retail] SET   [ges_numter1] = '1' &#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_op_retail] SET   [ges_numter2] = '0'&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_op_retail] SET   [ges_numter3] = '0' &#xA;&#xA;&#xA;&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_op_retail] SET edge_data35 = @carga + 1&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_op_retail] SET edge_data36 = 'Tipo Carga - Operaciones Retail'&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_op_retail] SET edge_data37 = cast(cast('CargaMasiva - ' as varchar)+ cast(cast(getdate()as date) as nvarchar) as varchar)&#xA;&#xA;&#xA;&#xA;insert into [dbo].[cargas] ([Numero_Carga],[Campana],[registros],[hora_proceso]) values (@carga + 1,'OPERACIONES RETAIL',@registros,getdate())&#xA;&#xA;&#xA;&#xA;&#xA;update [dbo].[base_carga_op_retail] set [glosa] = [ges_glomot]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Crea base temporal"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{6594B6CE-B215-42A3-9165-86A967978792}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Crea base temporal"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{8F05884E-8208-4767-A058-93CED141E85E}"
+          SQLTask:SqlStatementSource="&#xA;update [dbo].[base_op_retail_excel] set [CodV]  = 'K' where [CodV] is null&#xA;&#xA;insert into base_op_retail_tmp &#xA;SELECT &#xA;campana.[cam_numcam],&#xA;recursos.rec_numrec as usuario,&#xA;&#xA;&#xA;&#xA;cast(base.[RUT] as nvarchar) + cast([CodV] as nvarchar) as [Rut Cliente] ,&#xA;base.[NOMBRE],&#xA;base.[Telefono],&#xA;base.[CORREO],&#xA;&#xA;motivo.[mot_nummot1],&#xA;motivo.[mot_nummot2],&#xA;motivo.[mot_nummot3],&#xA;&#xA;&#xA;base.Glosa,&#xA;&#xA;&#xA;base.[Ticket_Reclamo],&#xA;base.[Monto_Diferencia_GC],&#xA;base.[Tipo de Requerimiento],&#xA;base.[Autorizado Por],&#xA;base.[Ceco],&#xA;base.[Origen Problema],&#xA;base.[Medio de Pago],&#xA;base.[Monto Pagado],&#xA;base.[Monto Solucion Comercial],&#xA;base.[Responsable],&#xA;base.[Departamento],&#xA;base.[SKU Original]&#xA;&#xA;&#xA;FROM [cierre_creacion_auris].[dbo].[base_op_retail_excel] as base&#xA; left join [dbo].[campana] as campana on base.campaña=campana.cam_nomcam collate SQL_Latin1_General_CP1_CI_AS&#xA; inner join [dbo].[motivos] as motivo on campana.cam_numcam=motivo.mot_numcam &#xA; inner join [dbo].[recursos] as recursos on base.usuario=recursos.[rec_userna] collate SQL_Latin1_General_CP1_CI_AS&#xA; &#xA;  where&#x9;base.[Motivo1]=motivo.[mot_desmot1] collate SQL_Latin1_General_CP1_CI_AS&#xA;&#x9;and&#x9;base.[Motivo2]=motivo.[mot_desmot2] collate SQL_Latin1_General_CP1_CI_AS&#xA;&#x9;and base.[Motivo3]=motivo.[mot_desmot3] collate SQL_Latin1_General_CP1_CI_AS&#x9;&#xA;&#xA;&#xA;&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Importa Base"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{5BECC885-6B58-4DA9-89B8-BAF0E55F58DC}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Importa Base"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Importa Base\Destino de OLE DB"
+              componentClassID="DTSAdapter.OLEDBDestination.3"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Destino de OLE DB"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[base_op_retail_excel]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Importa Base\Destino de OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[10.5.56.225.cierre_creacion_auris.analistas]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.5.56.225.cierre_creacion_auris.analistas]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[NOMBRE]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="NOMBRE"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[NOMBRE]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[NOMBRE]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[GLOSA]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="GLOSA"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[GLOSA]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[GLOSA]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Usuario]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Usuario"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Usuario]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Usuario]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Campaña]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Campaña"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Campaña]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Campaña]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Motivo1]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Motivo1"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Motivo1]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Motivo1]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Motivo2]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Motivo2"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Motivo2]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Motivo2]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Motivo3]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Motivo3"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Motivo3]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Motivo3]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[RUT]"
+                      cachedDataType="r8"
+                      cachedName="RUT"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[RUT]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[RUT]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[CodV]"
+                      cachedDataType="r8"
+                      cachedName="CodV"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CodV]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CodV]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[CORREO]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CORREO"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CORREO]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CORREO]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Telefono]"
+                      cachedDataType="r8"
+                      cachedName="Telefono"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Telefono]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Telefono]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Ticket_Reclamo]"
+                      cachedDataType="r8"
+                      cachedName="Ticket_Reclamo"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Ticket_Reclamo]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Ticket_Reclamo]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Monto_Diferencia_GC]"
+                      cachedDataType="r8"
+                      cachedName="Monto_Diferencia_GC"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Monto_Diferencia_GC]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Monto_Diferencia_GC]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Tipo de Requerimiento]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Tipo de Requerimiento"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo de Requerimiento]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tipo de Requerimiento]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Autorizado Por]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Autorizado Por"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Autorizado Por]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Autorizado Por]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Ceco]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Ceco"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Ceco]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Ceco]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Origen Problema]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Origen Problema"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Origen Problema]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Origen Problema]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Medio de Pago]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Medio de Pago"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Medio de Pago]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Medio de Pago]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Monto Pagado]"
+                      cachedDataType="r8"
+                      cachedName="Monto Pagado"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Monto Pagado]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Monto Pagado]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Monto Solucion Comercial]"
+                      cachedDataType="r8"
+                      cachedName="Monto Solucion Comercial"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Monto Solucion Comercial]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Monto Solucion Comercial]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Responsable]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Responsable"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Responsable]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Responsable]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Departamento]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Departamento"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Departamento]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Departamento]" />
+                    <inputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[SKU Original]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="SKU Original"
+                      externalMetadataColumnId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[SKU Original]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[SKU Original]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[NOMBRE]"
+                      dataType="wstr"
+                      length="255"
+                      name="NOMBRE" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[GLOSA]"
+                      dataType="wstr"
+                      length="255"
+                      name="GLOSA" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Usuario]"
+                      dataType="wstr"
+                      length="255"
+                      name="Usuario" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Campaña]"
+                      dataType="wstr"
+                      length="255"
+                      name="Campaña" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Motivo1]"
+                      dataType="wstr"
+                      length="255"
+                      name="Motivo1" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Motivo2]"
+                      dataType="wstr"
+                      length="255"
+                      name="Motivo2" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Motivo3]"
+                      dataType="wstr"
+                      length="255"
+                      name="Motivo3" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[RUT]"
+                      dataType="wstr"
+                      length="255"
+                      name="RUT" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CodV]"
+                      dataType="wstr"
+                      length="255"
+                      name="CodV" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CORREO]"
+                      dataType="wstr"
+                      length="255"
+                      name="CORREO" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Telefono]"
+                      dataType="wstr"
+                      length="255"
+                      name="Telefono" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Ticket_Reclamo]"
+                      dataType="wstr"
+                      length="255"
+                      name="Ticket_Reclamo" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Monto_Diferencia_GC]"
+                      dataType="wstr"
+                      length="255"
+                      name="Monto_Diferencia_GC" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo de Requerimiento]"
+                      dataType="wstr"
+                      length="255"
+                      name="Tipo de Requerimiento" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Autorizado Por]"
+                      dataType="wstr"
+                      length="255"
+                      name="Autorizado Por" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Ceco]"
+                      dataType="wstr"
+                      length="255"
+                      name="Ceco" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Origen Problema]"
+                      dataType="wstr"
+                      length="255"
+                      name="Origen Problema" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Medio de Pago]"
+                      dataType="wstr"
+                      length="255"
+                      name="Medio de Pago" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Monto Pagado]"
+                      dataType="wstr"
+                      length="255"
+                      name="Monto Pagado" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Monto Solucion Comercial]"
+                      dataType="r8"
+                      name="Monto Solucion Comercial" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Responsable]"
+                      dataType="wstr"
+                      length="255"
+                      name="Responsable" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Departamento]"
+                      dataType="wstr"
+                      length="255"
+                      name="Departamento" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[SKU Original]"
+                      dataType="wstr"
+                      length="255"
+                      name="SKU Original" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Importa Base\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Importa Base\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Importa Base\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Importa Base\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Importa Base\Origen de Excel"
+              componentClassID="DTSAdapter.ExcelSource.3"
+              contactInfo="Origen de Excel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de Excel"
+              name="Origen de Excel"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">Hoja1$</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="La asignación de parámetros del comando SQL a variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Importa Base\Origen de Excel.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel]"
+                  name="Salida de origen de Excel">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[NOMBRE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[NOMBRE]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[NOMBRE]"
+                      name="NOMBRE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[GLOSA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[GLOSA]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[GLOSA]"
+                      name="GLOSA"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Usuario]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Usuario]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Usuario]"
+                      name="Usuario"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Campaña]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Campaña]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Campaña]"
+                      name="Campaña"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Motivo1]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Motivo1]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Motivo1]"
+                      name="Motivo1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Motivo2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Motivo2]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Motivo2]"
+                      name="Motivo2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Motivo3]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Motivo3]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Motivo3]"
+                      name="Motivo3"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[RUT]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[RUT]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[RUT]"
+                      name="RUT"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CodV]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[CodV]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CodV]"
+                      name="CodV"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CORREO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[CORREO]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[CORREO]"
+                      name="CORREO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Telefono]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Telefono]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Telefono]"
+                      name="Telefono"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Ticket_Reclamo]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Ticket_Reclamo]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Ticket_Reclamo]"
+                      name="Ticket_Reclamo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Monto_Diferencia_GC]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Monto_Diferencia_GC]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Monto_Diferencia_GC]"
+                      name="Monto_Diferencia_GC"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tipo de Requerimiento]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Tipo de Requerimiento]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tipo de Requerimiento]"
+                      name="Tipo de Requerimiento"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Autorizado Por]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Autorizado Por]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Autorizado Por]"
+                      name="Autorizado Por"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Ceco]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Ceco]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Ceco]"
+                      name="Ceco"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Origen Problema]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Origen Problema]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Origen Problema]"
+                      name="Origen Problema"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Medio de Pago]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Medio de Pago]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Medio de Pago]"
+                      name="Medio de Pago"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Monto Pagado]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Monto Pagado]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Monto Pagado]"
+                      name="Monto Pagado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Monto Solucion Comercial]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Monto Solucion Comercial]"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Monto Solucion Comercial]"
+                      name="Monto Solucion Comercial"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Responsable]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Responsable]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Responsable]"
+                      name="Responsable"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Departamento]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Departamento]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Departamento]"
+                      name="Departamento"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[SKU Original]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[SKU Original]"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].Columns[SKU Original]"
+                      name="SKU Original"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[NOMBRE]"
+                      dataType="wstr"
+                      length="255"
+                      name="NOMBRE" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[GLOSA]"
+                      dataType="wstr"
+                      length="255"
+                      name="GLOSA" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Usuario]"
+                      dataType="wstr"
+                      length="255"
+                      name="Usuario" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Campaña]"
+                      dataType="wstr"
+                      length="255"
+                      name="Campaña" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Motivo1]"
+                      dataType="wstr"
+                      length="255"
+                      name="Motivo1" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Motivo2]"
+                      dataType="wstr"
+                      length="255"
+                      name="Motivo2" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Motivo3]"
+                      dataType="wstr"
+                      length="255"
+                      name="Motivo3" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[RUT]"
+                      dataType="r8"
+                      name="RUT" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[CodV]"
+                      dataType="r8"
+                      name="CodV" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[CORREO]"
+                      dataType="wstr"
+                      length="255"
+                      name="CORREO" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Telefono]"
+                      dataType="r8"
+                      name="Telefono" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Ticket_Reclamo]"
+                      dataType="r8"
+                      name="Ticket_Reclamo" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Monto_Diferencia_GC]"
+                      dataType="r8"
+                      name="Monto_Diferencia_GC" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Tipo de Requerimiento]"
+                      dataType="wstr"
+                      length="255"
+                      name="Tipo de Requerimiento" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Autorizado Por]"
+                      dataType="wstr"
+                      length="255"
+                      name="Autorizado Por" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Ceco]"
+                      dataType="wstr"
+                      length="255"
+                      name="Ceco" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Origen Problema]"
+                      dataType="wstr"
+                      length="255"
+                      name="Origen Problema" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Medio de Pago]"
+                      dataType="wstr"
+                      length="255"
+                      name="Medio de Pago" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Monto Pagado]"
+                      dataType="r8"
+                      name="Monto Pagado" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Monto Solucion Comercial]"
+                      dataType="r8"
+                      name="Monto Solucion Comercial" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Responsable]"
+                      dataType="wstr"
+                      length="255"
+                      name="Responsable" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Departamento]"
+                      dataType="wstr"
+                      length="255"
+                      name="Departamento" />
+                    <externalMetadataColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[SKU Original]"
+                      dataType="wstr"
+                      length="255"
+                      name="SKU Original" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de Excel">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Usuario]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Usuario]"
+                      name="Usuario" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Campaña]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Campaña]"
+                      name="Campaña" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Motivo1]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Motivo1]"
+                      name="Motivo1" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Motivo2]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Motivo2]"
+                      name="Motivo2" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Motivo3]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Motivo3]"
+                      name="Motivo3" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[RUT]"
+                      dataType="r8"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[RUT]"
+                      name="RUT" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[CodV]"
+                      dataType="r8"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[CodV]"
+                      name="CodV" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[CORREO]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[CORREO]"
+                      name="CORREO" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[NOMBRE]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[NOMBRE]"
+                      name="NOMBRE" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Telefono]"
+                      dataType="r8"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Telefono]"
+                      name="Telefono" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Ticket_Reclamo]"
+                      dataType="r8"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Ticket_Reclamo]"
+                      name="Ticket_Reclamo" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Monto_Diferencia_GC]"
+                      dataType="r8"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Monto_Diferencia_GC]"
+                      name="Monto_Diferencia_GC" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Tipo de Requerimiento]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Tipo de Requerimiento]"
+                      name="Tipo de Requerimiento" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Autorizado Por]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Autorizado Por]"
+                      name="Autorizado Por" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Ceco]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Ceco]"
+                      name="Ceco" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Origen Problema]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Origen Problema]"
+                      name="Origen Problema" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Medio de Pago]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Medio de Pago]"
+                      name="Medio de Pago" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Monto Pagado]"
+                      dataType="r8"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Monto Pagado]"
+                      name="Monto Pagado" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Monto Solucion Comercial]"
+                      dataType="r8"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Monto Solucion Comercial]"
+                      name="Monto Solucion Comercial" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Responsable]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Responsable]"
+                      name="Responsable" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Departamento]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Departamento]"
+                      name="Departamento" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[SKU Original]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[SKU Original]"
+                      name="SKU Original" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[GLOSA]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[GLOSA]"
+                      name="GLOSA" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Importa Base\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Importa Base.Paths[Salida de origen de Excel]"
+              endId="Package\Importa Base\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de origen de Excel"
+              startId="Package\Importa Base\Origen de Excel.Outputs[Salida de origen de Excel]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Limpia base anterior"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{7C21AC9A-E3D7-4C75-9668-22CB37D14297}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Limpia base anterior"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{8F05884E-8208-4767-A058-93CED141E85E}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[base_carga_op_retail]&#xA;TRUNCATE TABLE [dbo].[base_op_retail_excel]&#xA;TRUNCATE TABLE [dbo].[base_op_retail_tmp]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Ordena Datos"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{B2ECA236-CE07-4595-B13D-98206D753646}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Ordena Datos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Ordena Datos\Destino de OLE DB"
+              componentClassID="DTSAdapter.OLEDBDestination.3"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Destino de OLE DB"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[base_carga_op_retail]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Ordena Datos\Destino de OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[10.5.56.225.cierre_creacion_auris.analistas]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.5.56.225.cierre_creacion_auris.analistas]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Rut Cliente]"
+                      cachedDataType="wstr"
+                      cachedLength="60"
+                      cachedName="Rut Cliente"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_idclie]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Rut Cliente]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[usuario]"
+                      cachedDataType="numeric"
+                      cachedName="usuario"
+                      cachedPrecision="9"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_numrec]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[usuario]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[cam_numcam]"
+                      cachedDataType="numeric"
+                      cachedName="cam_numcam"
+                      cachedPrecision="9"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_numcag]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[cam_numcam]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[mot_nummot1]"
+                      cachedDataType="numeric"
+                      cachedName="mot_nummot1"
+                      cachedPrecision="4"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_nummot1]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[mot_nummot1]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[mot_nummot2]"
+                      cachedDataType="numeric"
+                      cachedName="mot_nummot2"
+                      cachedPrecision="4"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_nummot2]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[mot_nummot2]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[mot_nummot3]"
+                      cachedDataType="numeric"
+                      cachedName="mot_nummot3"
+                      cachedPrecision="4"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_nummot3]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[mot_nummot3]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[NOMBRE]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="NOMBRE"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_nomcli]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NOMBRE]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Telefono]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Telefono"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_telcom1]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Telefono]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[CORREO]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CORREO"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_email1]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CORREO]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Ticket_Reclamo]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Ticket_Reclamo"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data01]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Ticket_Reclamo]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Monto_Diferencia_GC]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Monto_Diferencia_GC"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data02]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Monto_Diferencia_GC]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Tipo de Requerimiento]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Tipo de Requerimiento"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data13]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Tipo de Requerimiento]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Autorizado Por]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Autorizado Por"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data14]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Autorizado Por]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Ceco]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Ceco"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data15]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Ceco]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Origen Problema]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Origen Problema"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data20]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Origen Problema]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Medio de Pago]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Medio de Pago"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data21]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Medio de Pago]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Monto Pagado]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Monto Pagado"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data22]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Monto Pagado]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Monto Solucion Comercial]"
+                      cachedDataType="r8"
+                      cachedName="Monto Solucion Comercial"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data23]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Monto Solucion Comercial]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Responsable]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Responsable"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data26]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Responsable]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Departamento]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Departamento"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data27]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Departamento]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[SKU Original]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="SKU Original"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data28]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[SKU Original]" />
+                    <inputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Glosa]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Glosa"
+                      externalMetadataColumnId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_glomot]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Glosa]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CodigoAccion]"
+                      dataType="nText"
+                      name="CodigoAccion" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[CodigoEvento]"
+                      dataType="nText"
+                      name="CodigoEvento" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_nomeven]"
+                      dataType="nText"
+                      name="ges_nomeven" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_nomasig]"
+                      dataType="nText"
+                      name="ges_nomasig" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_notif]"
+                      dataType="nText"
+                      name="ges_notif" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_numtarea]"
+                      dataType="nText"
+                      name="ges_numtarea" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_numrec]"
+                      dataType="nText"
+                      name="ges_numrec" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_numrec1]"
+                      dataType="nText"
+                      name="ges_numrec1" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_numcom]"
+                      dataType="nText"
+                      name="ges_numcom" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_numges]"
+                      dataType="nText"
+                      name="ges_numges" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_fehocr]"
+                      dataType="nText"
+                      name="ges_fehocr" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_indgestion]"
+                      dataType="nText"
+                      name="ges_indgestion" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_numplg]"
+                      dataType="nText"
+                      name="ges_numplg" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_numcag]"
+                      dataType="nText"
+                      name="ges_numcag" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_nummot1]"
+                      dataType="nText"
+                      name="ges_nummot1" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_nummot2]"
+                      dataType="nText"
+                      name="ges_nummot2" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_nummot3]"
+                      dataType="nText"
+                      name="ges_nummot3" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_numter1]"
+                      dataType="nText"
+                      name="ges_numter1" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_numter2]"
+                      dataType="nText"
+                      name="ges_numter2" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_numter3]"
+                      dataType="nText"
+                      name="ges_numter3" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_refmot]"
+                      dataType="nText"
+                      name="ges_refmot" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_glomot]"
+                      dataType="nText"
+                      name="ges_glomot" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_idclie]"
+                      dataType="nText"
+                      name="ges_idclie" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_nomcli]"
+                      dataType="nText"
+                      name="ges_nomcli" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_idpers]"
+                      dataType="nText"
+                      name="ges_idpers" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_nomper]"
+                      dataType="nText"
+                      name="ges_nomper" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_apatpe]"
+                      dataType="nText"
+                      name="ges_apatpe" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_amatpe]"
+                      dataType="nText"
+                      name="ges_amatpe" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_direc1]"
+                      dataType="nText"
+                      name="ges_direc1" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_comun1]"
+                      dataType="nText"
+                      name="ges_comun1" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_ciuda1]"
+                      dataType="nText"
+                      name="ges_ciuda1" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_codpo1]"
+                      dataType="nText"
+                      name="ges_codpo1" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_regio1]"
+                      dataType="nText"
+                      name="ges_regio1" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_tidir1]"
+                      dataType="nText"
+                      name="ges_tidir1" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_email1]"
+                      dataType="nText"
+                      name="ges_email1" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_email2]"
+                      dataType="nText"
+                      name="ges_email2" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_email3]"
+                      dataType="nText"
+                      name="ges_email3" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_telcom1]"
+                      dataType="nText"
+                      name="ges_telcom1" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_telcom2]"
+                      dataType="nText"
+                      name="ges_telcom2" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_faxcom]"
+                      dataType="nText"
+                      name="ges_faxcom" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_telpa1]"
+                      dataType="nText"
+                      name="ges_telpa1" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_telpa2]"
+                      dataType="nText"
+                      name="ges_telpa2" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_faxpar]"
+                      dataType="nText"
+                      name="ges_faxpar" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_telmov]"
+                      dataType="nText"
+                      name="ges_telmov" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_telasi]"
+                      dataType="nText"
+                      name="ges_telasi" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_telotr]"
+                      dataType="nText"
+                      name="ges_telotr" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_faxotr]"
+                      dataType="nText"
+                      name="ges_faxotr" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_beeper]"
+                      dataType="nText"
+                      name="ges_beeper" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_codtip]"
+                      dataType="nText"
+                      name="ges_codtip" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_codest]"
+                      dataType="nText"
+                      name="ges_codest" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data01]"
+                      dataType="nText"
+                      name="edge_data01" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data02]"
+                      dataType="nText"
+                      name="edge_data02" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data03]"
+                      dataType="nText"
+                      name="edge_data03" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data04]"
+                      dataType="nText"
+                      name="edge_data04" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data05]"
+                      dataType="nText"
+                      name="edge_data05" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data06]"
+                      dataType="nText"
+                      name="edge_data06" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data07]"
+                      dataType="nText"
+                      name="edge_data07" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data08]"
+                      dataType="nText"
+                      name="edge_data08" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data09]"
+                      dataType="nText"
+                      name="edge_data09" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data10]"
+                      dataType="nText"
+                      name="edge_data10" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data11]"
+                      dataType="nText"
+                      name="edge_data11" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data12]"
+                      dataType="nText"
+                      name="edge_data12" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data13]"
+                      dataType="nText"
+                      name="edge_data13" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data14]"
+                      dataType="nText"
+                      name="edge_data14" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data15]"
+                      dataType="nText"
+                      name="edge_data15" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data16]"
+                      dataType="nText"
+                      name="edge_data16" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data17]"
+                      dataType="nText"
+                      name="edge_data17" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data18]"
+                      dataType="nText"
+                      name="edge_data18" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data19]"
+                      dataType="nText"
+                      name="edge_data19" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data20]"
+                      dataType="nText"
+                      name="edge_data20" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data21]"
+                      dataType="nText"
+                      name="edge_data21" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data22]"
+                      dataType="nText"
+                      name="edge_data22" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data23]"
+                      dataType="nText"
+                      name="edge_data23" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data24]"
+                      dataType="nText"
+                      name="edge_data24" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data25]"
+                      dataType="nText"
+                      name="edge_data25" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data26]"
+                      dataType="nText"
+                      name="edge_data26" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data27]"
+                      dataType="nText"
+                      name="edge_data27" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data28]"
+                      dataType="nText"
+                      name="edge_data28" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data29]"
+                      dataType="nText"
+                      name="edge_data29" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data30]"
+                      dataType="nText"
+                      name="edge_data30" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data31]"
+                      dataType="nText"
+                      name="edge_data31" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data32]"
+                      dataType="nText"
+                      name="edge_data32" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data33]"
+                      dataType="nText"
+                      name="edge_data33" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data34]"
+                      dataType="nText"
+                      name="edge_data34" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data35]"
+                      dataType="nText"
+                      name="edge_data35" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data36]"
+                      dataType="nText"
+                      name="edge_data36" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data37]"
+                      dataType="nText"
+                      name="edge_data37" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data38]"
+                      dataType="nText"
+                      name="edge_data38" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data39]"
+                      dataType="nText"
+                      name="edge_data39" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data40]"
+                      dataType="nText"
+                      name="edge_data40" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data41]"
+                      dataType="nText"
+                      name="edge_data41" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data42]"
+                      dataType="nText"
+                      name="edge_data42" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data43]"
+                      dataType="nText"
+                      name="edge_data43" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data44]"
+                      dataType="nText"
+                      name="edge_data44" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data45]"
+                      dataType="nText"
+                      name="edge_data45" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data46]"
+                      dataType="nText"
+                      name="edge_data46" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data47]"
+                      dataType="nText"
+                      name="edge_data47" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data48]"
+                      dataType="nText"
+                      name="edge_data48" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data49]"
+                      dataType="nText"
+                      name="edge_data49" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data50]"
+                      dataType="nText"
+                      name="edge_data50" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data51]"
+                      dataType="nText"
+                      name="edge_data51" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data52]"
+                      dataType="nText"
+                      name="edge_data52" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data53]"
+                      dataType="nText"
+                      name="edge_data53" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data54]"
+                      dataType="nText"
+                      name="edge_data54" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data55]"
+                      dataType="nText"
+                      name="edge_data55" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data56]"
+                      dataType="nText"
+                      name="edge_data56" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data57]"
+                      dataType="nText"
+                      name="edge_data57" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data58]"
+                      dataType="nText"
+                      name="edge_data58" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data59]"
+                      dataType="nText"
+                      name="edge_data59" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data60]"
+                      dataType="nText"
+                      name="edge_data60" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data61]"
+                      dataType="nText"
+                      name="edge_data61" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data62]"
+                      dataType="nText"
+                      name="edge_data62" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data63]"
+                      dataType="nText"
+                      name="edge_data63" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data64]"
+                      dataType="nText"
+                      name="edge_data64" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data65]"
+                      dataType="nText"
+                      name="edge_data65" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data66]"
+                      dataType="nText"
+                      name="edge_data66" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data67]"
+                      dataType="nText"
+                      name="edge_data67" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data68]"
+                      dataType="nText"
+                      name="edge_data68" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data69]"
+                      dataType="nText"
+                      name="edge_data69" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data70]"
+                      dataType="nText"
+                      name="edge_data70" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data71]"
+                      dataType="nText"
+                      name="edge_data71" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data72]"
+                      dataType="nText"
+                      name="edge_data72" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data73]"
+                      dataType="nText"
+                      name="edge_data73" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data74]"
+                      dataType="nText"
+                      name="edge_data74" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data75]"
+                      dataType="nText"
+                      name="edge_data75" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data76]"
+                      dataType="nText"
+                      name="edge_data76" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data77]"
+                      dataType="nText"
+                      name="edge_data77" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data78]"
+                      dataType="nText"
+                      name="edge_data78" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data79]"
+                      dataType="nText"
+                      name="edge_data79" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data80]"
+                      dataType="nText"
+                      name="edge_data80" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data81]"
+                      dataType="nText"
+                      name="edge_data81" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data82]"
+                      dataType="nText"
+                      name="edge_data82" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data83]"
+                      dataType="nText"
+                      name="edge_data83" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data84]"
+                      dataType="nText"
+                      name="edge_data84" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data85]"
+                      dataType="nText"
+                      name="edge_data85" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data86]"
+                      dataType="nText"
+                      name="edge_data86" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data87]"
+                      dataType="nText"
+                      name="edge_data87" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data88]"
+                      dataType="nText"
+                      name="edge_data88" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data89]"
+                      dataType="nText"
+                      name="edge_data89" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data90]"
+                      dataType="nText"
+                      name="edge_data90" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data91]"
+                      dataType="nText"
+                      name="edge_data91" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data92]"
+                      dataType="nText"
+                      name="edge_data92" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data93]"
+                      dataType="nText"
+                      name="edge_data93" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data94]"
+                      dataType="nText"
+                      name="edge_data94" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data95]"
+                      dataType="nText"
+                      name="edge_data95" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data96]"
+                      dataType="nText"
+                      name="edge_data96" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data97]"
+                      dataType="nText"
+                      name="edge_data97" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data98]"
+                      dataType="nText"
+                      name="edge_data98" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data99]"
+                      dataType="nText"
+                      name="edge_data99" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data100]"
+                      dataType="nText"
+                      name="edge_data100" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[glosa]"
+                      dataType="nText"
+                      name="glosa" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Adj_nombres]"
+                      dataType="nText"
+                      name="Adj_nombres" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Ordena Datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Ordena Datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Ordena Datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Ordena Datos\Origen de OLE DB"
+              componentClassID="DTSAdapter.OLEDBSource.3"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="Origen de OLE DB"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[base_op_retail_tmp]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Ordena Datos\Origen de OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[10.5.56.225.cierre_creacion_auris.analistas]"
+                  connectionManagerRefId="Package.ConnectionManagers[10.5.56.225.cierre_creacion_auris.analistas]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[cam_numcam]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[cam_numcam]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[cam_numcam]"
+                      name="cam_numcam"
+                      precision="9"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[usuario]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[usuario]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[usuario]"
+                      name="usuario"
+                      precision="9"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Rut Cliente]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Rut Cliente]"
+                      length="60"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Rut Cliente]"
+                      name="Rut Cliente"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NOMBRE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NOMBRE]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NOMBRE]"
+                      name="NOMBRE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Telefono]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Telefono]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Telefono]"
+                      name="Telefono"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CORREO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CORREO]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CORREO]"
+                      name="CORREO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[mot_nummot1]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[mot_nummot1]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[mot_nummot1]"
+                      name="mot_nummot1"
+                      precision="4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[mot_nummot2]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[mot_nummot2]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[mot_nummot2]"
+                      name="mot_nummot2"
+                      precision="4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[mot_nummot3]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[mot_nummot3]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[mot_nummot3]"
+                      name="mot_nummot3"
+                      precision="4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Glosa]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Glosa]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Glosa]"
+                      name="Glosa"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Ticket_Reclamo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Ticket_Reclamo]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Ticket_Reclamo]"
+                      name="Ticket_Reclamo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Monto_Diferencia_GC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Monto_Diferencia_GC]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Monto_Diferencia_GC]"
+                      name="Monto_Diferencia_GC"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Tipo de Requerimiento]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Tipo de Requerimiento]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Tipo de Requerimiento]"
+                      name="Tipo de Requerimiento"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Autorizado Por]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Autorizado Por]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Autorizado Por]"
+                      name="Autorizado Por"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Ceco]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Ceco]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Ceco]"
+                      name="Ceco"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Origen Problema]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Origen Problema]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Origen Problema]"
+                      name="Origen Problema"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Medio de Pago]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Medio de Pago]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Medio de Pago]"
+                      name="Medio de Pago"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Monto Pagado]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Monto Pagado]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Monto Pagado]"
+                      name="Monto Pagado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Monto Solucion Comercial]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Monto Solucion Comercial]"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Monto Solucion Comercial]"
+                      name="Monto Solucion Comercial"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Responsable]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Responsable]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Responsable]"
+                      name="Responsable"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Departamento]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Departamento]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Departamento]"
+                      name="Departamento"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[SKU Original]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[SKU Original]"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[SKU Original]"
+                      name="SKU Original"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[cam_numcam]"
+                      dataType="numeric"
+                      name="cam_numcam"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[usuario]"
+                      dataType="numeric"
+                      name="usuario"
+                      precision="9" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Rut Cliente]"
+                      dataType="wstr"
+                      length="60"
+                      name="Rut Cliente" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NOMBRE]"
+                      dataType="wstr"
+                      length="255"
+                      name="NOMBRE" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Telefono]"
+                      dataType="wstr"
+                      length="255"
+                      name="Telefono" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CORREO]"
+                      dataType="wstr"
+                      length="255"
+                      name="CORREO" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[mot_nummot1]"
+                      dataType="numeric"
+                      name="mot_nummot1"
+                      precision="4" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[mot_nummot2]"
+                      dataType="numeric"
+                      name="mot_nummot2"
+                      precision="4" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[mot_nummot3]"
+                      dataType="numeric"
+                      name="mot_nummot3"
+                      precision="4" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Glosa]"
+                      dataType="wstr"
+                      length="255"
+                      name="Glosa" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Ticket_Reclamo]"
+                      dataType="wstr"
+                      length="255"
+                      name="Ticket_Reclamo" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Monto_Diferencia_GC]"
+                      dataType="wstr"
+                      length="255"
+                      name="Monto_Diferencia_GC" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Tipo de Requerimiento]"
+                      dataType="wstr"
+                      length="255"
+                      name="Tipo de Requerimiento" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Autorizado Por]"
+                      dataType="wstr"
+                      length="255"
+                      name="Autorizado Por" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Ceco]"
+                      dataType="wstr"
+                      length="255"
+                      name="Ceco" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Origen Problema]"
+                      dataType="wstr"
+                      length="255"
+                      name="Origen Problema" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Medio de Pago]"
+                      dataType="wstr"
+                      length="255"
+                      name="Medio de Pago" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Monto Pagado]"
+                      dataType="wstr"
+                      length="255"
+                      name="Monto Pagado" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Monto Solucion Comercial]"
+                      dataType="r8"
+                      name="Monto Solucion Comercial" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Responsable]"
+                      dataType="wstr"
+                      length="255"
+                      name="Responsable" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Departamento]"
+                      dataType="wstr"
+                      length="255"
+                      name="Departamento" />
+                    <externalMetadataColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[SKU Original]"
+                      dataType="wstr"
+                      length="255"
+                      name="SKU Original" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[cam_numcam]"
+                      dataType="numeric"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[cam_numcam]"
+                      name="cam_numcam"
+                      precision="9" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[usuario]"
+                      dataType="numeric"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[usuario]"
+                      name="usuario"
+                      precision="9" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Rut Cliente]"
+                      dataType="wstr"
+                      length="60"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Rut Cliente]"
+                      name="Rut Cliente" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NOMBRE]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NOMBRE]"
+                      name="NOMBRE" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Telefono]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Telefono]"
+                      name="Telefono" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CORREO]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CORREO]"
+                      name="CORREO" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[mot_nummot1]"
+                      dataType="numeric"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[mot_nummot1]"
+                      name="mot_nummot1"
+                      precision="4" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[mot_nummot2]"
+                      dataType="numeric"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[mot_nummot2]"
+                      name="mot_nummot2"
+                      precision="4" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[mot_nummot3]"
+                      dataType="numeric"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[mot_nummot3]"
+                      name="mot_nummot3"
+                      precision="4" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Glosa]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Glosa]"
+                      name="Glosa" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Ticket_Reclamo]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Ticket_Reclamo]"
+                      name="Ticket_Reclamo" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Monto_Diferencia_GC]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Monto_Diferencia_GC]"
+                      name="Monto_Diferencia_GC" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Tipo de Requerimiento]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Tipo de Requerimiento]"
+                      name="Tipo de Requerimiento" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Autorizado Por]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Autorizado Por]"
+                      name="Autorizado Por" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Ceco]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Ceco]"
+                      name="Ceco" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Origen Problema]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Origen Problema]"
+                      name="Origen Problema" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Medio de Pago]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Medio de Pago]"
+                      name="Medio de Pago" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Monto Pagado]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Monto Pagado]"
+                      name="Monto Pagado" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Monto Solucion Comercial]"
+                      dataType="r8"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Monto Solucion Comercial]"
+                      name="Monto Solucion Comercial" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Responsable]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Responsable]"
+                      name="Responsable" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Departamento]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Departamento]"
+                      name="Departamento" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[SKU Original]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[SKU Original]"
+                      name="SKU Original" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Ordena Datos.Paths[Salida de origen de OLE DB]"
+              endId="Package\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de origen de OLE DB"
+              startId="Package\Ordena Datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{9BC909D0-A4A0-4C1C-A2EB-08AC906C667C}"
+      DTS:From="Package\Actualiza Campañas y Motivos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Limpia base anterior" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{C915600D-9609-4236-A472-2BB7577433F9}"
+      DTS:From="Package\Limpia base anterior"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\Importa Base" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{8909D5BB-E4F5-4112-9F9D-5702E2DE0DCD}"
+      DTS:From="Package\Importa Base"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2"
+      DTS:To="Package\Crea base temporal" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{80827813-DC84-4B25-93F7-A2552DCF2048}"
+      DTS:From="Package\Ordena Datos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 4"
+      DTS:To="Package\Actualiza campos fijos" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{1C7A295D-3BC1-41AE-90C5-4DB29A5CB307}"
+      DTS:From="Package\Crea base temporal"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 5"
+      DTS:To="Package\Ordena Datos" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="sql11">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="229,42"
+          Id="Package\Actualiza Campañas y Motivos"
+          TopLeft="21,16" />
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Actualiza campos fijos"
+          TopLeft="253.999999659402,87.8470575451436" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Crea base temporal"
+          TopLeft="269.714289490058,270.552941142151" />
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Importa Base"
+          TopLeft="63.2857143927593,270.329411713227" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Limpia base anterior"
+          TopLeft="53,128" />
+        <NodeLayout
+          Size="143,42"
+          Id="Package\Ordena Datos"
+          TopLeft="282.142856753602,175.11764568606" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="137.75,58">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,70"
+              Start="0,0"
+              End="0,62.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="136.89285719638,170">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,100.329411713227"
+              Start="0,0"
+              End="0,92.829411713227">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,92.829411713227" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 4]"
+          TopLeft="351.671428206502,175.11764568606">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-45.6705881409168"
+              Start="0,0"
+              End="0,-38.1705881409168">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-38.1705881409168" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 5]"
+          TopLeft="354.12857312183,270.552941142151">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-53.835295456091"
+              Start="0,0"
+              End="0,-46.335295456091">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-46.335295456091" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="204.285714392759,291.441176427689">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="65.4285750972987,0"
+              Start="0,0"
+              End="57.9285750972987,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="57.9285750972987,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Importa Base">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Importa Base\Origen de Excel"
+          TopLeft="203,77" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Importa Base\Destino de OLE DB"
+          TopLeft="320,252" />
+        <EdgeLayout
+          Id="Package\Importa Base.Paths[Salida de origen de Excel]"
+          TopLeft="279,119">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="128.5,133"
+              Start="0,0"
+              End="128.5,125.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,62.5"
+                    Point2="0,66.5"
+                    Point3="4,66.5" />
+                  <mssgle:LineSegment
+                    End="124.5,66.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="124.5,66.5"
+                    Point2="128.5,66.5"
+                    Point3="128.5,70.5" />
+                  <mssgle:LineSegment
+                    End="128.5,125.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="47.74734375,71.5,33.0053125,9.7978515625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Importa Base\Origen de Excel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Ordena Datos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Ordena Datos\Destino de OLE DB"
+          TopLeft="396,203" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Ordena Datos\Origen de OLE DB"
+          TopLeft="122,30" />
+        <EdgeLayout
+          Id="Package\Ordena Datos.Paths[Salida de origen de OLE DB]"
+          TopLeft="207,72">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="276.5,131"
+              Start="0,0"
+              End="276.5,123.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,61.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,61.5"
+                    Point2="0,65.5"
+                    Point3="4,65.5" />
+                  <mssgle:LineSegment
+                    End="272.5,65.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="272.5,65.5"
+                    Point2="276.5,65.5"
+                    Point3="276.5,69.5" />
+                  <mssgle:LineSegment
+                    End="276.5,123.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="121.74734375,70.5,33.0053125,9.7978515625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Importa Base\Destino de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Ordena Datos\Destino de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Ordena Datos\Origen de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
