@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/26/2022 4:42:31 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="K34963419"
+  DTS:CreatorName="K34963419\Simon"
+  DTS:DTSID="{6A9A828C-FF29-4EFE-BA42-DC07C27137CD}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.694.0"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{3A9CD428-63DE-43DA-99A8-2FE2FD7BEFE3}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[10.5.60.100.cierre_creacion_auris.analistas]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{09088BF9-25C5-490F-BC52-1F0A08A4306A}"
+      DTS:ObjectName="10.5.60.100.cierre_creacion_auris.analistas">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=10.5.60.100;User ID=analistas;Initial Catalog=cierre_creacion_auris;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package1-{09088BF9-25C5-490F-BC52-1F0A08A4306A}10.5.60.100.cierre_creacion_auris.analistas;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADEz4cBjUzRJ7i4FvyXs2KvSfY5d890NFqL+D5zifNk9QAAAAAOgAAAAAIAACAAAABKAXSOM6ZLav4C2YIwGxEzRpqi7Ejl/qrPb/7R7A36LyAAAAAZ/HAiNK0zUhe5cNRmtzcP3CrKm579PUKiuvEWX0OLmEAAAAC+0faFU3kXUiyoG5i7Skkj0O2Dt0IHmmSBM2nPJOCDLug46F+pNZbcB2IhrUPAjo7zFkZhACaf1CIUC26d4VKF</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Crea Bitacora"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{D75A201B-C030-4A91-8FD7-DBBF1A0A7E6C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Crea Bitacora"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{09088BF9-25C5-490F-BC52-1F0A08A4306A}"
+          SQLTask:SqlStatementSource="insert into bitacora_cargas_gestion_retail_excel&#x9;&#xA;&#xA;select *,cast(getdate() as smalldatetime)  as fecha_carga &#xA;&#xA;from informar_gestion_retail_excel" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Obtiene Tickets"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{5BEB1635-5BBB-4A46-9BE7-42C6AB42F2E7}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Obtiene Tickets"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{09088BF9-25C5-490F-BC52-1F0A08A4306A}"
+          SQLTask:SqlStatementSource="truncate table informar_gestion_retail_excel&#xA;&#xA;declare @carga nvarchar(10);&#xA;set @carga = (select top 1 [edge_data100] from [dbo].[base_carga_gestion_retail])&#xA;&#xA;insert into informar_gestion_retail_excel&#xA;&#xA;SELECT&#xA;campana.cam_nomcam as Campaña,&#xA;a.dge_numcon as Numero_Ticket,&#xA;b.ges_idclie as Rut_Cliente,&#xA;b.ges_nomcli as Nombre_Cliente,&#xA;b.ges_telcom1 as Fono,&#xA;motivo.mot_desmot1 as Motivo1,&#xA;motivo.mot_desmot2 as Motivo2,&#xA;motivo.mot_desmot3 as Motivo3,&#xA;a.dge_data01 as OC,&#xA;a.dge_data02 as CUD,&#xA;a.dge_data03 as SKU,&#xA;@carga as Numcarga&#xA;&#xA;FROM [10.0.149.23].[AurisRip].[dbo].[DATOS_GESTION] as a&#xA;left join [10.0.149.23].[AurisRip].[dbo].[GESTION] as b on a.dge_numcon=b.ges_numcon&#xA;left join [10.0.149.23].[AurisRip].[dbo].[campana] as campana on b.ges_numcag=campana.cam_numcam&#xA;left join [10.0.149.23].[AurisRip].[dbo].[motivo] as motivo on campana.cam_numcam=motivo.mot_numcam&#xA;&#xA;where&#x9;b.[ges_nummot1]=motivo.[mot_nummot1] and&#x9;&#xA;&#x9;&#x9;b.[ges_nummot2]=motivo.[mot_nummot2] and&#xA;&#x9;    b.[ges_nummot3]=motivo.[mot_nummot3] and &#xA;&#x9;&#x9;a.[dge_data99] like 'Tipo Carga - Gestion Retail' and &#xA;&#x9;&#x9;a.dge_data100 = @carga and &#xA;&#x9;&#x9;b.ges_numcag = 290" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{1E0C453E-1CC4-4918-A4D7-3282EBA4BD03}"
+      DTS:From="Package\Obtiene Tickets"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Crea Bitacora" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="146,42"
+          Id="Package\Crea Bitacora"
+          TopLeft="110,152" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Obtiene Tickets"
+          TopLeft="110,64" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="185.25,106">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46"
+              Start="0,0"
+              End="0,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
