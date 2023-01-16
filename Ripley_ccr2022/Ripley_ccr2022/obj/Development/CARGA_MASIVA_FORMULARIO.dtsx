@@ -11,8 +11,8 @@
   DTS:LocaleID="13322"
   DTS:ObjectName="CARGA_MASIVA_FORMULARIO"
   DTS:PackageType="5"
-  DTS:VersionBuild="643"
-  DTS:VersionGUID="{1778DE2B-2441-430A-A5E3-8FD7BDFF7DDB}">
+  DTS:VersionBuild="646"
+  DTS:VersionGUID="{9B2C76F2-5E6E-4918-9D2A-AEEB79AB7562}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -40,7 +40,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAFWSf2MpwJ3QSJZ/dgXurJ13eW/Rx3feqHGiDmZ4KjJwAAAAAOgAAAAAIAACAAAAAyAM6LIxY3rvK6pFzfA0F5bUpWWsmkYRkLx45BgXbp/SAAAAAbVCrkNFuOi69JioznSd1czOvI3ApWhNfYJPT6G5bqRUAAAAC7DgS7eRgzNfnzGg9WBOFjaMMSRzKyLCAXFsPKwQyoXjvywEys4/JSAdnzlGFEoQ0PgGgR5+l0f9biYvaz41kb</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAIu9GxnV6TfcMXVBvAKXDNuwo2pLt9MFvAe2bgAvmwHwAAAAAOgAAAAAIAACAAAAASTqUQ42oQqiO/TxR9+xX3z1flmaAkxDymiY+eU4vZniAAAAB04RIN1URXFBYZMsBoj4eeROcfvYK120yL6JwMhQRN9UAAAAAhYrn4SkZ02HPJvP3zPazy67ry9277E/vF/yU3ZunBbwX23iuIJctkpja8rVI5a7s8VMkbShyL/XatZplynqZO</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -8157,7 +8157,7 @@ WHERE CAMPAÑA = 'ATC CLUBES RIPLEY' and Estado_auris = 'crear'</property>
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{3B1D8CEF-3190-407F-87A4-72E5088E8FAB}"
-                  SQLTask:SqlStatementSource="DECLARE @carga int;&#xA;DECLARE @registros int;&#xA;set @carga = (select max([Numero_Carga]) from [dbo].[correlativos_cargas] where [Campana] = 'MERCADO RIPLEY');&#xA;set @registros = (select count(*) from [base_carga_mkp_masiva])&#xA;&#xA;update base_carga_mkp_masiva  set ges_idclie = REPLACE(ges_idclie,'-','')&#xA;&#xA;UPDATE base_carga_mkp_masiva  SET   [ges_numrec1] = [ges_numrec]&#xA;UPDATE base_carga_mkp_masiva  SET   [CodigoAccion] = 'CREAR'&#xA;UPDATE base_carga_mkp_masiva  SET   [ges_numplg] = '30'&#xA;UPDATE base_carga_mkp_masiva  SET   [ges_numter1] = '1' &#xA;UPDATE base_carga_mkp_masiva  SET   [ges_numter2] = '0'&#xA;UPDATE base_carga_mkp_masiva  SET   [ges_numter3] = '0' &#xA;UPDATE base_carga_mkp_masiva  SET edge_data44 = 'Carga Formulario Masiva - MKP'&#xA;UPDATE base_carga_mkp_masiva  SET edge_data88 = @carga + 1&#xA;&#xA;&#xA;update base_carga_mkp_masiva  set [edge_data01] = left([edge_data01],60)&#xA;update base_carga_mkp_masiva  set [edge_data02] = left([edge_data02],60)&#xA;update base_carga_mkp_masiva  set [edge_data03] = left([edge_data03],60)&#xA;update base_carga_mkp_masiva  set [edge_data04] = left([edge_data04],60)&#xA;update base_carga_mkp_masiva  set [edge_data05] = left([edge_data05],60)&#xA;update base_carga_mkp_masiva  set [edge_data06] = left([edge_data06],60)&#xA;update base_carga_mkp_masiva  set [edge_data07] = left([edge_data07],60)&#xA;update base_carga_mkp_masiva  set [edge_data08] = left([edge_data08],60)&#xA;update base_carga_mkp_masiva  set [edge_data09] = left([edge_data09],60)&#xA;update base_carga_mkp_masiva  set [edge_data10] = left([edge_data10],60)&#xA;update base_carga_mkp_masiva  set [edge_data11] = left([edge_data11],60)&#xA;update base_carga_mkp_masiva  set [edge_data12] = left([edge_data12],60)&#xA;update base_carga_mkp_masiva  set [edge_data13] = left([edge_data13],60)&#xA;update base_carga_mkp_masiva  set [edge_data14] = left([edge_data14],60)&#xA;update base_carga_mkp_masiva  set [edge_data15] = left([edge_data15],60)&#xA;update base_carga_mkp_masiva  set [edge_data16] = left([edge_data16],60)&#xA;update base_carga_mkp_masiva  set [edge_data17] = left([edge_data17],60)&#xA;update base_carga_mkp_masiva  set [edge_data18] = left([edge_data18],60)&#xA;update base_carga_mkp_masiva  set [edge_data19] = left([edge_data19],60)&#xA;update base_carga_mkp_masiva  set [edge_data20] = left([edge_data20],60)&#xA;update base_carga_mkp_masiva  set [edge_data21] = left([edge_data21],60)&#xA;update base_carga_mkp_masiva  set [edge_data22] = left([edge_data22],60)&#xA;update base_carga_mkp_masiva  set [edge_data23] = left([edge_data23],60)&#xA;update base_carga_mkp_masiva  set [edge_data24] = left([edge_data24],60)&#xA;update base_carga_mkp_masiva  set [edge_data25] = left([edge_data25],60)&#xA;update base_carga_mkp_masiva  set [edge_data26] = left([edge_data26],60)&#xA;update base_carga_mkp_masiva  set [edge_data27] = left([edge_data27],60)&#xA;update base_carga_mkp_masiva  set [edge_data28] = left([edge_data28],60)&#xA;update base_carga_mkp_masiva  set [edge_data29] = left([edge_data29],60)&#xA;update base_carga_mkp_masiva  set [edge_data30] = left([edge_data30],60)&#xA;update base_carga_mkp_masiva  set [edge_data31] = left([edge_data31],60)&#xA;update base_carga_mkp_masiva  set [edge_data32] = left([edge_data32],60)&#xA;update base_carga_mkp_masiva  set [edge_data33] = left([edge_data33],60)&#xA;update base_carga_mkp_masiva  set [edge_data34] = left([edge_data34],60)&#xA;update base_carga_mkp_masiva  set [edge_data35] = left([edge_data35],60)&#xA;update base_carga_mkp_masiva  set [edge_data36] = left([edge_data36],60)&#xA;update base_carga_mkp_masiva  set [edge_data37] = left([edge_data37],60)&#xA;update base_carga_mkp_masiva  set [edge_data38] = left([edge_data38],60)&#xA;update base_carga_mkp_masiva  set [edge_data39] = left([edge_data39],60)&#xA;update base_carga_mkp_masiva  set [edge_data40] = left([edge_data40],60)&#xA;update base_carga_mkp_masiva  set [edge_data41] = left([edge_data41],60)&#xA;update base_carga_mkp_masiva  set [edge_data42] = left([edge_data42],60)&#xA;update base_carga_mkp_masiva  set [edge_data43] = left([edge_data43],60)&#xA;update base_carga_mkp_masiva  set [edge_data44] = left([edge_data44],60)&#xA;update base_carga_mkp_masiva  set [edge_data45] = left([edge_data45],60)&#xA;update base_carga_mkp_masiva  set [edge_data46] = left([edge_data46],60)&#xA;update base_carga_mkp_masiva  set [edge_data47] = left([edge_data47],60)&#xA;update base_carga_mkp_masiva  set [edge_data48] = left([edge_data48],60)&#xA;update base_carga_mkp_masiva  set [edge_data49] = left([edge_data49],60)&#xA;update base_carga_mkp_masiva  set [edge_data50] = left([edge_data50],60)&#xA;update base_carga_mkp_masiva  set [edge_data51] = left([edge_data51],60)&#xA;update base_carga_mkp_masiva  set [edge_data52] = left([edge_data52],60)&#xA;update base_carga_mkp_masiva  set [edge_data53] = left([edge_data53],60)&#xA;update base_carga_mkp_masiva  set [edge_data54] = left([edge_data54],60)&#xA;update base_carga_mkp_masiva  set [edge_data55] = left([edge_data55],60)&#xA;update base_carga_mkp_masiva  set [edge_data56] = left([edge_data56],60)&#xA;update base_carga_mkp_masiva  set [edge_data57] = left([edge_data57],60)&#xA;update base_carga_mkp_masiva  set [edge_data58] = left([edge_data58],60)&#xA;update base_carga_mkp_masiva  set [edge_data59] = left([edge_data59],60)&#xA;update base_carga_mkp_masiva  set [edge_data60] = left([edge_data60],60)&#xA;update base_carga_mkp_masiva  set [edge_data61] = left([edge_data61],60)&#xA;update base_carga_mkp_masiva  set [edge_data62] = left([edge_data62],60)&#xA;update base_carga_mkp_masiva  set [edge_data63] = left([edge_data63],60)&#xA;update base_carga_mkp_masiva  set [edge_data64] = left([edge_data64],60)&#xA;update base_carga_mkp_masiva  set [edge_data65] = left([edge_data65],60)&#xA;update base_carga_mkp_masiva  set [edge_data66] = left([edge_data66],60)&#xA;update base_carga_mkp_masiva  set [edge_data67] = left([edge_data67],60)&#xA;update base_carga_mkp_masiva  set [edge_data68] = left([edge_data68],60)&#xA;update base_carga_mkp_masiva  set [edge_data69] = left([edge_data69],60)&#xA;update base_carga_mkp_masiva  set [edge_data70] = left([edge_data70],60)&#xA;update base_carga_mkp_masiva  set [edge_data71] = left([edge_data71],60)&#xA;update base_carga_mkp_masiva  set [edge_data72] = left([edge_data72],60)&#xA;update base_carga_mkp_masiva  set [edge_data73] = left([edge_data73],60)&#xA;update base_carga_mkp_masiva  set [edge_data74] = left([edge_data74],60)&#xA;update base_carga_mkp_masiva  set [edge_data75] = left([edge_data75],60)&#xA;update base_carga_mkp_masiva  set [edge_data76] = left([edge_data76],60)&#xA;update base_carga_mkp_masiva  set [edge_data77] = left([edge_data77],60)&#xA;update base_carga_mkp_masiva  set [edge_data78] = left([edge_data78],60)&#xA;update base_carga_mkp_masiva  set [edge_data79] = left([edge_data79],60)&#xA;update base_carga_mkp_masiva  set [edge_data80] = left([edge_data80],60)&#xA;update base_carga_mkp_masiva  set [edge_data81] = left([edge_data81],60)&#xA;update base_carga_mkp_masiva  set [edge_data82] = left([edge_data82],60)&#xA;update base_carga_mkp_masiva  set [edge_data83] = left([edge_data83],60)&#xA;update base_carga_mkp_masiva  set [edge_data84] = left([edge_data84],60)&#xA;update base_carga_mkp_masiva  set [edge_data85] = left([edge_data85],60)&#xA;update base_carga_mkp_masiva  set [edge_data86] = left([edge_data86],60)&#xA;update base_carga_mkp_masiva  set [edge_data87] = left([edge_data87],60)&#xA;update base_carga_mkp_masiva  set [edge_data88] = left([edge_data88],60)&#xA;update base_carga_mkp_masiva  set [edge_data89] = left([edge_data89],60)&#xA;update base_carga_mkp_masiva  set [edge_data90] = left([edge_data90],60)&#xA;update base_carga_mkp_masiva  set [edge_data91] = left([edge_data91],60)&#xA;update base_carga_mkp_masiva  set [edge_data92] = left([edge_data92],60)&#xA;update base_carga_mkp_masiva  set [edge_data93] = left([edge_data93],60)&#xA;update base_carga_mkp_masiva  set [edge_data94] = left([edge_data94],60)&#xA;update base_carga_mkp_masiva  set [edge_data95] = left([edge_data95],60)&#xA;update base_carga_mkp_masiva  set [edge_data96] = left([edge_data96],60)&#xA;update base_carga_mkp_masiva  set [edge_data97] = left([edge_data97],60)&#xA;update base_carga_mkp_masiva  set [edge_data98] = left([edge_data98],60)&#xA;update base_carga_mkp_masiva  set [edge_data99] = left([edge_data99],60)&#xA;update base_carga_mkp_masiva  set [edge_data100] = left([edge_data100],60)&#xA;update base_carga_mkp_masiva  set [Adj_nombres] = left([Adj_nombres],60)&#xA;&#xA;update [dbo].[base_carga_mkp_masiva ] set [glosa] = [ges_glomot]&#xA;&#xA;insert into [dbo].[correlativos_cargas] ([Numero_Carga],[Campana],[registros],[hora_proceso]) values (@carga + 1,'MERCADO RIPLEY',@registros,getdate())&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="DECLARE @carga int;&#xA;DECLARE @registros int;&#xA;set @carga = (select max([Numero_Carga]) from [dbo].[correlativos_cargas] where [Campana] = 'MERCADO RIPLEY');&#xA;set @registros = (select count(*) from [base_carga_mkp_masiva])&#xA;&#xA;update base_carga_mkp_masiva  set ges_idclie = REPLACE(ges_idclie,'-','')&#xA;&#xA;UPDATE base_carga_mkp_masiva  SET   [ges_numrec1] = [ges_numrec]&#xA;UPDATE base_carga_mkp_masiva  SET   [CodigoAccion] = 'CREAR'&#xA;UPDATE base_carga_mkp_masiva  SET   [ges_numplg] = '30'&#xA;UPDATE base_carga_mkp_masiva  SET   [ges_numter1] = '6' &#xA;UPDATE base_carga_mkp_masiva  SET   [ges_numter2] = '1'&#xA;UPDATE base_carga_mkp_masiva  SET   [ges_numter3] = '7' &#xA;UPDATE base_carga_mkp_masiva  SET edge_data44 = 'Carga Formulario Masiva - MKP'&#xA;UPDATE base_carga_mkp_masiva  SET edge_data88 = @carga + 1&#xA;&#xA;&#xA;update base_carga_mkp_masiva  set [edge_data01] = left([edge_data01],60)&#xA;update base_carga_mkp_masiva  set [edge_data02] = left([edge_data02],60)&#xA;update base_carga_mkp_masiva  set [edge_data03] = left([edge_data03],60)&#xA;update base_carga_mkp_masiva  set [edge_data04] = left([edge_data04],60)&#xA;update base_carga_mkp_masiva  set [edge_data05] = left([edge_data05],60)&#xA;update base_carga_mkp_masiva  set [edge_data06] = left([edge_data06],60)&#xA;update base_carga_mkp_masiva  set [edge_data07] = left([edge_data07],60)&#xA;update base_carga_mkp_masiva  set [edge_data08] = left([edge_data08],60)&#xA;update base_carga_mkp_masiva  set [edge_data09] = left([edge_data09],60)&#xA;update base_carga_mkp_masiva  set [edge_data10] = left([edge_data10],60)&#xA;update base_carga_mkp_masiva  set [edge_data11] = left([edge_data11],60)&#xA;update base_carga_mkp_masiva  set [edge_data12] = left([edge_data12],60)&#xA;update base_carga_mkp_masiva  set [edge_data13] = left([edge_data13],60)&#xA;update base_carga_mkp_masiva  set [edge_data14] = left([edge_data14],60)&#xA;update base_carga_mkp_masiva  set [edge_data15] = left([edge_data15],60)&#xA;update base_carga_mkp_masiva  set [edge_data16] = left([edge_data16],60)&#xA;update base_carga_mkp_masiva  set [edge_data17] = left([edge_data17],60)&#xA;update base_carga_mkp_masiva  set [edge_data18] = left([edge_data18],60)&#xA;update base_carga_mkp_masiva  set [edge_data19] = left([edge_data19],60)&#xA;update base_carga_mkp_masiva  set [edge_data20] = left([edge_data20],60)&#xA;update base_carga_mkp_masiva  set [edge_data21] = left([edge_data21],60)&#xA;update base_carga_mkp_masiva  set [edge_data22] = left([edge_data22],60)&#xA;update base_carga_mkp_masiva  set [edge_data23] = left([edge_data23],60)&#xA;update base_carga_mkp_masiva  set [edge_data24] = left([edge_data24],60)&#xA;update base_carga_mkp_masiva  set [edge_data25] = left([edge_data25],60)&#xA;update base_carga_mkp_masiva  set [edge_data26] = left([edge_data26],60)&#xA;update base_carga_mkp_masiva  set [edge_data27] = left([edge_data27],60)&#xA;update base_carga_mkp_masiva  set [edge_data28] = left([edge_data28],60)&#xA;update base_carga_mkp_masiva  set [edge_data29] = left([edge_data29],60)&#xA;update base_carga_mkp_masiva  set [edge_data30] = left([edge_data30],60)&#xA;update base_carga_mkp_masiva  set [edge_data31] = left([edge_data31],60)&#xA;update base_carga_mkp_masiva  set [edge_data32] = left([edge_data32],60)&#xA;update base_carga_mkp_masiva  set [edge_data33] = left([edge_data33],60)&#xA;update base_carga_mkp_masiva  set [edge_data34] = left([edge_data34],60)&#xA;update base_carga_mkp_masiva  set [edge_data35] = left([edge_data35],60)&#xA;update base_carga_mkp_masiva  set [edge_data36] = left([edge_data36],60)&#xA;update base_carga_mkp_masiva  set [edge_data37] = left([edge_data37],60)&#xA;update base_carga_mkp_masiva  set [edge_data38] = left([edge_data38],60)&#xA;update base_carga_mkp_masiva  set [edge_data39] = left([edge_data39],60)&#xA;update base_carga_mkp_masiva  set [edge_data40] = left([edge_data40],60)&#xA;update base_carga_mkp_masiva  set [edge_data41] = left([edge_data41],60)&#xA;update base_carga_mkp_masiva  set [edge_data42] = left([edge_data42],60)&#xA;update base_carga_mkp_masiva  set [edge_data43] = left([edge_data43],60)&#xA;update base_carga_mkp_masiva  set [edge_data44] = left([edge_data44],60)&#xA;update base_carga_mkp_masiva  set [edge_data45] = left([edge_data45],60)&#xA;update base_carga_mkp_masiva  set [edge_data46] = left([edge_data46],60)&#xA;update base_carga_mkp_masiva  set [edge_data47] = left([edge_data47],60)&#xA;update base_carga_mkp_masiva  set [edge_data48] = left([edge_data48],60)&#xA;update base_carga_mkp_masiva  set [edge_data49] = left([edge_data49],60)&#xA;update base_carga_mkp_masiva  set [edge_data50] = left([edge_data50],60)&#xA;update base_carga_mkp_masiva  set [edge_data51] = left([edge_data51],60)&#xA;update base_carga_mkp_masiva  set [edge_data52] = left([edge_data52],60)&#xA;update base_carga_mkp_masiva  set [edge_data53] = left([edge_data53],60)&#xA;update base_carga_mkp_masiva  set [edge_data54] = left([edge_data54],60)&#xA;update base_carga_mkp_masiva  set [edge_data55] = left([edge_data55],60)&#xA;update base_carga_mkp_masiva  set [edge_data56] = left([edge_data56],60)&#xA;update base_carga_mkp_masiva  set [edge_data57] = left([edge_data57],60)&#xA;update base_carga_mkp_masiva  set [edge_data58] = left([edge_data58],60)&#xA;update base_carga_mkp_masiva  set [edge_data59] = left([edge_data59],60)&#xA;update base_carga_mkp_masiva  set [edge_data60] = left([edge_data60],60)&#xA;update base_carga_mkp_masiva  set [edge_data61] = left([edge_data61],60)&#xA;update base_carga_mkp_masiva  set [edge_data62] = left([edge_data62],60)&#xA;update base_carga_mkp_masiva  set [edge_data63] = left([edge_data63],60)&#xA;update base_carga_mkp_masiva  set [edge_data64] = left([edge_data64],60)&#xA;update base_carga_mkp_masiva  set [edge_data65] = left([edge_data65],60)&#xA;update base_carga_mkp_masiva  set [edge_data66] = left([edge_data66],60)&#xA;update base_carga_mkp_masiva  set [edge_data67] = left([edge_data67],60)&#xA;update base_carga_mkp_masiva  set [edge_data68] = left([edge_data68],60)&#xA;update base_carga_mkp_masiva  set [edge_data69] = left([edge_data69],60)&#xA;update base_carga_mkp_masiva  set [edge_data70] = left([edge_data70],60)&#xA;update base_carga_mkp_masiva  set [edge_data71] = left([edge_data71],60)&#xA;update base_carga_mkp_masiva  set [edge_data72] = left([edge_data72],60)&#xA;update base_carga_mkp_masiva  set [edge_data73] = left([edge_data73],60)&#xA;update base_carga_mkp_masiva  set [edge_data74] = left([edge_data74],60)&#xA;update base_carga_mkp_masiva  set [edge_data75] = left([edge_data75],60)&#xA;update base_carga_mkp_masiva  set [edge_data76] = left([edge_data76],60)&#xA;update base_carga_mkp_masiva  set [edge_data77] = left([edge_data77],60)&#xA;update base_carga_mkp_masiva  set [edge_data78] = left([edge_data78],60)&#xA;update base_carga_mkp_masiva  set [edge_data79] = left([edge_data79],60)&#xA;update base_carga_mkp_masiva  set [edge_data80] = left([edge_data80],60)&#xA;update base_carga_mkp_masiva  set [edge_data81] = left([edge_data81],60)&#xA;update base_carga_mkp_masiva  set [edge_data82] = left([edge_data82],60)&#xA;update base_carga_mkp_masiva  set [edge_data83] = left([edge_data83],60)&#xA;update base_carga_mkp_masiva  set [edge_data84] = left([edge_data84],60)&#xA;update base_carga_mkp_masiva  set [edge_data85] = left([edge_data85],60)&#xA;update base_carga_mkp_masiva  set [edge_data86] = left([edge_data86],60)&#xA;update base_carga_mkp_masiva  set [edge_data87] = left([edge_data87],60)&#xA;update base_carga_mkp_masiva  set [edge_data88] = left([edge_data88],60)&#xA;update base_carga_mkp_masiva  set [edge_data89] = left([edge_data89],60)&#xA;update base_carga_mkp_masiva  set [edge_data90] = left([edge_data90],60)&#xA;update base_carga_mkp_masiva  set [edge_data91] = left([edge_data91],60)&#xA;update base_carga_mkp_masiva  set [edge_data92] = left([edge_data92],60)&#xA;update base_carga_mkp_masiva  set [edge_data93] = left([edge_data93],60)&#xA;update base_carga_mkp_masiva  set [edge_data94] = left([edge_data94],60)&#xA;update base_carga_mkp_masiva  set [edge_data95] = left([edge_data95],60)&#xA;update base_carga_mkp_masiva  set [edge_data96] = left([edge_data96],60)&#xA;update base_carga_mkp_masiva  set [edge_data97] = left([edge_data97],60)&#xA;update base_carga_mkp_masiva  set [edge_data98] = left([edge_data98],60)&#xA;update base_carga_mkp_masiva  set [edge_data99] = left([edge_data99],60)&#xA;update base_carga_mkp_masiva  set [edge_data100] = left([edge_data100],60)&#xA;update base_carga_mkp_masiva  set [Adj_nombres] = left([Adj_nombres],60)&#xA;&#xA;update [dbo].[base_carga_mkp_masiva ] set [glosa] = [ges_glomot]&#xA;&#xA;insert into [dbo].[correlativos_cargas] ([Numero_Carga],[Campana],[registros],[hora_proceso]) values (@carga + 1,'MERCADO RIPLEY',@registros,getdate())&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
@@ -13854,7 +13854,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         <NodeLayout
           Size="176,42"
           Id="Package\Fin de Proceso"
-          TopLeft="545.650792657383,494.264285982904" />
+          TopLeft="537.650792657383,528.264285982904" />
         <NodeLayout
           Size="161,42"
           Id="Package\Incio de Proceso"
@@ -15060,7 +15060,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
           PanelSize="311,220"
           Size="250,43"
           Id="Package\Paso 3 - Armado de Archivo de Creacion\AUTOATENCION - CREA FIN"
-          TopLeft="43.0000000000001,625.5" />
+          TopLeft="9.50000000000009,621.5" />
         <NodeLayout
           Size="188,42"
           Id="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA CLUBES\Actualiza campos fijos"
@@ -15151,18 +15151,16 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="403,284"
-          Size="403,43"
+          Size="258,43"
           Id="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY"
-          TopLeft="5.50000000000006,416.5" />
+          TopLeft="5.50000000000006,415.5" />
         <NodeLayout
           Size="188,42"
           Id="Package\Paso 3 - Armado de Archivo de Creacion\GESTION RETAIL\Actualiza campos fijos"
@@ -15201,7 +15199,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
           PanelSize="206,242"
           Size="193,43"
           Id="Package\Paso 3 - Armado de Archivo de Creacion\GESTION RETAIL"
-          TopLeft="31.5,232.5" />
+          TopLeft="38,209.5" />
         <NodeLayout
           Size="176,42"
           Id="Package\Paso 3 - Armado de Archivo de Creacion\INSISTENCIAS\Tarea Ejecutar SQL"
@@ -15251,26 +15249,24 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
           TopLeft="36,107.5" />
         <EdgeLayout
           Id="Package\Paso 3 - Armado de Archivo de Creacion.PrecedenceConstraints[Restricción]"
-          TopLeft="131.25,149.5">
+          TopLeft="134.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,83"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,75.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,75.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15292,45 +15288,29 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Paso 3 - Armado de Archivo de Creacion.PrecedenceConstraints[Restricción 17]"
-          TopLeft="207,459.5">
+          TopLeft="134.5,458.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-72.4999999999999,59"
+              EndConnector="0,60"
               Start="0,0"
-              End="-72.4999999999999,51.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.5"
-                    Point2="0,29.5"
-                    Point3="-4,29.5" />
-                  <mssgle:LineSegment
-                    End="-68.4999999999999,29.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-68.4999999999999,29.5"
-                    Point2="-72.4999999999999,29.5"
-                    Point3="-72.4999999999999,33.5" />
-                  <mssgle:LineSegment
-                    End="-72.4999999999999,51.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15339,58 +15319,42 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="33.5,64"
+              EndConnector="0,60"
               Start="0,0"
-              End="33.5,56.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28"
-                    Point2="0,32"
-                    Point3="4,32" />
-                  <mssgle:LineSegment
-                    End="29.5,32" />
-                  <mssgle:CubicBezierSegment
-                    Point1="29.5,32"
-                    Point2="33.5,32"
-                    Point3="33.5,36" />
-                  <mssgle:LineSegment
-                    End="33.5,56.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Paso 3 - Armado de Archivo de Creacion.PrecedenceConstraints[Restricción 3]"
-          TopLeft="131.25,275.5">
+          TopLeft="134.5,252.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,29.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15399,41 +15363,27 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="72.5000000000001,61"
+              EndConnector="0,60"
               Start="0,0"
-              End="72.5000000000001,53.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.5"
-                    Point2="0,30.5"
-                    Point3="4,30.5" />
-                  <mssgle:LineSegment
-                    End="68.5000000000001,30.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="68.5000000000001,30.5"
-                    Point2="72.5000000000001,30.5"
-                    Point3="72.5000000000001,34.5" />
-                  <mssgle:LineSegment
-                    End="72.5000000000001,53.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="False"
-          PanelSize="414,939"
-          Size="301,43"
+          PanelSize="269,720"
+          Size="269,43"
           Id="Package\Paso 3 - Armado de Archivo de Creacion"
           TopLeft="170.349205157114,443.742063388748" />
         <EdgeLayout
@@ -15526,18 +15476,30 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="318.924602578557,405">
+          TopLeft="317,405">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,38.742063388748"
+              EndConnector="-12.150794842886,38.742063388748"
               Start="0,0"
-              End="0,31.242063388748">
+              End="-12.150794842886,31.242063388748">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.242063388748" />
+                    End="0,15.371031694374" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.371031694374"
+                    Point2="0,19.371031694374"
+                    Point3="-4,19.371031694374" />
+                  <mssgle:LineSegment
+                    End="-8.150794842886,19.371031694374" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-8.150794842886,19.371031694374"
+                    Point2="-12.150794842886,19.371031694374"
+                    Point3="-12.150794842886,23.371031694374" />
+                  <mssgle:LineSegment
+                    End="-12.150794842886,31.242063388748" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15570,18 +15532,30 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 5]"
-          TopLeft="320.25793155744,486.742063388748">
+          TopLeft="304.849205157114,486.742063388748">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,41.3912735537131"
+              EndConnector="14.817452800652,41.3912735537131"
               Start="0,0"
-              End="0,33.8912735537131">
+              End="14.817452800652,33.8912735537131">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.8912735537131" />
+                    End="0,16.6956367768565" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.6956367768565"
+                    Point2="0,20.6956367768565"
+                    Point3="4,20.6956367768565" />
+                  <mssgle:LineSegment
+                    End="10.817452800652,20.6956367768565" />
+                  <mssgle:CubicBezierSegment
+                    Point1="10.817452800652,20.6956367768565"
+                    Point2="14.817452800652,20.6956367768565"
+                    Point3="14.817452800652,24.6956367768565" />
+                  <mssgle:LineSegment
+                    End="14.817452800652,33.8912735537131" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15592,30 +15566,18 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 6]"
-          TopLeft="416.166657957766,549.133336942461">
+          TopLeft="416.166657957766,549.198811462683">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="129.484134699617,-33.8690509595569"
+              EndConnector="121.484134699617,0"
               Start="0,0"
-              End="121.984134699617,-33.8690509595569">
+              End="113.984134699617,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="60.7420673498085,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="60.7420673498085,0"
-                    Point2="64.7420673498085,0"
-                    Point3="64.7420673498085,-4" />
-                  <mssgle:LineSegment
-                    End="64.7420673498085,-29.8690509595569" />
-                  <mssgle:CubicBezierSegment
-                    Point1="64.7420673498085,-29.8690509595569"
-                    Point2="64.7420673498085,-33.8690509595569"
-                    Point3="68.7420673498085,-33.8690509595569" />
-                  <mssgle:LineSegment
-                    End="121.984134699617,-33.8690509595569" />
+                    End="113.984134699617,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

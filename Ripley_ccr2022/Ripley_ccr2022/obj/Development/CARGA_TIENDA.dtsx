@@ -11,8 +11,8 @@
   DTS:LocaleID="13322"
   DTS:ObjectName="CARGA_TIENDA_NUEVO"
   DTS:PackageType="5"
-  DTS:VersionBuild="427"
-  DTS:VersionGUID="{61F477C7-F101-4133-8281-F580379E1908}">
+  DTS:VersionBuild="429"
+  DTS:VersionGUID="{1BB6A23E-E696-4475-9A96-640E562A483B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -40,7 +40,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADxNdQWeEK0V6lSLnIRYlA0UycsjXTKiJzYiBZflIkoeAAAAAAOgAAAAAIAACAAAACyiwoq7G26u6df8J1s2vRDcKUjaRfdLLxJXNrXYR/oySAAAABfyg0AlUV1m6kvfdQx3g49WjR9ZsW4HAUPPT3ENKN/kUAAAAAbM0Lc7AEslNpf3ciGU33GEXQpMFbdInCEijrKtF4DoyfA0u6foRfcBrKwnTXYOuF0uL407Me3Jxbbr47pReQ/</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABcvdEBJjLuvY4BrctFhNzKpiIztDjyW0eYxQbaARJ3zgAAAAAOgAAAAAIAACAAAACWiFWixlIhcjy1CM3NBxlv+xz0fd/BdXvxoHv5sO/zwiAAAAAqyz+j8UatUtGi08OwDCGtph3YebrdjARkVEbncyDDbUAAAABfLs/yDbY0Zev2mwehUhsWJhJmDKxqUo4bQ6fUq7ub8tlxDJKgnzHcofpIda7ORzv39kYt0qZ4MfcNKvFnLzbb</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -57,7 +57,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZKDTqjnBH020b4/GXncm6gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD3h2f9fQszQYYPqXAV7d/tZRuHQPkhls5ltJF9RZvtkQAAAAAOgAAAAAIAACAAAADBXz8wOhgtRzJQK2n8oOe3xQu5UfU/Vnt3AOr5j+1kPSAAAABTz55Av1XbZBz3Q+97bqiqosm3x8+As/fQmhVUu7026UAAAACEhn8tOY3XVzRyxK8DymB9J1UEgwkOZxHreyd027RyUsgot7h/Njg0VMDHX0ZKV7nw/iF6bcwHRPakBBQb7jXu</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADWrjiDmVdLv/WLNmL+yS757Fe3mn27juf6z69OL1mFaQAAAAAOgAAAAAIAACAAAACOKzjlg11CAIcI88U56rby/71dywl+uKT5wYRIZgHceyAAAAAvnNTTd5oeg1i6CiOzhjKJgJ55i6ewtydDImFE76nQpkAAAABt0Ys/7Am9TXvjBgtaSeTNg9ZeZv+xXpkrFLID5VkHjUg2lVOubmbgyNSD2uuwbNVBGK97pbgj/oMkuuHUe8nr</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1957,7 +1957,7 @@ where nroventa in (select left(LEFT(oc,LEN(oc)-2),9) from [dbo].[DESCARGA_TIENDA
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{673E9547-176B-4147-8505-B0F2DCEACB5C}"
-                  SQLTask:SqlStatementSource="DECLARE @carga int;&#xA;DECLARE @registros int;&#xA;set @carga = (select max([Numero_Carga]) from [dbo].[correlativos_cargas] where [Campana] = 'MERCADO RIPLEY - TIENDA');&#xA;set @registros = (select count(*) from [base_carga_tienda_masiva])&#xA;&#xA;update base_carga_tienda_masiva  set ges_idclie = REPLACE(ges_idclie,'-','')&#xA;&#xA;UPDATE base_carga_tienda_masiva  SET   [ges_numrec1] = [ges_numrec]&#xA;UPDATE base_carga_tienda_masiva  SET   [CodigoAccion] = 'CREAR'&#xA;UPDATE base_carga_tienda_masiva  SET   [ges_numplg] = '30'&#xA;UPDATE base_carga_tienda_masiva  SET   [ges_numter1] = '1' &#xA;UPDATE base_carga_tienda_masiva  SET   [ges_numter2] = '0'&#xA;UPDATE base_carga_tienda_masiva  SET   [ges_numter3] = '0' &#xA;UPDATE base_carga_tienda_masiva  SET edge_data44 = 'Carga Formulario Tienda Masiva - MKP'&#xA;UPDATE base_carga_tienda_masiva  SET edge_data88 = @carga + 1&#xA;UPDATE base_carga_tienda_masiva SET edge_data37 = '-' + edge_data37&#xA;&#xA;&#xA;update base_carga_tienda_masiva  set [edge_data01] = left([edge_data01],60)&#xA;update base_carga_tienda_masiva  set [edge_data02] = left([edge_data02],60)&#xA;update base_carga_tienda_masiva  set [edge_data03] = left([edge_data03],60)&#xA;update base_carga_tienda_masiva  set [edge_data04] = left([edge_data04],60)&#xA;update base_carga_tienda_masiva  set [edge_data05] = left([edge_data05],60)&#xA;update base_carga_tienda_masiva  set [edge_data06] = left([edge_data06],60)&#xA;update base_carga_tienda_masiva  set [edge_data07] = left([edge_data07],60)&#xA;update base_carga_tienda_masiva  set [edge_data08] = left([edge_data08],60)&#xA;update base_carga_tienda_masiva  set [edge_data09] = left([edge_data09],60)&#xA;update base_carga_tienda_masiva  set [edge_data10] = left([edge_data10],60)&#xA;update base_carga_tienda_masiva  set [edge_data11] = left([edge_data11],60)&#xA;update base_carga_tienda_masiva  set [edge_data12] = left([edge_data12],60)&#xA;update base_carga_tienda_masiva  set [edge_data13] = left([edge_data13],60)&#xA;update base_carga_tienda_masiva  set [edge_data14] = left([edge_data14],60)&#xA;update base_carga_tienda_masiva  set [edge_data15] = left([edge_data15],60)&#xA;update base_carga_tienda_masiva  set [edge_data16] = left([edge_data16],60)&#xA;update base_carga_tienda_masiva  set [edge_data17] = left([edge_data17],60)&#xA;update base_carga_tienda_masiva  set [edge_data18] = left([edge_data18],60)&#xA;update base_carga_tienda_masiva  set [edge_data19] = left([edge_data19],60)&#xA;update base_carga_tienda_masiva  set [edge_data20] = left([edge_data20],60)&#xA;update base_carga_tienda_masiva  set [edge_data21] = left([edge_data21],60)&#xA;update base_carga_tienda_masiva  set [edge_data22] = left([edge_data22],60)&#xA;update base_carga_tienda_masiva  set [edge_data23] = left([edge_data23],60)&#xA;update base_carga_tienda_masiva  set [edge_data24] = left([edge_data24],60)&#xA;update base_carga_tienda_masiva  set [edge_data25] = left([edge_data25],60)&#xA;update base_carga_tienda_masiva  set [edge_data26] = left([edge_data26],60)&#xA;update base_carga_tienda_masiva  set [edge_data27] = left([edge_data27],60)&#xA;update base_carga_tienda_masiva  set [edge_data28] = left([edge_data28],60)&#xA;update base_carga_tienda_masiva  set [edge_data29] = left([edge_data29],60)&#xA;update base_carga_tienda_masiva  set [edge_data30] = left([edge_data30],60)&#xA;update base_carga_tienda_masiva  set [edge_data31] = left([edge_data31],60)&#xA;update base_carga_tienda_masiva  set [edge_data32] = left([edge_data32],60)&#xA;update base_carga_tienda_masiva  set [edge_data33] = left([edge_data33],60)&#xA;update base_carga_tienda_masiva  set [edge_data34] = left([edge_data34],60)&#xA;update base_carga_tienda_masiva  set [edge_data35] = left([edge_data35],60)&#xA;update base_carga_tienda_masiva  set [edge_data36] = left([edge_data36],60)&#xA;update base_carga_tienda_masiva  set [edge_data37] = left([edge_data37],60)&#xA;update base_carga_tienda_masiva  set [edge_data38] = left([edge_data38],60)&#xA;update base_carga_tienda_masiva  set [edge_data39] = left([edge_data39],60)&#xA;update base_carga_tienda_masiva  set [edge_data40] = left([edge_data40],60)&#xA;update base_carga_tienda_masiva  set [edge_data41] = left([edge_data41],60)&#xA;update base_carga_tienda_masiva  set [edge_data42] = left([edge_data42],60)&#xA;update base_carga_tienda_masiva  set [edge_data43] = left([edge_data43],60)&#xA;update base_carga_tienda_masiva  set [edge_data44] = left([edge_data44],60)&#xA;update base_carga_tienda_masiva  set [edge_data45] = left([edge_data45],60)&#xA;update base_carga_tienda_masiva  set [edge_data46] = left([edge_data46],60)&#xA;update base_carga_tienda_masiva  set [edge_data47] = left([edge_data47],60)&#xA;update base_carga_tienda_masiva  set [edge_data48] = left([edge_data48],60)&#xA;update base_carga_tienda_masiva  set [edge_data49] = left([edge_data49],60)&#xA;update base_carga_tienda_masiva  set [edge_data50] = left([edge_data50],60)&#xA;update base_carga_tienda_masiva  set [edge_data51] = left([edge_data51],60)&#xA;update base_carga_tienda_masiva  set [edge_data52] = left([edge_data52],60)&#xA;update base_carga_tienda_masiva  set [edge_data53] = left([edge_data53],60)&#xA;update base_carga_tienda_masiva  set [edge_data54] = left([edge_data54],60)&#xA;update base_carga_tienda_masiva  set [edge_data55] = left([edge_data55],60)&#xA;update base_carga_tienda_masiva  set [edge_data56] = left([edge_data56],60)&#xA;update base_carga_tienda_masiva  set [edge_data57] = left([edge_data57],60)&#xA;update base_carga_tienda_masiva  set [edge_data58] = left([edge_data58],60)&#xA;update base_carga_tienda_masiva  set [edge_data59] = left([edge_data59],60)&#xA;update base_carga_tienda_masiva  set [edge_data60] = left([edge_data60],60)&#xA;update base_carga_tienda_masiva  set [edge_data61] = left([edge_data61],60)&#xA;update base_carga_tienda_masiva  set [edge_data62] = left([edge_data62],60)&#xA;update base_carga_tienda_masiva  set [edge_data63] = left([edge_data63],60)&#xA;update base_carga_tienda_masiva  set [edge_data64] = left([edge_data64],60)&#xA;update base_carga_tienda_masiva  set [edge_data65] = left([edge_data65],60)&#xA;update base_carga_tienda_masiva  set [edge_data66] = left([edge_data66],60)&#xA;update base_carga_tienda_masiva  set [edge_data67] = left([edge_data67],60)&#xA;update base_carga_tienda_masiva  set [edge_data68] = left([edge_data68],60)&#xA;update base_carga_tienda_masiva  set [edge_data69] = left([edge_data69],60)&#xA;update base_carga_tienda_masiva  set [edge_data70] = left([edge_data70],60)&#xA;update base_carga_tienda_masiva  set [edge_data71] = left([edge_data71],60)&#xA;update base_carga_tienda_masiva  set [edge_data72] = left([edge_data72],60)&#xA;update base_carga_tienda_masiva  set [edge_data73] = left([edge_data73],60)&#xA;update base_carga_tienda_masiva  set [edge_data74] = left([edge_data74],60)&#xA;update base_carga_tienda_masiva  set [edge_data75] = left([edge_data75],60)&#xA;update base_carga_tienda_masiva  set [edge_data76] = left([edge_data76],60)&#xA;update base_carga_tienda_masiva  set [edge_data77] = left([edge_data77],60)&#xA;update base_carga_tienda_masiva  set [edge_data78] = left([edge_data78],60)&#xA;update base_carga_tienda_masiva  set [edge_data79] = left([edge_data79],60)&#xA;update base_carga_tienda_masiva  set [edge_data80] = left([edge_data80],60)&#xA;update base_carga_tienda_masiva  set [edge_data81] = left([edge_data81],60)&#xA;update base_carga_tienda_masiva  set [edge_data82] = left([edge_data82],60)&#xA;update base_carga_tienda_masiva  set [edge_data83] = left([edge_data83],60)&#xA;update base_carga_tienda_masiva  set [edge_data84] = left([edge_data84],60)&#xA;update base_carga_tienda_masiva  set [edge_data85] = left([edge_data85],60)&#xA;update base_carga_tienda_masiva  set [edge_data86] = left([edge_data86],60)&#xA;update base_carga_tienda_masiva  set [edge_data87] = left([edge_data87],60)&#xA;update base_carga_tienda_masiva  set [edge_data88] = left([edge_data88],60)&#xA;update base_carga_tienda_masiva  set [edge_data89] = left([edge_data89],60)&#xA;update base_carga_tienda_masiva  set [edge_data90] = left([edge_data90],60)&#xA;update base_carga_tienda_masiva  set [edge_data91] = left([edge_data91],60)&#xA;update base_carga_tienda_masiva  set [edge_data92] = left([edge_data92],60)&#xA;update base_carga_tienda_masiva  set [edge_data93] = left([edge_data93],60)&#xA;update base_carga_tienda_masiva  set [edge_data94] = left([edge_data94],60)&#xA;update base_carga_tienda_masiva  set [edge_data95] = left([edge_data95],60)&#xA;update base_carga_tienda_masiva  set [edge_data96] = left([edge_data96],60)&#xA;update base_carga_tienda_masiva  set [edge_data97] = left([edge_data97],60)&#xA;update base_carga_tienda_masiva  set [edge_data98] = left([edge_data98],60)&#xA;update base_carga_tienda_masiva  set [edge_data99] = left([edge_data99],60)&#xA;update base_carga_tienda_masiva  set [edge_data100] = left([edge_data100],60)&#xA;update base_carga_tienda_masiva  set [Adj_nombres] = left([Adj_nombres],60)&#xA;&#xA;update [dbo].[base_carga_tienda_masiva ] set [glosa] = [ges_glomot]&#xA;&#xA;insert into [dbo].[correlativos_cargas] ([Numero_Carga],[Campana],[registros],[hora_proceso]) values (@carga + 1,'MERCADO RIPLEY - TIENDA',@registros,getdate())&#xA;&#xA;update [base_carga_tienda_masiva] set edge_data01 = left(edge_data01,11) where  edge_data01 like '%-%' and len(edge_data01) = 13  &#xA;update [base_carga_tienda_masiva] set edge_data01 = left(edge_data01,9) where  edge_data01 like '%-%' and len(edge_data01) = 11 &#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="DECLARE @carga int;&#xA;DECLARE @registros int;&#xA;set @carga = (select max([Numero_Carga]) from [dbo].[correlativos_cargas] where [Campana] = 'MERCADO RIPLEY - TIENDA');&#xA;set @registros = (select count(*) from [base_carga_tienda_masiva])&#xA;&#xA;update base_carga_tienda_masiva  set ges_idclie = REPLACE(ges_idclie,'-','')&#xA;&#xA;UPDATE base_carga_tienda_masiva  SET   [ges_numrec1] = [ges_numrec]&#xA;UPDATE base_carga_tienda_masiva  SET   [CodigoAccion] = 'CREAR'&#xA;UPDATE base_carga_tienda_masiva  SET   [ges_numplg] = '30'&#xA;UPDATE base_carga_tienda_masiva  SET   [ges_numter1] = '6' &#xA;UPDATE base_carga_tienda_masiva  SET   [ges_numter2] = '1'&#xA;UPDATE base_carga_tienda_masiva  SET   [ges_numter3] = '7' &#xA;UPDATE base_carga_tienda_masiva  SET edge_data44 = 'Carga Formulario Tienda Masiva - MKP'&#xA;UPDATE base_carga_tienda_masiva  SET edge_data88 = @carga + 1&#xA;UPDATE base_carga_tienda_masiva SET edge_data37 = '-' + edge_data37&#xA;&#xA;&#xA;update base_carga_tienda_masiva  set [edge_data01] = left([edge_data01],60)&#xA;update base_carga_tienda_masiva  set [edge_data02] = left([edge_data02],60)&#xA;update base_carga_tienda_masiva  set [edge_data03] = left([edge_data03],60)&#xA;update base_carga_tienda_masiva  set [edge_data04] = left([edge_data04],60)&#xA;update base_carga_tienda_masiva  set [edge_data05] = left([edge_data05],60)&#xA;update base_carga_tienda_masiva  set [edge_data06] = left([edge_data06],60)&#xA;update base_carga_tienda_masiva  set [edge_data07] = left([edge_data07],60)&#xA;update base_carga_tienda_masiva  set [edge_data08] = left([edge_data08],60)&#xA;update base_carga_tienda_masiva  set [edge_data09] = left([edge_data09],60)&#xA;update base_carga_tienda_masiva  set [edge_data10] = left([edge_data10],60)&#xA;update base_carga_tienda_masiva  set [edge_data11] = left([edge_data11],60)&#xA;update base_carga_tienda_masiva  set [edge_data12] = left([edge_data12],60)&#xA;update base_carga_tienda_masiva  set [edge_data13] = left([edge_data13],60)&#xA;update base_carga_tienda_masiva  set [edge_data14] = left([edge_data14],60)&#xA;update base_carga_tienda_masiva  set [edge_data15] = left([edge_data15],60)&#xA;update base_carga_tienda_masiva  set [edge_data16] = left([edge_data16],60)&#xA;update base_carga_tienda_masiva  set [edge_data17] = left([edge_data17],60)&#xA;update base_carga_tienda_masiva  set [edge_data18] = left([edge_data18],60)&#xA;update base_carga_tienda_masiva  set [edge_data19] = left([edge_data19],60)&#xA;update base_carga_tienda_masiva  set [edge_data20] = left([edge_data20],60)&#xA;update base_carga_tienda_masiva  set [edge_data21] = left([edge_data21],60)&#xA;update base_carga_tienda_masiva  set [edge_data22] = left([edge_data22],60)&#xA;update base_carga_tienda_masiva  set [edge_data23] = left([edge_data23],60)&#xA;update base_carga_tienda_masiva  set [edge_data24] = left([edge_data24],60)&#xA;update base_carga_tienda_masiva  set [edge_data25] = left([edge_data25],60)&#xA;update base_carga_tienda_masiva  set [edge_data26] = left([edge_data26],60)&#xA;update base_carga_tienda_masiva  set [edge_data27] = left([edge_data27],60)&#xA;update base_carga_tienda_masiva  set [edge_data28] = left([edge_data28],60)&#xA;update base_carga_tienda_masiva  set [edge_data29] = left([edge_data29],60)&#xA;update base_carga_tienda_masiva  set [edge_data30] = left([edge_data30],60)&#xA;update base_carga_tienda_masiva  set [edge_data31] = left([edge_data31],60)&#xA;update base_carga_tienda_masiva  set [edge_data32] = left([edge_data32],60)&#xA;update base_carga_tienda_masiva  set [edge_data33] = left([edge_data33],60)&#xA;update base_carga_tienda_masiva  set [edge_data34] = left([edge_data34],60)&#xA;update base_carga_tienda_masiva  set [edge_data35] = left([edge_data35],60)&#xA;update base_carga_tienda_masiva  set [edge_data36] = left([edge_data36],60)&#xA;update base_carga_tienda_masiva  set [edge_data37] = left([edge_data37],60)&#xA;update base_carga_tienda_masiva  set [edge_data38] = left([edge_data38],60)&#xA;update base_carga_tienda_masiva  set [edge_data39] = left([edge_data39],60)&#xA;update base_carga_tienda_masiva  set [edge_data40] = left([edge_data40],60)&#xA;update base_carga_tienda_masiva  set [edge_data41] = left([edge_data41],60)&#xA;update base_carga_tienda_masiva  set [edge_data42] = left([edge_data42],60)&#xA;update base_carga_tienda_masiva  set [edge_data43] = left([edge_data43],60)&#xA;update base_carga_tienda_masiva  set [edge_data44] = left([edge_data44],60)&#xA;update base_carga_tienda_masiva  set [edge_data45] = left([edge_data45],60)&#xA;update base_carga_tienda_masiva  set [edge_data46] = left([edge_data46],60)&#xA;update base_carga_tienda_masiva  set [edge_data47] = left([edge_data47],60)&#xA;update base_carga_tienda_masiva  set [edge_data48] = left([edge_data48],60)&#xA;update base_carga_tienda_masiva  set [edge_data49] = left([edge_data49],60)&#xA;update base_carga_tienda_masiva  set [edge_data50] = left([edge_data50],60)&#xA;update base_carga_tienda_masiva  set [edge_data51] = left([edge_data51],60)&#xA;update base_carga_tienda_masiva  set [edge_data52] = left([edge_data52],60)&#xA;update base_carga_tienda_masiva  set [edge_data53] = left([edge_data53],60)&#xA;update base_carga_tienda_masiva  set [edge_data54] = left([edge_data54],60)&#xA;update base_carga_tienda_masiva  set [edge_data55] = left([edge_data55],60)&#xA;update base_carga_tienda_masiva  set [edge_data56] = left([edge_data56],60)&#xA;update base_carga_tienda_masiva  set [edge_data57] = left([edge_data57],60)&#xA;update base_carga_tienda_masiva  set [edge_data58] = left([edge_data58],60)&#xA;update base_carga_tienda_masiva  set [edge_data59] = left([edge_data59],60)&#xA;update base_carga_tienda_masiva  set [edge_data60] = left([edge_data60],60)&#xA;update base_carga_tienda_masiva  set [edge_data61] = left([edge_data61],60)&#xA;update base_carga_tienda_masiva  set [edge_data62] = left([edge_data62],60)&#xA;update base_carga_tienda_masiva  set [edge_data63] = left([edge_data63],60)&#xA;update base_carga_tienda_masiva  set [edge_data64] = left([edge_data64],60)&#xA;update base_carga_tienda_masiva  set [edge_data65] = left([edge_data65],60)&#xA;update base_carga_tienda_masiva  set [edge_data66] = left([edge_data66],60)&#xA;update base_carga_tienda_masiva  set [edge_data67] = left([edge_data67],60)&#xA;update base_carga_tienda_masiva  set [edge_data68] = left([edge_data68],60)&#xA;update base_carga_tienda_masiva  set [edge_data69] = left([edge_data69],60)&#xA;update base_carga_tienda_masiva  set [edge_data70] = left([edge_data70],60)&#xA;update base_carga_tienda_masiva  set [edge_data71] = left([edge_data71],60)&#xA;update base_carga_tienda_masiva  set [edge_data72] = left([edge_data72],60)&#xA;update base_carga_tienda_masiva  set [edge_data73] = left([edge_data73],60)&#xA;update base_carga_tienda_masiva  set [edge_data74] = left([edge_data74],60)&#xA;update base_carga_tienda_masiva  set [edge_data75] = left([edge_data75],60)&#xA;update base_carga_tienda_masiva  set [edge_data76] = left([edge_data76],60)&#xA;update base_carga_tienda_masiva  set [edge_data77] = left([edge_data77],60)&#xA;update base_carga_tienda_masiva  set [edge_data78] = left([edge_data78],60)&#xA;update base_carga_tienda_masiva  set [edge_data79] = left([edge_data79],60)&#xA;update base_carga_tienda_masiva  set [edge_data80] = left([edge_data80],60)&#xA;update base_carga_tienda_masiva  set [edge_data81] = left([edge_data81],60)&#xA;update base_carga_tienda_masiva  set [edge_data82] = left([edge_data82],60)&#xA;update base_carga_tienda_masiva  set [edge_data83] = left([edge_data83],60)&#xA;update base_carga_tienda_masiva  set [edge_data84] = left([edge_data84],60)&#xA;update base_carga_tienda_masiva  set [edge_data85] = left([edge_data85],60)&#xA;update base_carga_tienda_masiva  set [edge_data86] = left([edge_data86],60)&#xA;update base_carga_tienda_masiva  set [edge_data87] = left([edge_data87],60)&#xA;update base_carga_tienda_masiva  set [edge_data88] = left([edge_data88],60)&#xA;update base_carga_tienda_masiva  set [edge_data89] = left([edge_data89],60)&#xA;update base_carga_tienda_masiva  set [edge_data90] = left([edge_data90],60)&#xA;update base_carga_tienda_masiva  set [edge_data91] = left([edge_data91],60)&#xA;update base_carga_tienda_masiva  set [edge_data92] = left([edge_data92],60)&#xA;update base_carga_tienda_masiva  set [edge_data93] = left([edge_data93],60)&#xA;update base_carga_tienda_masiva  set [edge_data94] = left([edge_data94],60)&#xA;update base_carga_tienda_masiva  set [edge_data95] = left([edge_data95],60)&#xA;update base_carga_tienda_masiva  set [edge_data96] = left([edge_data96],60)&#xA;update base_carga_tienda_masiva  set [edge_data97] = left([edge_data97],60)&#xA;update base_carga_tienda_masiva  set [edge_data98] = left([edge_data98],60)&#xA;update base_carga_tienda_masiva  set [edge_data99] = left([edge_data99],60)&#xA;update base_carga_tienda_masiva  set [edge_data100] = left([edge_data100],60)&#xA;update base_carga_tienda_masiva  set [Adj_nombres] = left([Adj_nombres],60)&#xA;&#xA;update [dbo].[base_carga_tienda_masiva ] set [glosa] = [ges_glomot]&#xA;&#xA;insert into [dbo].[correlativos_cargas] ([Numero_Carga],[Campana],[registros],[hora_proceso]) values (@carga + 1,'MERCADO RIPLEY - TIENDA',@registros,getdate())&#xA;&#xA;update [base_carga_tienda_masiva] set edge_data01 = left(edge_data01,11) where  edge_data01 like '%-%' and len(edge_data01) = 13  &#xA;update [base_carga_tienda_masiva] set edge_data01 = left(edge_data01,9) where  edge_data01 like '%-%' and len(edge_data01) = 11 &#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
@@ -3614,7 +3614,9 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -3655,7 +3657,9 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3677,7 +3681,9 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -3734,7 +3740,9 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3792,7 +3800,9 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3874,9 +3884,9 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="250,205"
-          Size="250,43"
+          Size="258,248"
           Id="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY"
           TopLeft="32.6666666997803,143.5" />
         <NodeLayout
@@ -3889,9 +3899,9 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="27.6666666997803,84"
+              EndConnector="31.6666666997803,84"
               Start="0,0"
-              End="27.6666666997803,76.5">
+              End="31.6666666997803,76.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -3902,13 +3912,13 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
                     Point2="0,42"
                     Point3="4,42" />
                   <mssgle:LineSegment
-                    End="23.6666666997803,42" />
+                    End="27.6666666997803,42" />
                   <mssgle:CubicBezierSegment
-                    Point1="23.6666666997803,42"
-                    Point2="27.6666666997803,42"
-                    Point3="27.6666666997803,46" />
+                    Point1="27.6666666997803,42"
+                    Point2="31.6666666997803,42"
+                    Point3="31.6666666997803,46" />
                   <mssgle:LineSegment
-                    End="27.6666666997803,76.5" />
+                    End="31.6666666997803,76.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3920,7 +3930,7 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="False"
-          PanelSize="301,410"
+          PanelSize="301,446"
           Size="301,43"
           Id="Package\Paso 3 - Armado de Archivo de Creacion"
           TopLeft="176.904761904763,377.853174603174" />
