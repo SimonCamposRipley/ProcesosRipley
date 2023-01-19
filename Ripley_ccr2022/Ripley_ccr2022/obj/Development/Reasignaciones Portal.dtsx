@@ -7,12 +7,12 @@
   DTS:CreatorName="DESKTOP-F4L3O24\Simon"
   DTS:DTSID="{1DA577B5-AA1B-48CA-8842-8A5449C1BF62}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.167"
+  DTS:LastModifiedProductVersion="16.0.694.0"
   DTS:LocaleID="13322"
   DTS:ObjectName="Reasignaciones Portal"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{A2CE5BEA-98DD-4651-89AC-75BA0ADCAEA8}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{EDFE2CDA-2698-4028-BD28-016D139625C4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAppWmbepVaku/iuePlWa3VAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACjN5GP7p9h0zbIdKHkYxfYjqssLiN7jXVrAvjGaMbysAAAAAAOgAAAAAIAACAAAAC5FCbome407ZZxC5+aCJV+2haAdjoPCseObWo9Pxoj5iAAAABJVjT77m1QAkLOdnUqeL258BMZb5/XDqJf+lCNUkN4SkAAAAC1mQbDTyfOQFiRPKwcioM/CFC4czAfZK4c9WGX9nzJEnwtYqhlHb+o8SXAh7/X1bNxE9Du0mgVhqu5zm3U4nfy</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABHKZZhBlb1IXyGAXAaZEQt+9aI8u0wpnqjcBbTMipL+gAAAAAOgAAAAAIAACAAAACV9WBL3Jem3wkbTXlzCBSszi94iw9fn2eLDZUbnHQkCyAAAADJd/myGRyNs9HKmQGZ80XLhq8jUK0WnsRECXRmFRZOIkAAAAAsdkEH38cpYQ1U0YWn5DUsp6kl2fGO5/EqFJzu2XyWHzbh8AR5FlmE7zQUXmQwDPPJgaw10No/Pu1yyIh7DDrW</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -208,7 +208,7 @@
                   dataType="System.String"
                   description="Comando SQL para ejecutar."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
@@ -341,7 +341,7 @@
                   dataType="System.String"
                   description="Comando SQL para ejecutar."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.String"
                   description="Variable que contiene el comando SQL para ejecutar."
@@ -487,27 +487,27 @@
       DTS:To="Package\Asigna casos" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
-<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
-<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
-<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
 <Objects
   Version="8">
-  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
   <Package
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="144,41.6"
+          Size="144,42"
           Id="Package\Asigna casos"
           TopLeft="139,267" />
         <NodeLayout
-          Size="145.6,41.6"
+          Size="146,42"
           Id="Package\Importa Excel"
           TopLeft="134,170" />
         <NodeLayout
-          Size="139.2,41.6"
+          Size="139,42"
           Id="Package\Vacía tablas"
           TopLeft="134,77" />
         <EdgeLayout

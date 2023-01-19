@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="EXCEL - MKP"
   DTS:PackageType="5"
-  DTS:VersionBuild="299"
-  DTS:VersionGUID="{50B98755-084A-4A89-B7B1-B041B6E43162}">
+  DTS:VersionBuild="302"
+  DTS:VersionGUID="{8F1624D0-60D6-460A-984F-4105652FB8DF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABn7BL/BowxKa6BSvIP4vGonXaBNZwiSQ8BNPh650XR6AAAAAAOgAAAAAIAACAAAAAXENf9tZpVRxvS6mWDZY+GNIRZXn0xsgoWKw1pVCh1FyAAAACS0Yn9AF2nGqCzS6kZfzTQsMFAU6z8fmOa1nPQKA7zb0AAAACvVX1rzeTy1EU1CxTyrYqKYeN6zgkF29C0BOJUDyGdbO6SpplOiSsZ791ETzY0J2kZuWdtUIYgLfMc1H3JCkJp</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADopiELSMgXwjVtjrcZhiGW7fdd0kYfuGywQKxSHGqdWgAAAAAOgAAAAAIAACAAAAAacO2rOHTHXVwvsZQroHu6eEcdlG5u1nDa57QPKxasySAAAACAi7QxM2stMfwUkbfSKFJFsl6hbw9eMvuGyRVhNSjrikAAAAATgDd+5qo0Ph8Oz2vYSx0wx5Enff0WurpJYd7td2d5wG2a5OX/R1WioAwLBPMJWkYLeaZtL2JQOH4u5FlaqSMJ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1396,7 +1396,7 @@ LEFT join [dbo].[motivo] as motivo on campana.cam_numcam=motivo.mot_numcam
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{A102D0A0-ABF5-4AD7-82BE-5576E9BAB3EC}"
-              SQLTask:SqlStatementSource="DECLARE @carga int;&#xA;DECLARE @registros int;&#xA;set @carga = (select max([Numero_Carga]) from [dbo].[cargas] where [Campana] = 'MERCADO RIPLEY');&#xA;set @registros = (select count(*) from [base_carga_MKP])&#xA;&#xA;&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET   [ges_numrec1] = [ges_numrec]&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET   [CodigoAccion] = 'CREAR'&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET   [ges_numplg] = '30'&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET   [ges_numter1] = '1' &#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET   [ges_numter2] = '0'&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET   [ges_numter3] = '0' &#xA;&#xA;&#xA;&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET edge_data37 = '-' + edge_data37&#xA;&#xA;&#xA;&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET edge_data44 = 'Tipo Carga - Carga MKP Excel'&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET edge_data87 = cast(cast('CargaMasiva - ' as varchar)+ cast(cast(getdate()as date) as nvarchar) as varchar)&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET edge_data88 = @carga + 1&#xA;&#xA;insert into [dbo].[cargas] ([Numero_Carga],[Campana],[registros],[hora_proceso]) values (@carga + 1,'MERCADO RIPLEY',@registros,getdate())&#xA;&#xA;update [dbo].[base_carga_MKP] set [glosa] = [ges_glomot]&#xA;&#xA;update [dbo].[base_carga_mkp] set [ges_numrec] = '16311' where [ges_numrec]  in ('7426', '')&#xA;update [dbo].[base_carga_mkp] set [ges_numrec1] = '16311' where [ges_numrec1] in ('7426', '')&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="DECLARE @carga int;&#xA;DECLARE @registros int;&#xA;set @carga = (select max([Numero_Carga]) from [dbo].[cargas] where [Campana] = 'MERCADO RIPLEY');&#xA;set @registros = (select count(*) from [base_carga_MKP])&#xA;&#xA;&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET   [ges_numrec1] = [ges_numrec]&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET   [CodigoAccion] = 'CREAR'&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET   [ges_numplg] = '30'&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET   [ges_numter1] = '6' &#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET   [ges_numter2] = '1'&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET   [ges_numter3] = '7' &#xA;&#xA;&#xA;&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET edge_data37 = '-' + edge_data37&#xA;&#xA;&#xA;&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET edge_data44 = 'Tipo Carga - Carga MKP Excel'&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET edge_data87 = cast(cast('CargaMasiva - ' as varchar)+ cast(cast(getdate()as date) as nvarchar) as varchar)&#xA;UPDATE [cierre_creacion_auris].[dbo].[base_carga_MKP] SET edge_data88 = @carga + 1&#xA;&#xA;insert into [dbo].[cargas] ([Numero_Carga],[Campana],[registros],[hora_proceso]) values (@carga + 1,'MERCADO RIPLEY',@registros,getdate())&#xA;&#xA;update [dbo].[base_carga_MKP] set [glosa] = [ges_glomot]&#xA;&#xA;update [dbo].[base_carga_mkp] set [ges_numrec] = '16311' where [ges_numrec]  in ('7426', '')&#xA;update [dbo].[base_carga_mkp] set [ges_numrec1] = '16311' where [ges_numrec1] in ('7426', '')&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -3629,27 +3629,39 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="498,491"
-          Size="160,43"
+          Size="498,43"
           Id="Package\Crea tickets"
-          TopLeft="215,166" />
+          TopLeft="215,164" />
         <NodeLayout
           Size="263,42"
           Id="Package\Limpia tablas para proceso (truncate)"
           TopLeft="161,66" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="293.75,108">
+          TopLeft="292.5,108">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,58"
+              EndConnector="171.5,56"
               Start="0,0"
-              End="0,50.5">
+              End="171.5,48.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,50.5" />
+                    End="0,24" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24"
+                    Point2="0,28"
+                    Point3="4,28" />
+                  <mssgle:LineSegment
+                    End="167.5,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="167.5,28"
+                    Point2="171.5,28"
+                    Point3="171.5,32" />
+                  <mssgle:LineSegment
+                    End="171.5,48.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3660,18 +3672,30 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="294,209">
+          TopLeft="464,207">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53"
+              EndConnector="-171,55"
               Start="0,0"
-              End="0,45.5">
+              End="-171,47.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.5" />
+                    End="0,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5"
+                    Point2="0,27.5"
+                    Point3="-4,27.5" />
+                  <mssgle:LineSegment
+                    End="-167,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-167,27.5"
+                    Point2="-171,27.5"
+                    Point3="-171,31.5" />
+                  <mssgle:LineSegment
+                    End="-171,47.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3916,7 +3940,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
     design-time-name="Package\Crea tickets\Importa Datos Excel">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="164,42"
           Id="Package\Crea tickets\Importa Datos Excel\base_mkp_excel"
@@ -3956,7 +3980,9 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

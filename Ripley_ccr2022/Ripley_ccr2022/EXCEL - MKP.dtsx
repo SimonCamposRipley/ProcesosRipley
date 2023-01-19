@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="EXCEL - MKP"
   DTS:PackageType="5"
-  DTS:VersionBuild="301"
-  DTS:VersionGUID="{3817403D-955D-4C74-800C-4B199464117E}">
+  DTS:VersionBuild="302"
+  DTS:VersionGUID="{8F1624D0-60D6-460A-984F-4105652FB8DF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB3FPiRGZV81OyS73PnNNG1Xjq7cb81t11ALC+LJW4IIQAAAAAOgAAAAAIAACAAAABirQ0sn8skbbd2SPA4KjrxrOU1V1wNPn1WM6fDJ0t5JCAAAADmXzQEB4O0XeNNt/DpaDzZWmpp3bChyWs1N10M/vMS70AAAAAMKfdmqBYg8tdGoIU9vG0fc3bffzNbTdUJBYySy9PQpDeeQ23KlWe4Lq2u0opfhFIIjrx63uUeQSYdK4wfGqTX</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAFZHu7nrnj5WsbmecyYOiKdBOdfN9pYcvwj6WwLm/DZQAAAAAOgAAAAAIAACAAAADsAzf8fKjd97yrL8g/TDvt2jBu8puWZHjXSDL2mUIeLCAAAABvonA3tA9JpnvoNmdaGCRNyfkuQI2dUhIlcXwXyykuX0AAAABDDDPlCu+Qd4LYbkiWOEjQS/WA3W1Lco9OkSuH7aVeHdIypsgBZi/kWspCLl4goBw9UxFGDg2VJ1IJ2sDJXVte</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3627,9 +3627,9 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="True"
+          IsExpanded="False"
           PanelSize="498,491"
-          Size="498,534"
+          Size="498,43"
           Id="Package\Crea tickets"
           TopLeft="215,164" />
         <NodeLayout
@@ -3672,30 +3672,30 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="464,698">
+          TopLeft="464,207">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-171,-436"
+              EndConnector="-171,55"
               Start="0,0"
-              End="-171,-428.5">
+              End="-171,47.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-214" />
+                    End="0,23.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-214"
-                    Point2="0,-218"
-                    Point3="-4,-218" />
+                    Point1="0,23.5"
+                    Point2="0,27.5"
+                    Point3="-4,27.5" />
                   <mssgle:LineSegment
-                    End="-167,-218" />
+                    End="-167,27.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-167,-218"
-                    Point2="-171,-218"
-                    Point3="-171,-222" />
+                    Point1="-167,27.5"
+                    Point2="-171,27.5"
+                    Point3="-171,31.5" />
                   <mssgle:LineSegment
-                    End="-171,-428.5" />
+                    End="-171,47.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

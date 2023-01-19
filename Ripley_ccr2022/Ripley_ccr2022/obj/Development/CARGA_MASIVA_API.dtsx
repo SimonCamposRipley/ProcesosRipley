@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="1/5/2023 2:40:18 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="93"
-  DTS:VersionGUID="{89E4D432-4C10-4B37-A777-D5A085E73DFF}">
+  DTS:VersionBuild="91"
+  DTS:VersionGUID="{B5940CEB-2C06-486B-8FD3-A16E0343B2B1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACoUhAZgYQcgPZfIiZqTaqFcZwOTGcxwyNe0Ao9nfCH8wAAAAAOgAAAAAIAACAAAADOzBfuY9UWPv+7bgW/grZ/080JKbmfMotrVU0tnOCZsSAAAACn00g15Y0EwFEydkMK+gYYJrfix4Mml0VFM3fiCzNzT0AAAADQ42p790PVp7IgZD7NmFyuRkSUw7YLrLg7qQ8sAJsW+vCfKIxUcR3gjByLquZ1rAwtsczoJYpzqIHEnZI52NRR</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADpKSvpWaoxgHYkCG+vffGvQGzgqYcF5Kc4eT3bE+o3vgAAAAAOgAAAAAIAACAAAAB1TE0jLvIkMk0fG74QCNVUGlLNj+gtiRBslnnPMn7u1iAAAAAUEW+zj8EZdTGknG9Z7q7WWlFpR4gE8Of2bUZ7nhp9v0AAAABUgE0cz6v3QQrUnTAIVXsPnKRwcf3jW6+99zH4H41bkYE3JFWqPQ53nsCEoInBtJ8Cfd/lUadMqOXDVWk9wBE3</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABoyaJYStj8WHfOMPAS6N6mM64qBtCta6aU0PTcSWdqowAAAAAOgAAAAAIAACAAAAAg11ZHdmHs+NqDnEEo9eOCUBqhnlZAHriJ0gtDPlJnECAAAAAN+K4gledYoZi0Rx1WhRRfyluY02Tjd3Qw87C5mEzfTkAAAACLE4195jvPY20saGojpGo1/9WMyJACLUzwe0XSGTUYexBMqO8u8bpXSn91JUZdEXxiCb/uhdrgkCu7e3WZeRg3</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADAbEuCmkNWK5jZhLTi5PWV+fyCGdm3NQTUh9KJ6/M4KQAAAAAOgAAAAAIAACAAAADA/4xC7cvepbebvUSY63A+TXeWMRGAd0faJpx9Tw0v2SAAAABez38Z5TVmlD/LKFbFLmjvoluY5AKlqGPGVz3QfbpvDEAAAAC0GRPCjSaFa62gclg7i991SXVuPB/tbhRrEEueuksnHJPgnd5O/az5otsz8t/DLQaTnj39cpWAIJhkZLopCyzq</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -57,6 +57,7 @@
       DTS:refId="Package\Bitacora Clasificacion"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
+      DTS:Disabled="True"
       DTS:DTSID="{eb048378-7d03-4cc5-bd9d-0096ef0c588c}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -905,6 +906,7 @@
       DTS:refId="Package\Corrige CUD y SKU"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
+      DTS:Disabled="True"
       DTS:DTSID="{85F55415-3C8B-48B2-B16E-8EB788127A17}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -9230,6 +9232,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
       DTS:refId="Package\Descarga de Datos"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
+      DTS:Disabled="True"
       DTS:DTSID="{4543B056-1370-45A6-BDBB-EBB05CCEC4A1}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -14007,6 +14010,7 @@ tv
       DTS:refId="Package\Mantencion Bases"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
+      DTS:Disabled="True"
       DTS:DTSID="{07da6658-3231-48d8-a3a9-42de9354853c}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -14353,6 +14357,778 @@ tv
           Size="246,44"
           Id="Package\Carga Tickets a Auris por API"
           TopLeft="606.916666666667,305.111111111111" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Clasifica motivos de Formulario\1  Cambiar fecha de mi despacho\GESTION RETAIL"
+          TopLeft="57.75,13.4999999999999" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="291,110"
+          Size="291,153"
+          Id="Package\Clasifica motivos de Formulario\1  Cambiar fecha de mi despacho"
+          TopLeft="38,227" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Clasifica motivos de Formulario\10 - Cambiar la direccion de mi despacho\GESTION RETAIL"
+          TopLeft="83.5,12.75" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="False"
+          PanelSize="304,127"
+          Size="304,43"
+          Id="Package\Clasifica motivos de Formulario\10 - Cambiar la direccion de mi despacho"
+          TopLeft="32.5000000000001,665.5" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Clasifica motivos de Formulario\18 - Copia de Boleta\CLASIFICA CASOS"
+          TopLeft="33,27.5" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="False"
+          PanelSize="255,270"
+          Size="202,43"
+          Id="Package\Clasifica motivos de Formulario\18 - Copia de Boleta"
+          TopLeft="69,135" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\Clasifica motivos de Formulario\28 - Autorizar a un tercero a retirar mi producto\GESTION_RETAIL"
+          TopLeft="39,3.5" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="False"
+          PanelSize="330,100"
+          Size="330,43"
+          Id="Package\Clasifica motivos de Formulario\28 - Autorizar a un tercero a retirar mi producto"
+          TopLeft="16.5000000000001,401.5" />
+        <NodeLayout
+          Size="125,42"
+          Id="Package\Clasifica motivos de Formulario\3 - Me llegó otro producto\GESTION_RETAIL"
+          TopLeft="68,16" />
+        <NodeLayout
+          Size="103,42"
+          Id="Package\Clasifica motivos de Formulario\3 - Me llegó otro producto\MKP"
+          TopLeft="81,117" />
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario\3 - Me llegó otro producto.PrecedenceConstraints[Restricción]"
+          TopLeft="131.5,58">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59"
+              Start="0,0"
+              End="0,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="False"
+          PanelSize="259,215"
+          Size="259,43"
+          Id="Package\Clasifica motivos de Formulario\3 - Me llegó otro producto"
+          TopLeft="47,302.5" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Clasifica motivos de Formulario\35 - Cambio de producto\GESTION_RETAIL"
+          TopLeft="52.25,23.5" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="False"
+          PanelSize="330,122"
+          Size="223,43"
+          Id="Package\Clasifica motivos de Formulario\35 - Cambio de producto"
+          TopLeft="66.0000000000001,576.5" />
+        <NodeLayout
+          Size="125,42"
+          Id="Package\Clasifica motivos de Formulario\37 - Producto con alarma\GESTION RETAIL"
+          TopLeft="38.5,14.25" />
+        <NodeLayout
+          Size="103,42"
+          Id="Package\Clasifica motivos de Formulario\37 - Producto con alarma\MKP"
+          TopLeft="51,65" />
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario\37 - Producto con alarma.PrecedenceConstraints[Restricción]"
+          TopLeft="38.5,35.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="12.5,50.75"
+              Start="0,0"
+              End="5,50.75">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18.5,0"
+                    Point2="-22.5,0"
+                    Point3="-22.5,4" />
+                  <mssgle:LineSegment
+                    End="-22.5,46.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-22.5,46.75"
+                    Point2="-22.5,50.75"
+                    Point3="-18.5,50.75" />
+                  <mssgle:LineSegment
+                    End="5,50.75" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="False"
+          PanelSize="225,161"
+          Size="225,43"
+          Id="Package\Clasifica motivos de Formulario\37 - Producto con alarma"
+          TopLeft="71.5000000000001,823.5" />
+        <NodeLayout
+          Size="125,42"
+          Id="Package\Clasifica motivos de Formulario\4 - Me llegó incompleto\GESTION_RETAIL"
+          TopLeft="5.5,5.5" />
+        <NodeLayout
+          Size="103,42"
+          Id="Package\Clasifica motivos de Formulario\4 - Me llegó incompleto\MKP"
+          TopLeft="101,68" />
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario\4 - Me llegó incompleto.PrecedenceConstraints[Restricción]"
+          TopLeft="130.5,26.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22,41.5"
+              Start="0,0"
+              End="22,34">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="18,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18,0"
+                    Point2="22,0"
+                    Point3="22,4" />
+                  <mssgle:LineSegment
+                    End="22,34" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="False"
+          PanelSize="229,165"
+          Size="215,43"
+          Id="Package\Clasifica motivos de Formulario\4 - Me llegó incompleto"
+          TopLeft="75.5,1162.5" />
+        <NodeLayout
+          Size="125,42"
+          Id="Package\Clasifica motivos de Formulario\5 - No Funciona\GESTION RETAIL"
+          TopLeft="39.4545454545455,5.90909090909088" />
+        <NodeLayout
+          Size="103,42"
+          Id="Package\Clasifica motivos de Formulario\5 - No Funciona\MKP"
+          TopLeft="73,86" />
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario\5 - No Funciona.PrecedenceConstraints[Restricción]"
+          TopLeft="101.954545454545,47.9090909090909">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22.5454545454545,38.0909090909091"
+              Start="0,0"
+              End="22.5454545454545,30.5909090909091">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.0454545454546" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.0454545454546"
+                    Point2="0,19.0454545454546"
+                    Point3="4,19.0454545454546" />
+                  <mssgle:LineSegment
+                    End="18.5454545454545,19.0454545454546" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.5454545454545,19.0454545454546"
+                    Point2="22.5454545454545,19.0454545454546"
+                    Point3="22.5454545454545,23.0454545454546" />
+                  <mssgle:LineSegment
+                    End="22.5454545454545,30.5909090909091" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="False"
+          PanelSize="225,185"
+          Size="180,43"
+          Id="Package\Clasifica motivos de Formulario\5 - No Funciona"
+          TopLeft="97.5,1066.5" />
+        <NodeLayout
+          Size="125,42"
+          Id="Package\Clasifica motivos de Formulario\6 - Me llegó en mal estado\GESTION RETAIL"
+          TopLeft="40.5,12.25" />
+        <NodeLayout
+          Size="103,42"
+          Id="Package\Clasifica motivos de Formulario\6 - Me llegó en mal estado\MKP"
+          TopLeft="67,83" />
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario\6 - Me llegó en mal estado.PrecedenceConstraints[Restricción]"
+          TopLeft="103,54.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="15.5,28.75"
+              Start="0,0"
+              End="15.5,21.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.375"
+                    Point2="0,14.375"
+                    Point3="4,14.375" />
+                  <mssgle:LineSegment
+                    End="11.5,14.375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="11.5,14.375"
+                    Point2="15.5,14.375"
+                    Point3="15.5,18.375" />
+                  <mssgle:LineSegment
+                    End="15.5,21.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="False"
+          PanelSize="239,185"
+          Size="239,43"
+          Id="Package\Clasifica motivos de Formulario\6 - Me llegó en mal estado"
+          TopLeft="74.5000000000001,987.5" />
+        <NodeLayout
+          Size="125,42"
+          Id="Package\Clasifica motivos de Formulario\7 - Me arrepentí de mi compra\GESTION RETAIL"
+          TopLeft="45,9.75000000000006" />
+        <NodeLayout
+          Size="103,42"
+          Id="Package\Clasifica motivos de Formulario\7 - Me arrepentí de mi compra\MKP"
+          TopLeft="44,94" />
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario\7 - Me arrepentí de mi compra.PrecedenceConstraints[Restricción]"
+          TopLeft="107.5,51.7500000000001">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-12,42.2499999999999"
+              Start="0,0"
+              End="-12,34.7499999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.125" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.125"
+                    Point2="0,21.125"
+                    Point3="-4,21.125" />
+                  <mssgle:LineSegment
+                    End="-8,21.125" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-8,21.125"
+                    Point2="-12,21.125"
+                    Point3="-12,25.125" />
+                  <mssgle:LineSegment
+                    End="-12,34.7499999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="False"
+          PanelSize="281,191"
+          Size="281,43"
+          Id="Package\Clasifica motivos de Formulario\7 - Me arrepentí de mi compra"
+          TopLeft="45.5000000000001,906.5" />
+        <NodeLayout
+          Size="140,42"
+          Id="Package\Clasifica motivos de Formulario\9 - Necesito armar mi producto\GESTION RETAIL"
+          TopLeft="56,5.25" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="False"
+          PanelSize="252,102"
+          Size="252,43"
+          Id="Package\Clasifica motivos de Formulario\9 - Necesito armar mi producto"
+          TopLeft="49.5000000000001,482.5" />
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Clasifica motivos de Formulario\Motivos 17,33 (MACARENA FERNANDEZ)\Clasifica"
+          TopLeft="57.25,33.75" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="False"
+          PanelSize="313,129"
+          Size="313,43"
+          Id="Package\Clasifica motivos de Formulario\Motivos 17,33 (MACARENA FERNANDEZ)"
+          TopLeft="23,743" />
+        <NodeLayout
+          Size="136,42"
+          Id="Package\Clasifica motivos de Formulario\Motivos 26, 27, 29, 31, 36, 38, 39, 40, 41, 42,43\CLASIFICA"
+          TopLeft="44.5,19.75" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="False"
+          PanelSize="360,125"
+          Size="334,43"
+          Id="Package\Clasifica motivos de Formulario\Motivos 26, 27, 29, 31, 36, 38, 39, 40, 41, 42,43"
+          TopLeft="8.5,44" />
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint]"
+          TopLeft="172.75,87">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 1]"
+          TopLeft="170,178">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="13.5,49"
+              Start="0,0"
+              End="13.5,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.5"
+                    Point2="0,24.5"
+                    Point3="4,24.5" />
+                  <mssgle:LineSegment
+                    End="9.5,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="9.5,24.5"
+                    Point2="13.5,24.5"
+                    Point3="13.5,28.5" />
+                  <mssgle:LineSegment
+                    End="13.5,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 10]"
+          TopLeft="186,949.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="8,38"
+              Start="0,0"
+              End="8,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15"
+                    Point2="0,19"
+                    Point3="4,19" />
+                  <mssgle:LineSegment
+                    End="4,19" />
+                  <mssgle:CubicBezierSegment
+                    Point1="4,19"
+                    Point2="8,19"
+                    Point3="8,23" />
+                  <mssgle:LineSegment
+                    End="8,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 11]"
+          TopLeft="190.75,1030.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36"
+              Start="0,0"
+              End="0,28.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 12]"
+          TopLeft="185.25,1109.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53"
+              Start="0,0"
+              End="0,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 2]"
+          TopLeft="180,380">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-77.5"
+              Start="0,0"
+              End="0,-70">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-70" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 3]"
+          TopLeft="179,345.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56"
+              Start="0,0"
+              End="0,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 4]"
+          TopLeft="178.5,444.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38"
+              Start="0,0"
+              End="0,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 5]"
+          TopLeft="176.5,525.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51"
+              Start="0,0"
+              End="0,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 6]"
+          TopLeft="181,619.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46"
+              Start="0,0"
+              End="0,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 7]"
+          TopLeft="182,708.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.5"
+              Start="0,0"
+              End="0,27">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 8]"
+          TopLeft="181.75,786">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.5"
+              Start="0,0"
+              End="0,30">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 9]"
+          TopLeft="185,866.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40"
+              Start="0,0"
+              End="0,32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Clasifica motivos de Formulario\2  - No me ha llegado mi producto\GESTION RETAIL"
+          TopLeft="54.4523809523809,26.5039682539682" />
+        <NodeLayout
+          Size="103,42"
+          Id="Package\Clasifica motivos de Formulario\2  - No me ha llegado mi producto\MKP"
+          TopLeft="69.2380952380954,97.095238095238" />
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario\2  - No me ha llegado mi producto.PrecedenceConstraints[Restricción]"
+          TopLeft="139.452380952381,68.5039682539682">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-18.7142857142855,28.5912698412698"
+              Start="0,0"
+              End="-18.7142857142855,21.0912698412698">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.2956349206349" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.2956349206349"
+                    Point2="0,14.2956349206349"
+                    Point3="-4,14.2956349206349" />
+                  <mssgle:LineSegment
+                    End="-14.7142857142855,14.2956349206349" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-14.7142857142855,14.2956349206349"
+                    Point2="-18.7142857142855,14.2956349206349"
+                    Point3="-18.7142857142855,18.2956349206349" />
+                  <mssgle:LineSegment
+                    End="-18.7142857142855,21.0912698412698" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="387,238"
+          Size="387,281"
+          Id="Package\Clasifica motivos de Formulario\2  - No me ha llegado mi producto"
+          TopLeft="49.6111111111109,1258.16666666667" />
+        <EdgeLayout
+          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 13]"
+          TopLeft="183,1205.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="60.1111111111109,52.6666666666672"
+              Start="0,0"
+              End="60.1111111111109,45.1666666666672">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.3333333333336" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.3333333333336"
+                    Point2="0,26.3333333333336"
+                    Point3="4,26.3333333333336" />
+                  <mssgle:LineSegment
+                    End="56.1111111111109,26.3333333333336" />
+                  <mssgle:CubicBezierSegment
+                    Point1="56.1111111111109,26.3333333333336"
+                    Point2="60.1111111111109,26.3333333333336"
+                    Point3="60.1111111111109,30.3333333333336" />
+                  <mssgle:LineSegment
+                    End="60.1111111111109,45.1666666666672" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="442,1594"
+          Size="442,1637"
+          Id="Package\Clasifica motivos de Formulario"
+          TopLeft="328.277777777778,107.138888888889" />
         <NodeLayout
           Size="176,42"
           Id="Package\Corrige CUD y SKU"
@@ -15355,18 +16131,30 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="456.527777777778,204.5">
+          TopLeft="457.277777777778,204.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-54.3611111111111"
+              EndConnector="92.0000000000001,-97.3611111111111"
               Start="0,0"
-              End="0,-46.8611111111111">
+              End="92.0000000000001,-104.861111111111">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-46.8611111111111" />
+                    End="0,-115.861111111111" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-115.861111111111"
+                    Point2="0,-119.861111111111"
+                    Point3="4,-119.861111111111" />
+                  <mssgle:LineSegment
+                    End="88.0000000000001,-119.861111111111" />
+                  <mssgle:CubicBezierSegment
+                    Point1="88.0000000000001,-119.861111111111"
+                    Point2="92.0000000000001,-119.861111111111"
+                    Point3="92.0000000000001,-115.861111111111" />
+                  <mssgle:LineSegment
+                    End="92.0000000000001,-104.861111111111" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15553,154 +16341,24 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11]"
-          TopLeft="583.277777777778,131.486111111111">
+          TopLeft="770.277777777778,925.638888888889">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55.6111111111111,0"
+              EndConnector="-68.7222222222223,-770.305555555555"
               Start="0,0"
-              End="48.1111111111111,0">
+              End="-68.7222222222223,-762.805555555555">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="48.1111111111111,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Clasifica motivos de Formulario\1  Cambiar fecha de mi despacho\GESTION RETAIL"
-          TopLeft="57.75,13.4999999999999" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="291,110"
-          Size="291,153"
-          Id="Package\Clasifica motivos de Formulario\1  Cambiar fecha de mi despacho"
-          TopLeft="38,227" />
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Clasifica motivos de Formulario\10 - Cambiar la direccion de mi despacho\GESTION RETAIL"
-          TopLeft="83.5,12.75" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="304,127"
-          Size="304,43"
-          Id="Package\Clasifica motivos de Formulario\10 - Cambiar la direccion de mi despacho"
-          TopLeft="32.5000000000001,665.5" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Clasifica motivos de Formulario\18 - Copia de Boleta\CLASIFICA CASOS"
-          TopLeft="33,27.5" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="255,270"
-          Size="202,43"
-          Id="Package\Clasifica motivos de Formulario\18 - Copia de Boleta"
-          TopLeft="69,135" />
-        <NodeLayout
-          Size="193,42"
-          Id="Package\Clasifica motivos de Formulario\28 - Autorizar a un tercero a retirar mi producto\GESTION_RETAIL"
-          TopLeft="39,3.5" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="330,100"
-          Size="330,43"
-          Id="Package\Clasifica motivos de Formulario\28 - Autorizar a un tercero a retirar mi producto"
-          TopLeft="16.5000000000001,401.5" />
-        <NodeLayout
-          Size="125,42"
-          Id="Package\Clasifica motivos de Formulario\3 - Me llegó otro producto\GESTION_RETAIL"
-          TopLeft="68,16" />
-        <NodeLayout
-          Size="103,42"
-          Id="Package\Clasifica motivos de Formulario\3 - Me llegó otro producto\MKP"
-          TopLeft="81,117" />
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario\3 - Me llegó otro producto.PrecedenceConstraints[Restricción]"
-          TopLeft="131.5,58">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59"
-              Start="0,0"
-              End="0,51.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,51.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="259,215"
-          Size="259,43"
-          Id="Package\Clasifica motivos de Formulario\3 - Me llegó otro producto"
-          TopLeft="47,302.5" />
-        <NodeLayout
-          Size="173,42"
-          Id="Package\Clasifica motivos de Formulario\35 - Cambio de producto\GESTION_RETAIL"
-          TopLeft="52.25,23.5" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="330,122"
-          Size="223,43"
-          Id="Package\Clasifica motivos de Formulario\35 - Cambio de producto"
-          TopLeft="66.0000000000001,576.5" />
-        <NodeLayout
-          Size="125,42"
-          Id="Package\Clasifica motivos de Formulario\37 - Producto con alarma\GESTION RETAIL"
-          TopLeft="38.5,14.25" />
-        <NodeLayout
-          Size="103,42"
-          Id="Package\Clasifica motivos de Formulario\37 - Producto con alarma\MKP"
-          TopLeft="51,65" />
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario\37 - Producto con alarma.PrecedenceConstraints[Restricción]"
-          TopLeft="38.5,35.25">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="12.5,50.75"
-              Start="0,0"
-              End="5,50.75">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-18.5,0" />
+                    End="-64.7222222222223,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="-18.5,0"
-                    Point2="-22.5,0"
-                    Point3="-22.5,4" />
+                    Point1="-64.7222222222223,0"
+                    Point2="-68.7222222222223,0"
+                    Point3="-68.7222222222223,-4" />
                   <mssgle:LineSegment
-                    End="-22.5,46.75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-22.5,46.75"
-                    Point2="-22.5,50.75"
-                    Point3="-18.5,50.75" />
-                  <mssgle:LineSegment
-                    End="5,50.75" />
+                    End="-68.7222222222223,-762.805555555555" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15709,632 +16367,6 @@ tv
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="225,161"
-          Size="225,43"
-          Id="Package\Clasifica motivos de Formulario\37 - Producto con alarma"
-          TopLeft="71.5000000000001,823.5" />
-        <NodeLayout
-          Size="125,42"
-          Id="Package\Clasifica motivos de Formulario\4 - Me llegó incompleto\GESTION_RETAIL"
-          TopLeft="5.5,5.5" />
-        <NodeLayout
-          Size="103,42"
-          Id="Package\Clasifica motivos de Formulario\4 - Me llegó incompleto\MKP"
-          TopLeft="101,68" />
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario\4 - Me llegó incompleto.PrecedenceConstraints[Restricción]"
-          TopLeft="130.5,26.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="22,41.5"
-              Start="0,0"
-              End="22,34">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="18,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="18,0"
-                    Point2="22,0"
-                    Point3="22,4" />
-                  <mssgle:LineSegment
-                    End="22,34" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="229,165"
-          Size="215,43"
-          Id="Package\Clasifica motivos de Formulario\4 - Me llegó incompleto"
-          TopLeft="75.5,1162.5" />
-        <NodeLayout
-          Size="125,42"
-          Id="Package\Clasifica motivos de Formulario\5 - No Funciona\GESTION RETAIL"
-          TopLeft="39.4545454545455,5.90909090909088" />
-        <NodeLayout
-          Size="103,42"
-          Id="Package\Clasifica motivos de Formulario\5 - No Funciona\MKP"
-          TopLeft="73,86" />
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario\5 - No Funciona.PrecedenceConstraints[Restricción]"
-          TopLeft="101.954545454545,47.9090909090909">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="22.5454545454545,38.0909090909091"
-              Start="0,0"
-              End="22.5454545454545,30.5909090909091">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15.0454545454546" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.0454545454546"
-                    Point2="0,19.0454545454546"
-                    Point3="4,19.0454545454546" />
-                  <mssgle:LineSegment
-                    End="18.5454545454545,19.0454545454546" />
-                  <mssgle:CubicBezierSegment
-                    Point1="18.5454545454545,19.0454545454546"
-                    Point2="22.5454545454545,19.0454545454546"
-                    Point3="22.5454545454545,23.0454545454546" />
-                  <mssgle:LineSegment
-                    End="22.5454545454545,30.5909090909091" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="225,185"
-          Size="180,43"
-          Id="Package\Clasifica motivos de Formulario\5 - No Funciona"
-          TopLeft="97.5,1066.5" />
-        <NodeLayout
-          Size="125,42"
-          Id="Package\Clasifica motivos de Formulario\6 - Me llegó en mal estado\GESTION RETAIL"
-          TopLeft="40.5,12.25" />
-        <NodeLayout
-          Size="103,42"
-          Id="Package\Clasifica motivos de Formulario\6 - Me llegó en mal estado\MKP"
-          TopLeft="67,83" />
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario\6 - Me llegó en mal estado.PrecedenceConstraints[Restricción]"
-          TopLeft="103,54.25">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="15.5,28.75"
-              Start="0,0"
-              End="15.5,21.25">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,10.375" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,10.375"
-                    Point2="0,14.375"
-                    Point3="4,14.375" />
-                  <mssgle:LineSegment
-                    End="11.5,14.375" />
-                  <mssgle:CubicBezierSegment
-                    Point1="11.5,14.375"
-                    Point2="15.5,14.375"
-                    Point3="15.5,18.375" />
-                  <mssgle:LineSegment
-                    End="15.5,21.25" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="239,185"
-          Size="239,43"
-          Id="Package\Clasifica motivos de Formulario\6 - Me llegó en mal estado"
-          TopLeft="74.5000000000001,987.5" />
-        <NodeLayout
-          Size="125,42"
-          Id="Package\Clasifica motivos de Formulario\7 - Me arrepentí de mi compra\GESTION RETAIL"
-          TopLeft="45,9.75000000000006" />
-        <NodeLayout
-          Size="103,42"
-          Id="Package\Clasifica motivos de Formulario\7 - Me arrepentí de mi compra\MKP"
-          TopLeft="44,94" />
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario\7 - Me arrepentí de mi compra.PrecedenceConstraints[Restricción]"
-          TopLeft="107.5,51.7500000000001">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-12,42.2499999999999"
-              Start="0,0"
-              End="-12,34.7499999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.125" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.125"
-                    Point2="0,21.125"
-                    Point3="-4,21.125" />
-                  <mssgle:LineSegment
-                    End="-8,21.125" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-8,21.125"
-                    Point2="-12,21.125"
-                    Point3="-12,25.125" />
-                  <mssgle:LineSegment
-                    End="-12,34.7499999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="281,191"
-          Size="281,43"
-          Id="Package\Clasifica motivos de Formulario\7 - Me arrepentí de mi compra"
-          TopLeft="45.5000000000001,906.5" />
-        <NodeLayout
-          Size="140,42"
-          Id="Package\Clasifica motivos de Formulario\9 - Necesito armar mi producto\GESTION RETAIL"
-          TopLeft="56,5.25" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="252,102"
-          Size="252,43"
-          Id="Package\Clasifica motivos de Formulario\9 - Necesito armar mi producto"
-          TopLeft="49.5000000000001,482.5" />
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Clasifica motivos de Formulario\Motivos 17,33 (MACARENA FERNANDEZ)\Clasifica"
-          TopLeft="57.25,33.75" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="313,129"
-          Size="313,43"
-          Id="Package\Clasifica motivos de Formulario\Motivos 17,33 (MACARENA FERNANDEZ)"
-          TopLeft="23,743" />
-        <NodeLayout
-          Size="136,42"
-          Id="Package\Clasifica motivos de Formulario\Motivos 26, 27, 29, 31, 36, 38, 39, 40, 41, 42,43\CLASIFICA"
-          TopLeft="44.5,19.75" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="360,125"
-          Size="334,43"
-          Id="Package\Clasifica motivos de Formulario\Motivos 26, 27, 29, 31, 36, 38, 39, 40, 41, 42,43"
-          TopLeft="8.5,44" />
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint]"
-          TopLeft="172.75,87">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,48"
-              Start="0,0"
-              End="0,40.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 1]"
-          TopLeft="170,178">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="13.5,49"
-              Start="0,0"
-              End="13.5,41.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.5"
-                    Point2="0,24.5"
-                    Point3="4,24.5" />
-                  <mssgle:LineSegment
-                    End="9.5,24.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="9.5,24.5"
-                    Point2="13.5,24.5"
-                    Point3="13.5,28.5" />
-                  <mssgle:LineSegment
-                    End="13.5,41.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 10]"
-          TopLeft="186,949.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="8,38"
-              Start="0,0"
-              End="8,30.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15"
-                    Point2="0,19"
-                    Point3="4,19" />
-                  <mssgle:LineSegment
-                    End="4,19" />
-                  <mssgle:CubicBezierSegment
-                    Point1="4,19"
-                    Point2="8,19"
-                    Point3="8,23" />
-                  <mssgle:LineSegment
-                    End="8,30.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 11]"
-          TopLeft="190.75,1030.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,36"
-              Start="0,0"
-              End="0,28.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 12]"
-          TopLeft="188.75,1109.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,53"
-              Start="0,0"
-              End="0,45.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 2]"
-          TopLeft="180,380">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,-77.5"
-              Start="0,0"
-              End="0,-70">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-70" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 3]"
-          TopLeft="179,345.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,56"
-              Start="0,0"
-              End="0,48.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 4]"
-          TopLeft="178.5,444.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,38"
-              Start="0,0"
-              End="0,30.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 5]"
-          TopLeft="176.5,525.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,51"
-              Start="0,0"
-              End="0,43.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,43.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 6]"
-          TopLeft="181,619.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,46"
-              Start="0,0"
-              End="0,38.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 7]"
-          TopLeft="182,708.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,34.5"
-              Start="0,0"
-              End="0,27">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 8]"
-          TopLeft="181.75,786">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,37.5"
-              Start="0,0"
-              End="0,30">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 9]"
-          TopLeft="185,866.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40"
-              Start="0,0"
-              End="0,32.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Clasifica motivos de Formulario\2  - No me ha llegado mi producto\GESTION RETAIL"
-          TopLeft="54.4523809523809,26.5039682539682" />
-        <NodeLayout
-          Size="103,42"
-          Id="Package\Clasifica motivos de Formulario\2  - No me ha llegado mi producto\MKP"
-          TopLeft="69.2380952380954,97.095238095238" />
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario\2  - No me ha llegado mi producto.PrecedenceConstraints[Restricción]"
-          TopLeft="139.452380952381,68.5039682539682">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-18.7142857142855,28.5912698412698"
-              Start="0,0"
-              End="-18.7142857142855,21.0912698412698">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,10.2956349206349" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,10.2956349206349"
-                    Point2="0,14.2956349206349"
-                    Point3="-4,14.2956349206349" />
-                  <mssgle:LineSegment
-                    End="-14.7142857142855,14.2956349206349" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-14.7142857142855,14.2956349206349"
-                    Point2="-18.7142857142855,14.2956349206349"
-                    Point3="-18.7142857142855,18.2956349206349" />
-                  <mssgle:LineSegment
-                    End="-18.7142857142855,21.0912698412698" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="387,238"
-          Size="387,281"
-          Id="Package\Clasifica motivos de Formulario\2  - No me ha llegado mi producto"
-          TopLeft="49.6111111111109,1258.16666666667" />
-        <EdgeLayout
-          Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 13]"
-          TopLeft="186.555555555555,1205.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,52.6666666666672"
-              Start="0,0"
-              End="0,45.1666666666672">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.1666666666672" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="442,1594"
-          Size="255,43"
-          Id="Package\Clasifica motivos de Formulario"
-          TopLeft="328.277777777778,107.138888888889" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
