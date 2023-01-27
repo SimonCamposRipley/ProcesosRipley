@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Informar_Carga_Masiva_Formulario"
   DTS:PackageType="5"
-  DTS:VersionBuild="314"
-  DTS:VersionGUID="{A4697368-7E8A-47BF-A1CB-FA7BB1DD68D0}">
+  DTS:VersionBuild="321"
+  DTS:VersionGUID="{FC0BDF1E-4481-4FDE-97A7-4B0A2D6A8A4E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADE0gij3WrT46slmr/sJD/b0jjLqXGOuUFuvMa0/UwDrAAAAAAOgAAAAAIAACAAAAAM5xrPRztDugrZyrD/tos0iAWXgx0WNOlywTHRHxlvqyAAAADcOp/zdXN4SSIphAuTuBqL+CETN+IrL7P/SB8BFrvtD0AAAAAn+FCCb3rekUr/UYd4b5ifTUGdcE+sTAZuwLtYbTPD0iTNKX+8apFvenNe0iUDrq5557BIgXKTNepN/FMpEbU/</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADVWX8tYo8tduL3SLIkbq3FchzBwBFhjriLA/ZJjADffgAAAAAOgAAAAAIAACAAAADNSX22AU/rgWWzRol4VvzqbE9OEu2G5hMbnrS9j24djCAAAAC+QvkMmi/YyYXuRC4Az6xTKXnD5QI0jBwUKcSOUiz41kAAAADZBH1Ffeu4DqHYuTMHxIv7GLsH5fSNL9daYvg9Cab5TO3NoPjO6CAGyomAbNNl6deM1XL2J41BtlGZRa2y1b9h</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1080,11 +1080,11 @@
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="True"
+          IsExpanded="False"
           PanelSize="296,746"
-          Size="296,789"
+          Size="240,43"
           Id="Package\Correos\Envío de correos Formulario"
-          TopLeft="31.333334128062,5.5" />
+          TopLeft="33.333334128062,11.5" />
         <NodeLayout
           Size="110,42"
           Id="Package\Correos\Envìo de correos Macarena Fernandez\Banco"
@@ -1144,9 +1144,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1168,9 +1166,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1192,9 +1188,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1216,9 +1210,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1240,9 +1232,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1264,9 +1254,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1288,9 +1276,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1312,9 +1298,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -1336,9 +1320,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -1350,41 +1332,33 @@
           TopLeft="5.5,96.549206872668" />
         <EdgeLayout
           Id="Package\Correos.PrecedenceConstraints[Constraint]"
-          TopLeft="31.333334128062,400">
+          TopLeft="152.416667064031,54.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="120.166665871938,-303.450793127332"
+              EndConnector="0,42.049206872668"
               Start="0,0"
-              End="120.166665871938,-295.950793127332">
+              End="0,34.549206872668">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="116.166665871938,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="116.166665871938,0"
-                    Point2="120.166665871938,0"
-                    Point3="120.166665871938,-4" />
-                  <mssgle:LineSegment
-                    End="120.166665871938,-295.950793127332" />
+                    End="0,34.549206872668" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="False"
-          PanelSize="331,864"
+          PanelSize="331,1215"
           Size="141,43"
           Id="Package\Correos"
-          TopLeft="189,386" />
+          TopLeft="189,388" />
         <NodeLayout
           Size="155,42"
           Id="Package\Mantencion Bases\Compacta LOG"
@@ -1663,14 +1637,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37"
+              EndConnector="0,39"
               Start="0,0"
-              End="0,29.5">
+              End="0,31.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.5" />
+                    End="0,31.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
