@@ -11,8 +11,8 @@
   DTS:LocaleID="13322"
   DTS:ObjectName="CARGA_TIENDA_NUEVO"
   DTS:PackageType="5"
-  DTS:VersionBuild="429"
-  DTS:VersionGUID="{1BB6A23E-E696-4475-9A96-640E562A483B}">
+  DTS:VersionBuild="435"
+  DTS:VersionGUID="{DD6BBF1D-EEEC-44F7-9909-B3F6D1C3D415}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -40,7 +40,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABqsl1gDk0FjTy57/FSA5dVEisDANpml8LUhJnwBn0fNwAAAAAOgAAAAAIAACAAAAA0t343iZfxZb6PnI/TR/vH1a+eCgTjL0vmgMaH192rIyAAAAALYldi5+6Z3LOps3Q1lTGD+3dbLaCEI4pUshpj5K19ekAAAACNn+quaH7VrovhsU2MgWnPymrCdfYFZzkwtBku8Fk64IWMtDgaR2AcJqjeqvh5RlgmEXpYwvfCZ+OLfrsv4acr</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAkyflqVqhbsdkCaJx94GDVrv4cEMJhBPytfzop86Fm5wAAAAAOgAAAAAIAACAAAACweMDYhKpT7gYCaM18UWowWe0SDvnZ3Xc6QP4rM9H06yAAAACzFcjD8ibTrVKU2jo+QVT0P4M2hXPdnrA9divs7aNIdEAAAADi8eTIzCShxRxU/P/QNQfTKgt6FLHmT5Q5B7PUUeXqGnNcw6rFQbhe+dH0mmZ7XwCXh3XPv/A7H58oTYOkzjTD</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -57,7 +57,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACh82UNg3eP1Bgv6vSeALTrMUO+Itv7ygj9lZAtk5T7VgAAAAAOgAAAAAIAACAAAABXD59LYX78+KHM27YkCoibt3VIxxqZv2arsWp7ewFkiiAAAABGt5vMhIl10bJBN8rn2DDBDPe7VHiHYZJha6Ua1eL+I0AAAABpRj2RqsfdHfEEnf1KdPgqHB8Pf6FGpuJ3Ne1qwP3ynaUSgrnyeZPOoC80DyZznX/aRoxO1t/LxE5jbkZGWSUB</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADdonCTIMm42kxCq1IaoJWrBGIT4I5zv1c1gpPT1nLdrQAAAAAOgAAAAAIAACAAAACQ9fSBMh2H64GRinUwzZLt9OjGu24ghT1mbgWzEv5ZViAAAAC5fkB+GV7x4od+dPmHTUy+rOJ/8zlOF2qJ+Sbf1FGSTEAAAABJdkUPUYZr0sBj6qqTe9YjCPpT4phVEBUmwNNNHYO0JAK2Cq8U1Fw7hD4yV9P3WK7GS7u/mlWa0A7UzcgA5XUS</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1018,7 +1018,7 @@
           DTS:ExecutableType="Microsoft.SendMailTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="ERROR DESCARGA FORMULARIO TIENDA SGO"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SendMailTask:SendMailTaskData
@@ -1202,8 +1202,7 @@
                           name="EMAIL_CLIENTE" />
                         <externalMetadataColumn
                           refId="Package\Paso 1 - Descarga de Datos\Obtiene datos de SGO y MTO\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[TELEFONO_CLIENTE]"
-                          dataType="wstr"
-                          length="250"
+                          dataType="nText"
                           name="TELEFONO_CLIENTE" />
                       </externalMetadataColumns>
                     </input>
@@ -1329,7 +1328,7 @@
                         <inputColumn
                           refId="Package\Paso 1 - Descarga de Datos\Obtiene datos de SGO y MTO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].Columns[CLIENTE]"
                           cachedDataType="wstr"
-                          cachedLength="100"
+                          cachedLength="200"
                           cachedName="CLIENTE"
                           externalMetadataColumnId="Package\Paso 1 - Descarga de Datos\Obtiene datos de SGO y MTO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[CLIENTE]"
                           lineageId="Package\Paso 1 - Descarga de Datos\Obtiene datos de SGO y MTO\MTO.Outputs[Salida de origen de OLE DB].Columns[CLIENTE]" />
@@ -1377,8 +1376,7 @@
                           name="EMAIL_CLIENTE" />
                         <externalMetadataColumn
                           refId="Package\Paso 1 - Descarga de Datos\Obtiene datos de SGO y MTO\Destino de OLE DB 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[TELEFONO_CLIENTE]"
-                          dataType="wstr"
-                          length="250"
+                          dataType="nText"
                           name="TELEFONO_CLIENTE" />
                       </externalMetadataColumns>
                     </input>
@@ -1513,7 +1511,7 @@ where nroventa in (select LEFT(oc,LEN(oc)-2)from [dbo].[DESCARGA_TIENDA] where l
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
                           externalMetadataColumnId="Package\Paso 1 - Descarga de Datos\Obtiene datos de SGO y MTO\MTO.Outputs[Salida de origen de OLE DB].ExternalColumns[CLIENTE]"
-                          length="100"
+                          length="200"
                           lineageId="Package\Paso 1 - Descarga de Datos\Obtiene datos de SGO y MTO\MTO.Outputs[Salida de origen de OLE DB].Columns[CLIENTE]"
                           name="CLIENTE"
                           truncationRowDisposition="FailComponent" />
@@ -2133,11 +2131,10 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY\Ordena Datos\Armado_CREACION.Outputs[Salida de origen de OLE DB].Columns[Telefono]"
-                              dataType="wstr"
+                              dataType="nText"
                               errorOrTruncationOperation="Conversión"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY\Ordena Datos\Armado_CREACION.Outputs[Salida de origen de OLE DB].ExternalColumns[Telefono]"
-                              length="250"
                               lineageId="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY\Ordena Datos\Armado_CREACION.Outputs[Salida de origen de OLE DB].Columns[Telefono]"
                               name="Telefono"
                               truncationRowDisposition="FailComponent" />
@@ -2289,8 +2286,7 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
                               name="NOMBRE_CLIENTE" />
                             <externalMetadataColumn
                               refId="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY\Ordena Datos\Armado_CREACION.Outputs[Salida de origen de OLE DB].ExternalColumns[Telefono]"
-                              dataType="wstr"
-                              length="250"
+                              dataType="nText"
                               name="Telefono" />
                             <externalMetadataColumn
                               refId="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY\Ordena Datos\Armado_CREACION.Outputs[Salida de origen de OLE DB].ExternalColumns[Campana]"
@@ -2382,8 +2378,7 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
                               name="NOMBRE_CLIENTE" />
                             <outputColumn
                               refId="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY\Ordena Datos\Armado_CREACION.Outputs[Salida de error de origen de OLE DB].Columns[Telefono]"
-                              dataType="wstr"
-                              length="250"
+                              dataType="nText"
                               lineageId="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY\Ordena Datos\Armado_CREACION.Outputs[Salida de error de origen de OLE DB].Columns[Telefono]"
                               name="Telefono" />
                             <outputColumn
@@ -2765,8 +2760,7 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
                               lineageId="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY\Ordena Datos\Armado_CREACION.Outputs[Salida de origen de OLE DB].Columns[NOMBRE_CLIENTE]" />
                             <inputColumn
                               refId="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Telefono]"
-                              cachedDataType="wstr"
-                              cachedLength="250"
+                              cachedDataType="nText"
                               cachedName="Telefono"
                               externalMetadataColumnId="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY\Ordena Datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[ges_telcom1]"
                               lineageId="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY\Ordena Datos\Armado_CREACION.Outputs[Salida de origen de OLE DB].Columns[Telefono]" />
@@ -3692,7 +3686,7 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
           PanelSize="275,315"
           Size="275,43"
           Id="Package\Paso 1 - Descarga de Datos\Descarga casos desde formulario"
-          TopLeft="328.5,110.5" />
+          TopLeft="330.5,112.5" />
         <NodeLayout
           Size="303,42"
           Id="Package\Paso 1 - Descarga de Datos\ERROR DESCARGA FORMULARIO TIENDA"
@@ -3711,30 +3705,30 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
           TopLeft="368,209.5" />
         <EdgeLayout
           Id="Package\Paso 1 - Descarga de Datos.PrecedenceConstraints[Restricción]"
-          TopLeft="510.5,153.5">
+          TopLeft="512.5,155.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-29.5,56"
+              EndConnector="-31.5,54"
               Start="0,0"
-              End="-29.5,48.5">
+              End="-31.5,46.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.5943600867679" />
+                    End="0,17.7874186550976" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,18.5943600867679"
-                    Point2="0,22.5943600867679"
-                    Point3="-4,22.5943600867679" />
+                    Point1="0,17.7874186550976"
+                    Point2="0,21.7874186550976"
+                    Point3="-4,21.7874186550976" />
                   <mssgle:LineSegment
-                    End="-25.5,22.5943600867679" />
+                    End="-27.5,21.7874186550976" />
                   <mssgle:CubicBezierSegment
-                    Point1="-25.5,22.5943600867679"
-                    Point2="-29.5,22.5943600867679"
-                    Point3="-29.5,26.5943600867679" />
+                    Point1="-27.5,21.7874186550976"
+                    Point2="-31.5,21.7874186550976"
+                    Point3="-31.5,25.7874186550976" />
                   <mssgle:LineSegment
-                    End="-29.5,48.5" />
+                    End="-31.5,46.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3783,18 +3777,18 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Paso 1 - Descarga de Datos.PrecedenceConstraints[Restricción 22]"
-          TopLeft="465,47.5">
+          TopLeft="466,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,63"
+              EndConnector="0,65"
               Start="0,0"
-              End="0,55.5">
+              End="0,57.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55.5" />
+                    End="0,57.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3807,37 +3801,37 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Paso 1 - Descarga de Datos.PrecedenceConstraints[Restricción 5]"
-          TopLeft="421.5,153.5">
+          TopLeft="423.5,155.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-264.5,57"
+              EndConnector="-266.5,55"
               Start="0,0"
-              End="-264.5,49.5">
+              End="-266.5,47.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.997830802603" />
+                    End="0,18.1908893709328" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,18.997830802603"
-                    Point2="0,22.997830802603"
-                    Point3="-4,22.997830802603" />
+                    Point1="0,18.1908893709328"
+                    Point2="0,22.1908893709328"
+                    Point3="-4,22.1908893709328" />
                   <mssgle:LineSegment
-                    End="-260.5,22.997830802603" />
+                    End="-262.5,22.1908893709328" />
                   <mssgle:CubicBezierSegment
-                    Point1="-260.5,22.997830802603"
-                    Point2="-264.5,22.997830802603"
-                    Point3="-264.5,26.997830802603" />
+                    Point1="-262.5,22.1908893709328"
+                    Point2="-266.5,22.1908893709328"
+                    Point3="-266.5,26.1908893709328" />
                   <mssgle:LineSegment
-                    End="-264.5,49.5" />
+                    End="-266.5,47.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-143.77869140625,27.997830802603,23.0573828125,9.421875"
+              BoundingBox="-144.77869140625,27.1908893709328,23.0573828125,9.421875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -3885,7 +3879,7 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="250,205"
+          PanelSize="258,205"
           Size="258,248"
           Id="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY"
           TopLeft="32.6666666997803,143.5" />
@@ -4075,7 +4069,7 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
     design-time-name="Package\Paso 1 - Descarga de Datos\Descarga casos desde formulario\Descarga de Formulario">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="162,42"
           Id="Package\Paso 1 - Descarga de Datos\Descarga casos desde formulario\Descarga de Formulario\Descarga_tienda"
@@ -4103,7 +4097,9 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4139,7 +4135,7 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
     design-time-name="Package\Paso 1 - Descarga de Datos\Obtiene datos de SGO y MTO">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="103,42"
           Id="Package\Paso 1 - Descarga de Datos\Obtiene datos de SGO y MTO\SGO"
@@ -4187,7 +4183,9 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4221,7 +4219,9 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4245,6 +4245,19 @@ WHERE Estado_auris = 'crear' and rut is not null) as a) as b</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Paso 1 - Descarga de Datos\Obtiene datos de SGO y MTO\Destino de OLE DB 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Paso 1 - Descarga de Datos\Obtiene datos de SGO y MTO\Destino de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

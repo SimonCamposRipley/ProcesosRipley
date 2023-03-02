@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="133"
-  DTS:VersionGUID="{95254EA4-BE65-42A8-B001-7E44678B0E98}">
+  DTS:VersionBuild="143"
+  DTS:VersionGUID="{AFC290DE-3E26-4C6C-9E1C-836818ABF2DD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABfUcxmz22RWjjptlk3pxNoAKFKHxnXnmMXiw37Ehhm9QAAAAAOgAAAAAIAACAAAACajcvYpuzcr26B9rQ8gCir56rX24kIb5Ov9NddCTjhhCAAAACfR/7fToUFF1E0AipC9Y3nTcCzGWdmTqdU5ugcbx1PnUAAAADrkPjX+XtRGA8c0O7IZbGzE88GVIge+5idRuY5W8hmnZOJBbrlV6vqnpf6B5+6ZsG0CTlPtvi1NRrnR/WCagu7</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC3+Jt8ehsAN92lAPKLEiow9ESKTCiDpkwvFFSVkOkmZwAAAAAOgAAAAAIAACAAAADEqm8oNMLpx5rMBiVyslMvGVjrWZTFKSBCKxB8eKEqkSAAAABkcPE+7fbhxhyXUxFPC0naLgLMkIE5ZR26KfN3DG2EkkAAAAA56c8d3hxb6FFzCPEEpZQ8H6o8gqXIlnGBc44OrzA65yd2eh6no7anJZb0DhU/yTSutmx9aByamQ1xWXwkr/dm</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADV++xpocetIIthCscyn6DkVHU+FUuu7ot2xNZwSkjH8AAAAAAOgAAAAAIAACAAAABXmdOBQRsijjSAYlgmA9lXsXyYmEIDkUve7NrahMJ9qiAAAACePBmwihSfUdEMqqDFczqm1WIkSzqdj479iFNbRj3KUkAAAABzYgaqZciJswue7rVu4Hc42A2t9YqytMyNh3hcH/XH7DNVLns7xY9rTTEvlpAeXkEvMtjYv3vmduyjW0nV4YjK</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABTMrO5iwi80yDyYyKgtELTZ1kJNQXXp1gHn6Tp2X/TwAAAAAAOgAAAAAIAACAAAABmIU1C7rHNy8w6VPRjCGk8kPO/t1cIgjHENca+JYB4yyAAAAC5pD9RXM29SvGNdnCAgaua0uX3UkN6wP6L4lwOWVgF60AAAABakaOQ0xF30LpKsFcr3yP37aDIQGikplPQBDDuIhp48zYwU1ser/53BaA2vqBhg7gcRNg1oFPnuJZv8L355GdW</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -210,6 +210,7 @@
           DTS:refId="Package\Clasifica motivos de Formulario\1  Cambiar fecha de mi despacho"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Contenedor de secuencias"
+          DTS:Disabled="True"
           DTS:DTSID="{5D47FAE5-8943-419C-A049-F5331B3A3ABA}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -238,6 +239,7 @@
           DTS:refId="Package\Clasifica motivos de Formulario\10 - Cambiar la direccion de mi despacho"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Contenedor de secuencias"
+          DTS:Disabled="True"
           DTS:DTSID="{387D70A1-8E20-4379-9219-BAF4645EF92F}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -294,7 +296,6 @@
           DTS:refId="Package\Clasifica motivos de Formulario\2  - No me ha llegado mi producto"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Contenedor de secuencias"
-          DTS:Disabled="True"
           DTS:DTSID="{8C665381-3E69-48B6-82F1-BEF09C1D4A27}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -349,6 +350,7 @@
           DTS:refId="Package\Clasifica motivos de Formulario\28 - Autorizar a un tercero a retirar mi producto"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Contenedor de secuencias"
+          DTS:Disabled="True"
           DTS:DTSID="{B5D9D4F9-C554-49B7-8D61-E3F9EC38A001}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -377,6 +379,7 @@
           DTS:refId="Package\Clasifica motivos de Formulario\3 - Me llegó otro producto"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Contenedor de secuencias"
+          DTS:Disabled="True"
           DTS:DTSID="{77427537-1581-43D9-BE9A-ECEC85A210C5}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -431,6 +434,7 @@
           DTS:refId="Package\Clasifica motivos de Formulario\35 - Cambio de producto"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Contenedor de secuencias"
+          DTS:Disabled="True"
           DTS:DTSID="{CCCF5F09-D731-47B1-B99A-1EAF02467E49}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -459,6 +463,7 @@
           DTS:refId="Package\Clasifica motivos de Formulario\37 - Producto con alarma"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Contenedor de secuencias"
+          DTS:Disabled="True"
           DTS:DTSID="{673E33E4-7B2D-49D1-8E09-9799ABC7E7B8}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -513,6 +518,7 @@
           DTS:refId="Package\Clasifica motivos de Formulario\4 - Me llegó incompleto"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Contenedor de secuencias"
+          DTS:Disabled="True"
           DTS:DTSID="{5618CDD3-EFF6-4C19-B2D2-6689E426DB31}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -567,6 +573,7 @@
           DTS:refId="Package\Clasifica motivos de Formulario\5 - No Funciona"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Contenedor de secuencias"
+          DTS:Disabled="True"
           DTS:DTSID="{2058D1E2-DAFE-4AB9-ABDD-AF26A812B522}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -621,6 +628,7 @@
           DTS:refId="Package\Clasifica motivos de Formulario\6 - Me llegó en mal estado"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Contenedor de secuencias"
+          DTS:Disabled="True"
           DTS:DTSID="{C66F4751-3971-4BB5-B720-CEAC65D1FA74}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -675,6 +683,7 @@
           DTS:refId="Package\Clasifica motivos de Formulario\7 - Me arrepentí de mi compra"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Contenedor de secuencias"
+          DTS:Disabled="True"
           DTS:DTSID="{25499D67-AA85-4E83-A2CF-0E0656EAEA59}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -710,7 +719,7 @@
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{8FE4BC8B-BCE9-4C55-A17E-EDD396A34F37}"
-                  SQLTask:SqlStatementSource="update descarga_formulario set tipificacion_auris = 'ACM' &#xA;where motivo = 7 and &#xA;ESTADO_AURIS = 'CREAR' and &#xA;CAMPAÑA='MERCADO RIPLEY'&#xA;&#xA;update descarga_formulario set tipificacion_auris = 'ACMR' &#xA;where motivo = 7 and &#xA;ESTADO_AURIS = 'CREAR' and &#xA;CAMPAÑA='MERCADO RIPLEY'&#xA;and [mot_cliente] in ('No recibí mi compra en el tiempo estimado', 'Me cambiaron la fecha de despacho')&#xA;&#xA;update descarga_formulario set ESTADO_AURIS = 'CREAR',CAMPAÑA='MERCADO RIPLEY',tipificacion_auris = 'ACM'&#xA;where motivo = 7 and &#xA;[mot_cliente] is null and&#xA;ESTADO_AURIS = 'CREAR' and &#xA;CAMPAÑA='MERCADO RIPLEY'&#xA;&#xA;update descarga_formulario set tipificacion_auris = 'MAIL - INSISTENCIA',CAMPAÑA='MERCADO RIPLEY' WHERE motivo = 7 AND CAMPAÑA='MERCADO RIPLEY' AND ESTADO_AURIS = 'ABIERTO'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="update descarga_formulario set tipificacion_auris = 'ACM' &#xA;where motivo = 7 and &#xA;ESTADO_AURIS = 'CREAR' and &#xA;CAMPAÑA='MERCADO RIPLEY'&#xA;&#xA;update descarga_formulario set tipificacion_auris = 'ACMR' &#xA;where motivo = 7 and &#xA;ESTADO_AURIS = 'CREAR' and &#xA;CAMPAÑA='MERCADO RIPLEY'&#xA;and [mot_cliente] in ('No recibí mi compra en el tiempo estimado', 'Me cambiaron la fecha de despacho')&#xA;&#xA;update descarga_formulario set ESTADO_AURIS = 'CREAR',CAMPAÑA='MERCADO RIPLEY',tipificacion_auris = 'ACM'&#xA;where motivo = 7 and &#xA;[mot_cliente] is null and&#xA;ESTADO_AURIS = 'CREAR' and &#xA;CAMPAÑA='MERCADO RIPLEY'&#xA;&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -729,6 +738,7 @@
           DTS:refId="Package\Clasifica motivos de Formulario\9 - Necesito armar mi producto"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Contenedor de secuencias"
+          DTS:Disabled="True"
           DTS:DTSID="{169FA761-E591-46B4-8885-C67C0CB9204E}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -757,6 +767,7 @@
           DTS:refId="Package\Clasifica motivos de Formulario\Motivos 17,33 (MACARENA FERNANDEZ)"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Contenedor de secuencias"
+          DTS:Disabled="True"
           DTS:DTSID="{A943D171-9C59-4D90-B22F-AE2B054960F0}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -785,6 +796,7 @@
           DTS:refId="Package\Clasifica motivos de Formulario\Motivos 26, 27, 29, 31, 36, 38, 39, 40, 41, 42,43"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Contenedor de secuencias"
+          DTS:Disabled="True"
           DTS:DTSID="{8186CB06-20D3-4D6B-B400-3D170193A9FF}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -929,6 +941,7 @@
       DTS:refId="Package\Corrige CUD y SKU"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
+      DTS:Disabled="True"
       DTS:DTSID="{85F55415-3C8B-48B2-B16E-8EB788127A17}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -9254,6 +9267,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
       DTS:refId="Package\Descarga de Datos"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
+      DTS:Disabled="True"
       DTS:DTSID="{4543B056-1370-45A6-BDBB-EBB05CCEC4A1}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -13966,7 +13980,6 @@ tv
       DTS:refId="Package\Genera INSISTENCIAS"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
-      DTS:Disabled="True"
       DTS:DTSID="{FCF81F72-1D64-4EDE-A06C-BE9B7C144B22}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -13983,6 +13996,7 @@ tv
       DTS:refId="Package\Identifica Campañas"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
+      DTS:Disabled="True"
       DTS:DTSID="{0316D926-FA6C-44FB-A6EA-4BBC93AB4181}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -13999,6 +14013,7 @@ tv
       DTS:refId="Package\Identifica casos abiertos"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
+      DTS:Disabled="True"
       DTS:DTSID="{D4189E1E-1C2F-41BD-B1EB-9ECFB5B0E489}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -14015,6 +14030,7 @@ tv
       DTS:refId="Package\Limpieza en caso que falle paso 2"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
+      DTS:Disabled="True"
       DTS:DTSID="{D81A5CA9-1D45-473B-BBCA-E4B307A9F8D1}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -14031,7 +14047,6 @@ tv
       DTS:refId="Package\MAILS"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
-      DTS:Disabled="True"
       DTS:DTSID="{44D04F29-7427-4A17-ADF2-29DD7C3A5175}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -14102,7 +14117,6 @@ tv
       DTS:refId="Package\Marcacion MySQL"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Tarea Ejecutar SQL"
-      DTS:Disabled="True"
       DTS:DTSID="{27eb7550-17ec-4643-8422-d693c0640ac3}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -14428,7 +14442,9 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14450,7 +14466,9 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14472,7 +14490,9 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -14494,7 +14514,7 @@ tv
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="291,110"
-          Size="291,43"
+          Size="266,43"
           Id="Package\Clasifica motivos de Formulario\1  Cambiar fecha de mi despacho"
           TopLeft="38,227" />
         <NodeLayout
@@ -14511,14 +14531,14 @@ tv
         <NodeLayout
           Size="177,42"
           Id="Package\Clasifica motivos de Formulario\18 - Copia de Boleta\CLASIFICA CASOS"
-          TopLeft="33,27.5" />
+          TopLeft="34,61.5" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="255,270"
           Size="255,43"
           Id="Package\Clasifica motivos de Formulario\18 - Copia de Boleta"
-          TopLeft="68.1666666666666,138.333333333333" />
+          TopLeft="72.1666666666666,138.333333333333" />
         <NodeLayout
           Size="170,42"
           Id="Package\Clasifica motivos de Formulario\2  - No me ha llegado mi producto\GESTION RETAIL"
@@ -14563,9 +14583,9 @@ tv
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="387,238"
-          Size="267,43"
+          Size="387,281"
           Id="Package\Clasifica motivos de Formulario\2  - No me ha llegado mi producto"
           TopLeft="49.6111111111109,1258.16666666667" />
         <NodeLayout
@@ -14606,16 +14626,14 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="259,215"
-          Size="259,43"
+          Size="227,43"
           Id="Package\Clasifica motivos de Formulario\3 - Me llegó otro producto"
           TopLeft="47,302.5" />
         <NodeLayout
@@ -14626,7 +14644,7 @@ tv
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="330,122"
-          Size="223,43"
+          Size="330,43"
           Id="Package\Clasifica motivos de Formulario\35 - Cambio de producto"
           TopLeft="66.0000000000001,576.5" />
         <NodeLayout
@@ -14668,9 +14686,7 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -14713,18 +14729,16 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="229,165"
-          Size="215,43"
+          Size="229,43"
           Id="Package\Clasifica motivos de Formulario\4 - Me llegó incompleto"
-          TopLeft="75.5,1162.5" />
+          TopLeft="77.5,1163.5" />
         <NodeLayout
           Size="125,42"
           Id="Package\Clasifica motivos de Formulario\5 - No Funciona\GESTION RETAIL"
@@ -14764,18 +14778,16 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="225,185"
-          Size="180,43"
+          Size="225,43"
           Id="Package\Clasifica motivos de Formulario\5 - No Funciona"
-          TopLeft="97.5,1066.5" />
+          TopLeft="91.5,1069.5" />
         <NodeLayout
           Size="125,42"
           Id="Package\Clasifica motivos de Formulario\6 - Me llegó en mal estado\GESTION RETAIL"
@@ -14815,16 +14827,14 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="239,185"
-          Size="239,43"
+          Size="231,43"
           Id="Package\Clasifica motivos de Formulario\6 - Me llegó en mal estado"
           TopLeft="74.5000000000001,987.5" />
         <NodeLayout
@@ -14866,9 +14876,7 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -14877,7 +14885,7 @@ tv
           PanelSize="281,191"
           Size="281,43"
           Id="Package\Clasifica motivos de Formulario\7 - Me arrepentí de mi compra"
-          TopLeft="45.5000000000001,906.5" />
+          TopLeft="46.5000000000001,909.5" />
         <NodeLayout
           Size="140,42"
           Id="Package\Clasifica motivos de Formulario\9 - Necesito armar mi producto\GESTION RETAIL"
@@ -14908,35 +14916,23 @@ tv
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="360,125"
-          Size="334,43"
+          Size="360,43"
           Id="Package\Clasifica motivos de Formulario\Motivos 26, 27, 29, 31, 36, 38, 39, 40, 41, 42,43"
-          TopLeft="8.5,44" />
+          TopLeft="24.5,44" />
         <EdgeLayout
           Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint]"
-          TopLeft="175.5,87">
+          TopLeft="202.083333333333,87">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="20.1666666666666,51.3333333333334"
+              EndConnector="0,51.333333333333"
               Start="0,0"
-              End="20.1666666666666,43.8333333333334">
+              End="0,43.833333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.6666666666667" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.6666666666667"
-                    Point2="0,25.6666666666667"
-                    Point3="4,25.6666666666667" />
-                  <mssgle:LineSegment
-                    End="16.1666666666666,25.6666666666667" />
-                  <mssgle:CubicBezierSegment
-                    Point1="16.1666666666666,25.6666666666667"
-                    Point2="20.1666666666666,25.6666666666667"
-                    Point3="20.1666666666666,29.6666666666667" />
-                  <mssgle:LineSegment
-                    End="20.1666666666666,43.8333333333334" />
+                    End="0,43.833333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14947,30 +14943,30 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 1]"
-          TopLeft="195.666666666667,181.333333333333">
+          TopLeft="199.666666666667,181.333333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-12.1666666666666,45.6666666666666"
+              EndConnector="-28.6666666666666,45.666666666667"
               Start="0,0"
-              End="-12.1666666666666,38.1666666666666">
+              End="-28.6666666666666,38.166666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.8333333333333" />
+                    End="0,18.8333333333335" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,18.8333333333333"
-                    Point2="0,22.8333333333333"
-                    Point3="-4,22.8333333333333" />
+                    Point1="0,18.8333333333335"
+                    Point2="0,22.8333333333335"
+                    Point3="-4,22.8333333333335" />
                   <mssgle:LineSegment
-                    End="-8.16666666666663,22.8333333333333" />
+                    End="-24.6666666666666,22.8333333333335" />
                   <mssgle:CubicBezierSegment
-                    Point1="-8.16666666666663,22.8333333333333"
-                    Point2="-12.1666666666666,22.8333333333333"
-                    Point3="-12.1666666666666,26.8333333333333" />
+                    Point1="-24.6666666666666,22.8333333333335"
+                    Point2="-28.6666666666666,22.8333333333335"
+                    Point3="-28.6666666666666,26.8333333333335" />
                   <mssgle:LineSegment
-                    End="-12.1666666666666,38.1666666666666" />
+                    End="-28.6666666666666,38.166666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14981,30 +14977,18 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 10]"
-          TopLeft="186,949.5">
+          TopLeft="188.5,952.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="8,38"
+              EndConnector="0,35"
               Start="0,0"
-              End="8,30.5">
+              End="0,27.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15"
-                    Point2="0,19"
-                    Point3="4,19" />
-                  <mssgle:LineSegment
-                    End="4,19" />
-                  <mssgle:CubicBezierSegment
-                    Point1="4,19"
-                    Point2="8,19"
-                    Point3="8,23" />
-                  <mssgle:LineSegment
-                    End="8,30.5" />
+                    End="0,27.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15015,18 +14999,30 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 11]"
-          TopLeft="190.75,1030.5">
+          TopLeft="190,1030.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,36"
+              EndConnector="13.9999999999999,39"
               Start="0,0"
-              End="0,28.5">
+              End="13.9999999999999,31.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.5" />
+                    End="0,15.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.5"
+                    Point2="0,19.5"
+                    Point3="4,19.5" />
+                  <mssgle:LineSegment
+                    End="9.99999999999989,19.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="9.99999999999989,19.5"
+                    Point2="13.9999999999999,19.5"
+                    Point3="13.9999999999999,23.5" />
+                  <mssgle:LineSegment
+                    End="13.9999999999999,31.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15037,18 +15033,30 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 12]"
-          TopLeft="188.75,1109.5">
+          TopLeft="204,1112.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,53"
+              EndConnector="-12,51"
               Start="0,0"
-              End="0,45.5">
+              End="-12,43.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.5" />
+                    End="0,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.5"
+                    Point2="0,25.5"
+                    Point3="-4,25.5" />
+                  <mssgle:LineSegment
+                    End="-8,25.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-8,25.5"
+                    Point2="-12,25.5"
+                    Point3="-12,29.5" />
+                  <mssgle:LineSegment
+                    End="-12,43.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15059,18 +15067,30 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 13]"
-          TopLeft="183.055555555555,1205.5">
+          TopLeft="192,1206.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,52.6666666666699"
+              EndConnector="51.1111111111109,51.6666666666699"
               Start="0,0"
-              End="0,45.1666666666699">
+              End="51.1111111111109,44.1666666666699">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.1666666666699" />
+                    End="0,21.833333333335" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.833333333335"
+                    Point2="0,25.833333333335"
+                    Point3="4,25.833333333335" />
+                  <mssgle:LineSegment
+                    End="47.1111111111109,25.833333333335" />
+                  <mssgle:CubicBezierSegment
+                    Point1="47.1111111111109,25.833333333335"
+                    Point2="51.1111111111109,25.833333333335"
+                    Point3="51.1111111111109,29.833333333335" />
+                  <mssgle:LineSegment
+                    End="51.1111111111109,44.1666666666699" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15081,18 +15101,30 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 2]"
-          TopLeft="180,270">
+          TopLeft="171,270">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,32.5"
+              EndConnector="-10.5,32.5"
               Start="0,0"
-              End="0,25">
+              End="-10.5,25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25" />
+                    End="0,12.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.25"
+                    Point2="0,16.25"
+                    Point3="-4,16.25" />
+                  <mssgle:LineSegment
+                    End="-6.5,16.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6.5,16.25"
+                    Point2="-10.5,16.25"
+                    Point3="-10.5,20.25" />
+                  <mssgle:LineSegment
+                    End="-10.5,25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15103,18 +15135,30 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 3]"
-          TopLeft="179,345.5">
+          TopLeft="160.5,345.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,56"
+              EndConnector="21.0000000000001,56"
               Start="0,0"
-              End="0,48.5">
+              End="21.0000000000001,48.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.5" />
+                    End="0,24" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24"
+                    Point2="0,28"
+                    Point3="4,28" />
+                  <mssgle:LineSegment
+                    End="17.0000000000001,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.0000000000001,28"
+                    Point2="21.0000000000001,28"
+                    Point3="21.0000000000001,32" />
+                  <mssgle:LineSegment
+                    End="21.0000000000001,48.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15147,18 +15191,30 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 5]"
-          TopLeft="176.5,525.5">
+          TopLeft="175.5,525.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,51"
+              EndConnector="55.5,51"
               Start="0,0"
-              End="0,43.5">
+              End="55.5,43.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,43.5" />
+                    End="0,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.5"
+                    Point2="0,25.5"
+                    Point3="4,25.5" />
+                  <mssgle:LineSegment
+                    End="51.5,25.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51.5,25.5"
+                    Point2="55.5,25.5"
+                    Point3="55.5,29.5" />
+                  <mssgle:LineSegment
+                    End="55.5,43.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15169,18 +15225,30 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 6]"
-          TopLeft="181.416666666667,619.5">
+          TopLeft="231,619.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46"
+              EndConnector="-45.6666666666666,46"
               Start="0,0"
-              End="0,38.5">
+              End="-45.6666666666666,38.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.5" />
+                    End="0,19" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19"
+                    Point2="0,23"
+                    Point3="-4,23" />
+                  <mssgle:LineSegment
+                    End="-41.6666666666666,23" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-41.6666666666666,23"
+                    Point2="-45.6666666666666,23"
+                    Point3="-45.6666666666666,27" />
+                  <mssgle:LineSegment
+                    End="-45.6666666666666,38.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15235,18 +15303,18 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Clasifica motivos de Formulario.PrecedenceConstraints[Constraint 9]"
-          TopLeft="185,866.5">
+          TopLeft="185.5,866.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,40"
+              EndConnector="0,43"
               Start="0,0"
-              End="0,32.5">
+              End="0,35.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.5" />
+                    End="0,35.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15257,11 +15325,11 @@ tv
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="442,1594"
-          Size="255,43"
+          Size="442,1637"
           Id="Package\Clasifica motivos de Formulario"
-          TopLeft="324.555555555556,394.083333333334" />
+          TopLeft="321.555555555556,393.083333333334" />
         <NodeLayout
           Size="176,42"
           Id="Package\Corrige CUD y SKU"
@@ -15473,7 +15541,9 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -15510,7 +15580,9 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15532,7 +15604,9 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15554,7 +15628,9 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15576,7 +15652,9 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15598,7 +15676,9 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15620,7 +15700,9 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -15696,7 +15778,7 @@ tv
           PanelSize="266,343"
           Size="266,43"
           Id="Package\Descarga de Datos\Descarga casos desde formulario"
-          TopLeft="27.5,126.5" />
+          TopLeft="59.5,131.5" />
         <NodeLayout
           Size="170,42"
           Id="Package\Descarga de Datos\Descarga Datos desde API\API OC - API_OC_informacion_producto\Tarea Ejecutar SQL"
@@ -15967,36 +16049,38 @@ tv
           TopLeft="56.5,23.5" />
         <EdgeLayout
           Id="Package\Descarga de Datos.PrecedenceConstraints[Constraint]"
-          TopLeft="160.5,169.5">
+          TopLeft="149.5,174.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="26.6666666666668,72.5"
+              EndConnector="37.6666666666668,67.5"
               Start="0,0"
-              End="26.6666666666668,65">
+              End="37.6666666666668,60">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,39.2997698504028" />
+                    End="0,29.8079026377868" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,39.2997698504028"
-                    Point2="0,43.2997698504028"
-                    Point3="4,43.2997698504028" />
+                    Point1="0,29.8079026377868"
+                    Point2="0,33.8079026377868"
+                    Point3="4,33.8079026377868" />
                   <mssgle:LineSegment
-                    End="22.6666666666668,43.2997698504028" />
+                    End="33.6666666666668,33.8079026377868" />
                   <mssgle:CubicBezierSegment
-                    Point1="22.6666666666668,43.2997698504028"
-                    Point2="26.6666666666668,43.2997698504028"
-                    Point3="26.6666666666668,47.2997698504028" />
+                    Point1="33.6666666666668,33.8079026377868"
+                    Point2="37.6666666666668,33.8079026377868"
+                    Point3="37.6666666666668,37.8079026377868" />
                   <mssgle:LineSegment
-                    End="26.6666666666668,65" />
+                    End="37.6666666666668,60" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16031,47 +16115,73 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Descarga de Datos.PrecedenceConstraints[Restricción 22]"
-          TopLeft="164,65.5">
+          TopLeft="167.5,65.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,61"
+              EndConnector="25,66"
               Start="0,0"
-              End="0,53.5">
+              End="25,58.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Descarga de Datos.PrecedenceConstraints[Restricción 5]"
-          TopLeft="293.5,147.75">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="40,0"
-              Start="0,0"
-              End="32.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
+                    End="0,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29"
+                    Point2="0,33"
+                    Point3="4,33" />
                   <mssgle:LineSegment
-                    End="32.5,0" />
+                    End="21,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21,33"
+                    Point2="25,33"
+                    Point3="25,37" />
+                  <mssgle:LineSegment
+                    End="25,58.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="4.72130859375,5,23.0573828125,9.421875"
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Descarga de Datos.PrecedenceConstraints[Restricción 5]"
+          TopLeft="235.5,174.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="186,-3"
+              Start="0,0"
+              End="186,4.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.5"
+                    Point2="0,22.5"
+                    Point3="4,22.5" />
+                  <mssgle:LineSegment
+                    End="182,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="182,22.5"
+                    Point2="186,22.5"
+                    Point3="186,18.5" />
+                  <mssgle:LineSegment
+                    End="186,4.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="81.47130859375,27.5,23.0573828125,9.421875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16180,7 +16290,9 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16202,7 +16314,9 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16224,7 +16338,9 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -16306,18 +16422,30 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11]"
-          TopLeft="452.305555555556,394.083333333334">
+          TopLeft="542.555555555556,393.083333333334">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-42.4166666666678"
+              EndConnector="-90,-41.4166666666679"
               Start="0,0"
-              End="0,-34.9166666666678">
+              End="-90,-33.9166666666679">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-34.9166666666678" />
+                    End="0,-16.708333333334" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-16.708333333334"
+                    Point2="0,-20.708333333334"
+                    Point3="-4,-20.708333333334" />
+                  <mssgle:LineSegment
+                    End="-86,-20.708333333334" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-86,-20.708333333334"
+                    Point2="-90,-20.708333333334"
+                    Point3="-90,-24.708333333334" />
+                  <mssgle:LineSegment
+                    End="-90,-33.9166666666679" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16438,18 +16566,30 @@ tv
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="246.777777777778,418.541666666667">
+          TopLeft="246.777777777778,421.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="77.7777777777781,0"
+              EndConnector="74.777777777778,790.083333333334"
               Start="0,0"
-              End="70.2777777777781,0">
+              End="67.277777777778,790.083333333334">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="70.2777777777781,0" />
+                    End="33.388888888889,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="33.388888888889,0"
+                    Point2="37.388888888889,0"
+                    Point3="37.388888888889,4" />
+                  <mssgle:LineSegment
+                    End="37.388888888889,786.083333333334" />
+                  <mssgle:CubicBezierSegment
+                    Point1="37.388888888889,786.083333333334"
+                    Point2="37.388888888889,790.083333333334"
+                    Point3="41.388888888889,790.083333333334" />
+                  <mssgle:LineSegment
+                    End="67.277777777778,790.083333333334" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16851,7 +16991,7 @@ tv
     design-time-name="Package\Crea tablas de creacion de ticket\INSISTENCIAS\Tarea Flujo de datos">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="170,42"
           Id="Package\Crea tablas de creacion de ticket\INSISTENCIAS\Tarea Flujo de datos\Origen de OLE DB"
@@ -16891,7 +17031,9 @@ tv
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

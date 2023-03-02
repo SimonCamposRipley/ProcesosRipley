@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="EXCEL - MKP"
   DTS:PackageType="5"
-  DTS:VersionBuild="302"
-  DTS:VersionGUID="{8F1624D0-60D6-460A-984F-4105652FB8DF}">
+  DTS:VersionBuild="306"
+  DTS:VersionGUID="{657CB885-47E9-48C7-A664-66368C1364FC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADopiELSMgXwjVtjrcZhiGW7fdd0kYfuGywQKxSHGqdWgAAAAAOgAAAAAIAACAAAAAacO2rOHTHXVwvsZQroHu6eEcdlG5u1nDa57QPKxasySAAAACAi7QxM2stMfwUkbfSKFJFsl6hbw9eMvuGyRVhNSjrikAAAAATgDd+5qo0Ph8Oz2vYSx0wx5Enff0WurpJYd7td2d5wG2a5OX/R1WioAwLBPMJWkYLeaZtL2JQOH4u5FlaqSMJ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABZm2zuFOyC2Z/psrX2qfIOopAMO8q00FHmvqTOM+oL3gAAAAAOgAAAAAIAACAAAAAsFFiBZj0YNCnUSVmPTCWHxObFy2yuodCKSZ9UUooTbyAAAACwjplQbjq1K8+YliW8UTEXH5WfTo0lPOEh1+kkuRarXkAAAADIYZUyev1HY3LX2jqurwFGgJ7ocmw6ZSLtw/RJgWbhg8cQGere5azbmP+tH1/Jh+vCw0jxwOVZhNGVbA49THjI</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1586,6 +1586,34 @@ LEFT join [dbo].[motivo] as motivo on campana.cam_numcam=motivo.mot_numcam
                           cachedName="SKU"
                           externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data09]"
                           lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[SKU]" />
+                        <inputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].Columns[tienda_solicitante]"
+                          cachedDataType="wstr"
+                          cachedLength="1000"
+                          cachedName="tienda_solicitante"
+                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data05]"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[tienda_solicitante]" />
+                        <inputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].Columns[numero_cuenta]"
+                          cachedDataType="wstr"
+                          cachedLength="1000"
+                          cachedName="numero_cuenta"
+                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data51]"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[numero_cuenta]" />
+                        <inputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].Columns[medio_pago]"
+                          cachedDataType="wstr"
+                          cachedLength="1000"
+                          cachedName="medio_pago"
+                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data48]"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[medio_pago]" />
+                        <inputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].Columns[banco]"
+                          cachedDataType="wstr"
+                          cachedLength="1000"
+                          cachedName="banco"
+                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data49]"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[banco]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -2261,6 +2289,10 @@ base.[Email],
 base.[Letra OC],
 base.direccion,
 base.SKU,
+base.tienda_solicitante,
+base.numero_cuenta,
+base.medio_pago,
+base.banco,
 left(base.Glosa, 350) as Glosa,
 motivo.[mot_nummot1] as Motivo1,
 motivo.[mot_nummot2] as Motivo2,
@@ -2441,6 +2473,46 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[SKU]"
                           name="SKU"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[tienda_solicitante]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].ExternalColumns[tienda_solicitante]"
+                          length="1000"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[tienda_solicitante]"
+                          name="tienda_solicitante"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[numero_cuenta]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].ExternalColumns[numero_cuenta]"
+                          length="1000"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[numero_cuenta]"
+                          name="numero_cuenta"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[medio_pago]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].ExternalColumns[medio_pago]"
+                          length="1000"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[medio_pago]"
+                          name="medio_pago"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[banco]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].ExternalColumns[banco]"
+                          length="1000"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[banco]"
+                          name="banco"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -2505,6 +2577,26 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].ExternalColumns[SKU]"
                           dataType="nText"
                           name="SKU" />
+                        <externalMetadataColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].ExternalColumns[tienda_solicitante]"
+                          dataType="wstr"
+                          length="1000"
+                          name="tienda_solicitante" />
+                        <externalMetadataColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].ExternalColumns[numero_cuenta]"
+                          dataType="wstr"
+                          length="1000"
+                          name="numero_cuenta" />
+                        <externalMetadataColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].ExternalColumns[medio_pago]"
+                          dataType="wstr"
+                          length="1000"
+                          name="medio_pago" />
+                        <externalMetadataColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].ExternalColumns[banco]"
+                          dataType="wstr"
+                          length="1000"
+                          name="banco" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -2564,6 +2656,30 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           dataType="nText"
                           lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de error de origen de OLE DB].Columns[SKU]"
                           name="SKU" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de error de origen de OLE DB].Columns[tienda_solicitante]"
+                          dataType="wstr"
+                          length="1000"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de error de origen de OLE DB].Columns[tienda_solicitante]"
+                          name="tienda_solicitante" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de error de origen de OLE DB].Columns[numero_cuenta]"
+                          dataType="wstr"
+                          length="1000"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de error de origen de OLE DB].Columns[numero_cuenta]"
+                          name="numero_cuenta" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de error de origen de OLE DB].Columns[medio_pago]"
+                          dataType="wstr"
+                          length="1000"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de error de origen de OLE DB].Columns[medio_pago]"
+                          name="medio_pago" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de error de origen de OLE DB].Columns[banco]"
+                          dataType="wstr"
+                          length="1000"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de error de origen de OLE DB].Columns[banco]"
+                          name="banco" />
                         <outputColumn
                           refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de error de origen de OLE DB].Columns[Glosa]"
                           dataType="nText"
@@ -2832,6 +2948,46 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[SKU]"
                           name="SKU"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Tienda_Solicitante]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].ExternalColumns[Tienda_Solicitante]"
+                          length="255"
+                          lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Tienda_Solicitante]"
+                          name="Tienda_Solicitante"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Numero_cuenta]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].ExternalColumns[Numero_cuenta]"
+                          length="255"
+                          lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Numero_cuenta]"
+                          name="Numero_cuenta"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Medio_pago]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].ExternalColumns[Medio_pago]"
+                          length="255"
+                          lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Medio_pago]"
+                          name="Medio_pago"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Banco]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].ExternalColumns[Banco]"
+                          length="255"
+                          lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Banco]"
+                          name="Banco"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -2910,6 +3066,26 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           dataType="wstr"
                           length="255"
                           name="SKU" />
+                        <externalMetadataColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].ExternalColumns[Tienda_Solicitante]"
+                          dataType="wstr"
+                          length="255"
+                          name="Tienda_Solicitante" />
+                        <externalMetadataColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].ExternalColumns[Numero_cuenta]"
+                          dataType="wstr"
+                          length="255"
+                          name="Numero_cuenta" />
+                        <externalMetadataColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].ExternalColumns[Medio_pago]"
+                          dataType="wstr"
+                          length="255"
+                          name="Medio_pago" />
+                        <externalMetadataColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].ExternalColumns[Banco]"
+                          dataType="wstr"
+                          length="255"
+                          name="Banco" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -3007,6 +3183,30 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           length="255"
                           lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[SKU]"
                           name="SKU" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[Tienda_Solicitante]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[Tienda_Solicitante]"
+                          name="Tienda_Solicitante" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[Numero_cuenta]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[Numero_cuenta]"
+                          name="Numero_cuenta" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[Medio_pago]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[Medio_pago]"
+                          name="Medio_pago" />
+                        <outputColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[Banco]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[Banco]"
+                          name="Banco" />
                         <outputColumn
                           refId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de error de origen de Excel].Columns[ErrorColumn]"
                           dataType="i4"
@@ -3201,6 +3401,34 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           cachedName="SKU"
                           externalMetadataColumnId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].ExternalColumns[SKU]"
                           lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[SKU]" />
+                        <inputColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].Columns[Tienda_Solicitante]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Tienda_Solicitante"
+                          externalMetadataColumnId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tienda_Solicitante]"
+                          lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Tienda_Solicitante]" />
+                        <inputColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].Columns[Numero_cuenta]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Numero_cuenta"
+                          externalMetadataColumnId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].ExternalColumns[numero_cuenta]"
+                          lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Numero_cuenta]" />
+                        <inputColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].Columns[Medio_pago]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Medio_pago"
+                          externalMetadataColumnId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].ExternalColumns[medio_pago]"
+                          lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Medio_pago]" />
+                        <inputColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].Columns[Banco]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Banco"
+                          externalMetadataColumnId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].ExternalColumns[banco]"
+                          lineageId="Package\Crea tickets\Importa Datos Excel\Archivo MKP.Outputs[Salida de origen de Excel].Columns[Banco]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -3264,6 +3492,26 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                           refId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].ExternalColumns[SKU]"
                           dataType="nText"
                           name="SKU" />
+                        <externalMetadataColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tienda_Solicitante]"
+                          dataType="wstr"
+                          length="1000"
+                          name="Tienda_Solicitante" />
+                        <externalMetadataColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].ExternalColumns[numero_cuenta]"
+                          dataType="wstr"
+                          length="1000"
+                          name="numero_cuenta" />
+                        <externalMetadataColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].ExternalColumns[medio_pago]"
+                          dataType="wstr"
+                          length="1000"
+                          name="medio_pago" />
+                        <externalMetadataColumn
+                          refId="Package\Crea tickets\Importa Datos Excel\base_mkp_excel.Inputs[Entrada de destino de OLE DB].ExternalColumns[banco]"
+                          dataType="wstr"
+                          length="1000"
+                          name="banco" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -3629,7 +3877,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="498,491"
-          Size="498,43"
+          Size="160,43"
           Id="Package\Crea tickets"
           TopLeft="215,164" />
         <NodeLayout
@@ -3638,30 +3886,18 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
           TopLeft="161,66" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="292.5,108">
+          TopLeft="293.75,108">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="171.5,56"
+              EndConnector="0,56"
               Start="0,0"
-              End="171.5,48.5">
+              End="0,48.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,24"
-                    Point2="0,28"
-                    Point3="4,28" />
-                  <mssgle:LineSegment
-                    End="167.5,28" />
-                  <mssgle:CubicBezierSegment
-                    Point1="167.5,28"
-                    Point2="171.5,28"
-                    Point3="171.5,32" />
-                  <mssgle:LineSegment
-                    End="171.5,48.5" />
+                    End="0,48.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3672,30 +3908,18 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="464,207">
+          TopLeft="294,207">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-171,55"
+              EndConnector="0,55"
               Start="0,0"
-              End="-171,47.5">
+              End="0,47.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.5"
-                    Point2="0,27.5"
-                    Point3="-4,27.5" />
-                  <mssgle:LineSegment
-                    End="-167,27.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-167,27.5"
-                    Point2="-171,27.5"
-                    Point3="-171,31.5" />
-                  <mssgle:LineSegment
-                    End="-171,47.5" />
+                    End="0,47.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3862,7 +4086,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
     design-time-name="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="172,42"
           Id="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce"
@@ -3902,9 +4126,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3940,49 +4162,47 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
     design-time-name="Package\Crea tickets\Importa Datos Excel">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="164,42"
           Id="Package\Crea tickets\Importa Datos Excel\base_mkp_excel"
-          TopLeft="450,229" />
+          TopLeft="511,345" />
         <NodeLayout
           Size="145,42"
           Id="Package\Crea tickets\Importa Datos Excel\Archivo MKP"
           TopLeft="254,129" />
         <EdgeLayout
           Id="Package\Crea tickets\Importa Datos Excel.Paths[Salida de origen de Excel]"
-          TopLeft="326.4,170.6">
+          TopLeft="326.5,171">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="205.6,58.3999999999999"
+              EndConnector="266.5,174"
               Start="0,0"
-              End="205.6,50.8999999999999">
+              End="266.5,166.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.2" />
+                    End="0,83" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,25.2"
-                    Point2="0,29.2"
-                    Point3="4,29.2" />
+                    Point1="0,83"
+                    Point2="0,87"
+                    Point3="4,87" />
                   <mssgle:LineSegment
-                    End="201.6,29.2" />
+                    End="262.5,87" />
                   <mssgle:CubicBezierSegment
-                    Point1="201.6,29.2"
-                    Point2="205.6,29.2"
-                    Point3="205.6,33.2" />
+                    Point1="262.5,87"
+                    Point2="266.5,87"
+                    Point3="266.5,91" />
                   <mssgle:LineSegment
-                    End="205.6,50.8999999999999" />
+                    End="266.5,166.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
