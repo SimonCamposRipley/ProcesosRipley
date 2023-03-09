@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Informar_Carga_Masiva_Formulario"
   DTS:PackageType="5"
-  DTS:VersionBuild="322"
-  DTS:VersionGUID="{14822EF6-52F7-44AE-8B42-34FEF81F2986}">
+  DTS:VersionBuild="325"
+  DTS:VersionGUID="{EA0C71D4-948B-462B-956D-E5BEA157B682}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAlbmSEWnFnzF9byFbJbf18oN+gX8NcyJPZw6YxvJDk1gAAAAAOgAAAAAIAACAAAAA0f8xWAIDLzms5Jl0PkPxGjb2/Jfk9E4QGUR6etM+JgiAAAACCAm4nFqW8DEc3MCyaStcmmg+kzRoJNGIZNSQ5EVg/vEAAAAA4hHZsV0mrKtHm5Ur62cwRITtJ+6+/ELyHjcE24p7aEezR6sAa1Yzn9QD6hVt9TAzqIOO0LrJzmYNzjNZqFi1v</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABvLbMuM0t8K/W2+3c2c56Yg7qUqmjPOsNMj8uGPi8dxgAAAAAOgAAAAAIAACAAAAD4v0zbugsei++gCQnf4bfklCR3FRBUR3TRjj/1BGEjuCAAAAD4ps08TOOOJsTHODkSF0OtLmZh42/BnIpwUueTdVq3bEAAAABo1p+0ZUmmcNEny5dNK4eFyznLUK4QV8CIkyJZLUMcHsvRkWhr9/AUzedzisS1kaq91X5AGa3H3O5xpc/9oKI2</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>

@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="EXCEL - MKP"
   DTS:PackageType="5"
-  DTS:VersionBuild="306"
-  DTS:VersionGUID="{657CB885-47E9-48C7-A664-66368C1364FC}">
+  DTS:VersionBuild="308"
+  DTS:VersionGUID="{1858F317-C016-41A5-933A-74C5270F202A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABZm2zuFOyC2Z/psrX2qfIOopAMO8q00FHmvqTOM+oL3gAAAAAOgAAAAAIAACAAAAAsFFiBZj0YNCnUSVmPTCWHxObFy2yuodCKSZ9UUooTbyAAAACwjplQbjq1K8+YliW8UTEXH5WfTo0lPOEh1+kkuRarXkAAAADIYZUyev1HY3LX2jqurwFGgJ7ocmw6ZSLtw/RJgWbhg8cQGere5azbmP+tH1/Jh+vCw0jxwOVZhNGVbA49THjI</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAqJ8Lbb1AjqkIBjgBXRMulUgBCHKqNt7wC78u2L8NtmgAAAAAOgAAAAAIAACAAAABTs5VBV5t3A326abe3aR3lTR2r/EsAkRMH1LMwQQk5fyAAAABTeTQU8Mt/wzikcil33j6eqzBc66w+QrK727YLWJ6lxkAAAADlMMr2F+G6wG6o3d4hFOL1Zt9fppS0VQcBnKPoOzJfd6hr4cBiC+WmtgnTAJ9hxYQP29OhHgxURrKaqE+4xepy</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1594,26 +1594,26 @@ LEFT join [dbo].[motivo] as motivo on campana.cam_numcam=motivo.mot_numcam
                           externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data05]"
                           lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[tienda_solicitante]" />
                         <inputColumn
-                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].Columns[numero_cuenta]"
-                          cachedDataType="wstr"
-                          cachedLength="1000"
-                          cachedName="numero_cuenta"
-                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data51]"
-                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[numero_cuenta]" />
-                        <inputColumn
-                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].Columns[medio_pago]"
-                          cachedDataType="wstr"
-                          cachedLength="1000"
-                          cachedName="medio_pago"
-                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data48]"
-                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[medio_pago]" />
-                        <inputColumn
                           refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].Columns[banco]"
                           cachedDataType="wstr"
                           cachedLength="1000"
                           cachedName="banco"
                           externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data49]"
                           lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[banco]" />
+                        <inputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].Columns[numero_cuenta]"
+                          cachedDataType="wstr"
+                          cachedLength="1000"
+                          cachedName="numero_cuenta"
+                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data48]"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[numero_cuenta]" />
+                        <inputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].Columns[medio_pago]"
+                          cachedDataType="wstr"
+                          cachedLength="1000"
+                          cachedName="medio_pago"
+                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data51]"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[medio_pago]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -3875,9 +3875,9 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="498,491"
-          Size="160,43"
+          Size="498,534"
           Id="Package\Crea tickets"
           TopLeft="215,164" />
         <NodeLayout
@@ -3886,18 +3886,30 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
           TopLeft="161,66" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="293.75,108">
+          TopLeft="292.5,108">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,56"
+              EndConnector="171.5,56"
               Start="0,0"
-              End="0,48.5">
+              End="171.5,48.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.5" />
+                    End="0,24" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24"
+                    Point2="0,28"
+                    Point3="4,28" />
+                  <mssgle:LineSegment
+                    End="167.5,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="167.5,28"
+                    Point2="171.5,28"
+                    Point3="171.5,32" />
+                  <mssgle:LineSegment
+                    End="171.5,48.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3908,18 +3920,30 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="294,207">
+          TopLeft="464,698">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,55"
+              EndConnector="-171,-436"
               Start="0,0"
-              End="0,47.5">
+              End="-171,-428.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,47.5" />
+                    End="0,-214" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-214"
+                    Point2="0,-218"
+                    Point3="-4,-218" />
+                  <mssgle:LineSegment
+                    End="-167,-218" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-167,-218"
+                    Point2="-171,-218"
+                    Point3="-171,-222" />
+                  <mssgle:LineSegment
+                    End="-171,-428.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

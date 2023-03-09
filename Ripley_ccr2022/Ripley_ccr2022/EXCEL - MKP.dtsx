@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="EXCEL - MKP"
   DTS:PackageType="5"
-  DTS:VersionBuild="306"
-  DTS:VersionGUID="{657CB885-47E9-48C7-A664-66368C1364FC}">
+  DTS:VersionBuild="309"
+  DTS:VersionGUID="{7403A2F7-FE0D-42BE-AAAA-DE38393955BD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADqJ4xP9RYWjvoR8OHVgMHabZnwBKJ4PNdy2UVLEAyXSAAAAAAOgAAAAAIAACAAAADLr9Kfb7vRekR2187hh3AeLKfelIsEAySJOkwzdeYDYCAAAABvMecQ1MmN2yLvV83SAIYR4lkeQHhHJLyJ/FcUBxP8P0AAAAAKwqF2nxZKFvRj0mmr21J2WmJqTvhw9X6ZtyqMG197KdQLtUFUAgGaS+ZqoK51yJ3cudvGOk4eIpTdouwbDdyh</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACraWrQhPZgmZ2lg8Jrv9aeshp31lRrJXS6mc+HiuA3zAAAAAAOgAAAAAIAACAAAABXM2RqrEiiwJiPkkH9WoJ8Q+ylScj9z6oFf4FIQbi9jiAAAAD86a9Zqto3BR75gZgvKo0m8wJ6JP4AvT/UOv8YJxkONkAAAABoWF72Uj+GIZpNdQsuZctPd+PtreUtO37/tzDxKzmvAWdXwbp6Jn72fNQANpORhZ2cf4SOsiKcRP+TkDNmLU89</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1594,26 +1594,26 @@ LEFT join [dbo].[motivo] as motivo on campana.cam_numcam=motivo.mot_numcam
                           externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data05]"
                           lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[tienda_solicitante]" />
                         <inputColumn
-                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].Columns[numero_cuenta]"
-                          cachedDataType="wstr"
-                          cachedLength="1000"
-                          cachedName="numero_cuenta"
-                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data51]"
-                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[numero_cuenta]" />
-                        <inputColumn
-                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].Columns[medio_pago]"
-                          cachedDataType="wstr"
-                          cachedLength="1000"
-                          cachedName="medio_pago"
-                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data48]"
-                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[medio_pago]" />
-                        <inputColumn
                           refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].Columns[banco]"
                           cachedDataType="wstr"
                           cachedLength="1000"
                           cachedName="banco"
                           externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data49]"
                           lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[banco]" />
+                        <inputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].Columns[numero_cuenta]"
+                          cachedDataType="wstr"
+                          cachedLength="1000"
+                          cachedName="numero_cuenta"
+                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data48]"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[numero_cuenta]" />
+                        <inputColumn
+                          refId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].Columns[medio_pago]"
+                          cachedDataType="wstr"
+                          cachedLength="1000"
+                          cachedName="medio_pago"
+                          externalMetadataColumnId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\base_carga_mkp.Inputs[Entrada de destino de OLE DB].ExternalColumns[edge_data51]"
+                          lineageId="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce.Outputs[Salida de origen de OLE DB].Columns[medio_pago]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
