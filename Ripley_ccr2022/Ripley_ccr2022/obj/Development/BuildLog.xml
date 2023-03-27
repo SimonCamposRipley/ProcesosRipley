@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Ripley_ccr2022</Name>
-    <LastWriteTime>2023-01-31T21:25:56.4675399Z</LastWriteTime>
+    <LastWriteTime>2023-03-14T11:49:34.7463Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -48,7 +48,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>EXCEL - MKP.dtsx</Name>
-      <LastWriteTime>2023-03-09T20:27:05.8035037Z</LastWriteTime>
+      <LastWriteTime>2023-03-14T11:50:04.79014Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -58,7 +58,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Informar_Carga_Masiva_Formulario.dtsx</Name>
-      <LastWriteTime>2023-03-08T16:32:37.0952915Z</LastWriteTime>
+      <LastWriteTime>2023-03-09T20:27:36.746351Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -73,17 +73,17 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Actualizar.dtsx</Name>
-      <LastWriteTime>2023-01-13T12:56:46.9120093Z</LastWriteTime>
+      <LastWriteTime>2023-03-13T16:30:16.2759757Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CARGA_MASIVA_FORMULARIO.dtsx</Name>
-      <LastWriteTime>2023-03-09T20:21:12.8094042Z</LastWriteTime>
+      <LastWriteTime>2023-03-22T14:28:21.7297154Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CARGA_MASIVA_API.dtsx</Name>
-      <LastWriteTime>2023-02-09T18:45:19.9803295Z</LastWriteTime>
+      <LastWriteTime>2023-03-24T18:16:18.6946462Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

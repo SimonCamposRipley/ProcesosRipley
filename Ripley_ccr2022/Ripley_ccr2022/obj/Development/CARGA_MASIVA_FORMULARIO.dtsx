@@ -11,8 +11,8 @@
   DTS:LocaleID="13322"
   DTS:ObjectName="CARGA_MASIVA_FORMULARIO"
   DTS:PackageType="5"
-  DTS:VersionBuild="685"
-  DTS:VersionGUID="{B26217BD-EA68-4EC9-84B8-414FC163F3EC}">
+  DTS:VersionBuild="705"
+  DTS:VersionGUID="{D1AD4BBF-73E2-4B8E-A1BE-4784754D2282}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -40,7 +40,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAVza3MvS1n2067v0iABD+FhXK2G88wj/g2YGJ1iA8YxQAAAAAOgAAAAAIAACAAAABpHUGB9ocAkPTNr1scbjwocE3/4g5WCkGutPcHBl2bOCAAAAAo3DLJaQOS2vyLnd9mPDD+v3Y68BPzZ5wKxPrFrWNdTUAAAABnooZFHp7MoZehQKk7DXpuc29S8HykHEW/hWNH6NP1atxIe3Cq5zVDuKFIUdhe57SvJYoY1RLS+mPS0vR03WPx</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGWZZR0PMDUSG7hscfOU9EwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAzdqTlpmOUFPS5+QRVwVtlwAk2MYYYmUKGqMYFnE/0fwAAAAAOgAAAAAIAACAAAAD5TRRf878kNf9zU6JkRhla7gpq9TNrGwT8JUlSqQxQtSAAAACMXYdPvtEcfyjNwnZNs6UHd6/V97s/npzGGCKxv7GFv0AAAAAFJQ1HY8CSg26tSPxdqScv9dPbCPEC8SMkKHdQsZIG9uikx3Y5MuJjGme+Lze3jeHPfAJgRU86PaChmfWr52+w</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -200,7 +200,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{3B1D8CEF-3190-407F-87A4-72E5088E8FAB}"
-          SQLTask:SqlStatementSource="&#xA;/*&#xA;-------------CORRIGE ERROR DE CAMPAÑA MKP CON CUD CON GUION-------------------&#xA;*/&#xA;&#xA; update [DESCARGA_FORMULARIO] set campaña = 'MERCADO RIPLEY' &#xA; WHERE &#xA; OC NOT LIKE '%-%' AND &#xA; SKU LIKE '20%' AND &#xA; CUD LIKE '%-%' AND &#xA; CAMPAÑA = 'GESTION RETAIL' AND &#xA; TIPIFICACION_AURIS IN (SELECT [CODIGO_TIPIFICACION] FROM [PROCESO_CARGA_MASIVA].[dbo].[motivos_formulario_GR] WHERE cam_nomcam = 'MERCADO RIPLEY')&#xA;&#xA;&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="/*&#xA;-------------CORRIGE ERROR DE CAMPAÑA MKP CON CUD CON GUION-------------------&#xA;*/&#xA;&#xA; &#xA;&#xA;update [DESCARGA_FORMULARIO] set campaña = 'MERCADO RIPLEY' &#xA; WHERE &#xA; OC NOT LIKE '%-%' &#xA;AND &#xA; SKU LIKE '20%' &#xA;AND &#xA; CUD LIKE '%-%' &#xA;AND &#xA; CAMPAÑA = 'GESTION RETAIL' &#xA;AND &#xA; TIPIFICACION_AURIS IN (SELECT [CODIGO_TIPIFICACION] FROM [PROCESO_CARGA_MASIVA].[dbo].[motivos_formulario_GR] WHERE cam_nomcam = 'MERCADO RIPLEY')&#xA;&#xA;update DESCARGA_FORMULARIO set oc = oc+'01'&#xA;where CAMPAÑA = 'mercado ripley'&#xA;and oc not like '%01' &#xA;and oc not like '%-%'&#xA;and len(oc) = 9&#xA;&#xA;update DESCARGA_FORMULARIO_1733 set oc = oc+'01'&#xA;where CAMPAÑA = 'mercado ripley'&#xA;and oc not like '%01' &#xA;and oc not like '%-%'&#xA;and len(oc) = 9&#xA;&#xA;update DESCARGA_FORMULARIO_AUTOATENCION  set oc = oc+'01'&#xA;where CAMPAÑA = 'mercado ripley'&#xA;and oc not like '%01' &#xA;and oc not like '%-%'&#xA;and len(oc) = 9&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -13901,15 +13901,15 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
           PanelSize="303,189"
           Size="192,43"
           Id="Package\Mantencion Bases"
-          TopLeft="225,34" />
+          TopLeft="229,34" />
         <NodeLayout
           Size="193,42"
           Id="Package\Mantencion de Bitacoras"
-          TopLeft="223.166657957766,528.133336942461" />
+          TopLeft="231.166657957766,528.133336942461" />
         <NodeLayout
           Size="210,42"
           Id="Package\PARCHES TEMPORALES"
-          TopLeft="212,363" />
+          TopLeft="221,363" />
         <NodeLayout
           Size="183,42"
           Id="Package\Paso 1 - Descarga de Datos\Descarga casos desde formulario\Bitacora de descarga"
@@ -13957,9 +13957,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13981,9 +13979,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14005,9 +14001,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -14058,9 +14052,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14082,9 +14074,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14141,7 +14131,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
           PanelSize="576,547"
           Size="240,43"
           Id="Package\Paso 1 - Descarga de Datos"
-          TopLeft="200.4166648123,124.766666756206" />
+          TopLeft="210.4166648123,124.766666756206" />
         <NodeLayout
           Size="170,42"
           Id="Package\Paso 2 - Clasifica motivos de Formulario\1  Cambiar fecha de mi despacho\GESTION RETAIL"
@@ -14270,14 +14260,16 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="True"
+          IsExpanded="False"
           PanelSize="387,238"
-          Size="387,281"
+          Size="387,43"
           Id="Package\Paso 2 - Clasifica motivos de Formulario\2  - No me ha llegado mi producto"
           TopLeft="43,115.5" />
         <NodeLayout
@@ -14654,7 +14646,9 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14676,7 +14670,9 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14698,7 +14694,9 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14720,7 +14718,9 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14742,7 +14742,9 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14764,7 +14766,9 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14786,41 +14790,45 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Paso 2 - Clasifica motivos de Formulario.PrecedenceConstraints[Restricción 3]"
-          TopLeft="236.5,396.5">
+          TopLeft="236.5,158.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-64,-185"
+              EndConnector="-64,53"
               Start="0,0"
-              End="-64,-177.5">
+              End="-64,45.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-88.5" />
+                    End="0,22.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,-88.5"
-                    Point2="0,-92.5"
-                    Point3="-4,-92.5" />
+                    Point1="0,22.5"
+                    Point2="0,26.5"
+                    Point3="-4,26.5" />
                   <mssgle:LineSegment
-                    End="-60,-92.5" />
+                    End="-60,26.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-60,-92.5"
-                    Point2="-64,-92.5"
-                    Point3="-64,-96.5" />
+                    Point1="-60,26.5"
+                    Point2="-64,26.5"
+                    Point3="-64,30.5" />
                   <mssgle:LineSegment
-                    End="-64,-177.5" />
+                    End="-64,45.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14842,7 +14850,9 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14876,7 +14886,9 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14898,7 +14910,9 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14920,7 +14934,9 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14942,7 +14958,9 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14964,18 +14982,20 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="True"
+          IsExpanded="False"
           PanelSize="431,1816"
-          Size="431,1859"
+          Size="299,43"
           Id="Package\Paso 2 - Clasifica motivos de Formulario"
-          TopLeft="176.126981378547,205.932539648101" />
+          TopLeft="182.126981378547,204.932539648101" />
         <NodeLayout
-          Size="176,42"
+          Size="188,42"
           Id="Package\Paso 3 - Armado de Archivo de Creacion\AUTOATENCION - CREA FIN\Actualiza campos fijos"
           TopLeft="51,104.5" />
         <NodeLayout
@@ -14984,7 +15004,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
           TopLeft="56,20.75" />
         <EdgeLayout
           Id="Package\Paso 3 - Armado de Archivo de Creacion\AUTOATENCION - CREA FIN.PrecedenceConstraints[Restricción]"
-          TopLeft="142.5,62.75">
+          TopLeft="145.5,62.75">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -15008,9 +15028,9 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="311,220"
-          Size="250,43"
+          Size="311,263"
           Id="Package\Paso 3 - Armado de Archivo de Creacion\AUTOATENCION - CREA FIN"
           TopLeft="9.50000000000009,621.5" />
         <NodeLayout
@@ -15110,11 +15130,11 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="403,284"
-          Size="258,43"
+          Size="403,327"
           Id="Package\Paso 3 - Armado de Archivo de Creacion\CAMPAÑA MERCADO RIPLEY"
-          TopLeft="5.50000000000006,415.5" />
+          TopLeft="5.5,410.5" />
         <NodeLayout
           Size="188,42"
           Id="Package\Paso 3 - Armado de Archivo de Creacion\GESTION RETAIL\Actualiza campos fijos"
@@ -15149,9 +15169,9 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="True"
+          IsExpanded="False"
           PanelSize="206,242"
-          Size="206,285"
+          Size="193,43"
           Id="Package\Paso 3 - Armado de Archivo de Creacion\GESTION RETAIL"
           TopLeft="38,209.5" />
         <NodeLayout
@@ -15203,7 +15223,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
           TopLeft="36,107.5" />
         <EdgeLayout
           Id="Package\Paso 3 - Armado de Archivo de Creacion.PrecedenceConstraints[Restricción]"
-          TopLeft="137.75,149.5">
+          TopLeft="134.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -15251,18 +15271,30 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Paso 3 - Armado de Archivo de Creacion.PrecedenceConstraints[Restricción 17]"
-          TopLeft="134.5,458.5">
+          TopLeft="207,737.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="-72.4999999999999,-219"
               Start="0,0"
-              End="0,52.5">
+              End="-72.4999999999999,-211.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,-105.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-105.5"
+                    Point2="0,-109.5"
+                    Point3="-4,-109.5" />
+                  <mssgle:LineSegment
+                    End="-68.4999999999999,-109.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-68.4999999999999,-109.5"
+                    Point2="-72.4999999999999,-109.5"
+                    Point3="-72.4999999999999,-113.5" />
+                  <mssgle:LineSegment
+                    End="-72.4999999999999,-211.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15279,14 +15311,26 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="30.5,60"
               Start="0,0"
-              End="0,52.5">
+              End="30.5,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
+                  <mssgle:LineSegment
+                    End="26.5,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="26.5,30"
+                    Point2="30.5,30"
+                    Point3="30.5,34" />
+                  <mssgle:LineSegment
+                    End="30.5,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15299,18 +15343,18 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Paso 3 - Armado de Archivo de Creacion.PrecedenceConstraints[Restricción 3]"
-          TopLeft="137.75,494.5">
+          TopLeft="134.5,252.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-182"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,-174.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-174.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15327,14 +15371,26 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="72.5,55"
               Start="0,0"
-              End="0,52.5">
+              End="72.5,47.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5"
+                    Point2="0,27.5"
+                    Point3="4,27.5" />
+                  <mssgle:LineSegment
+                    End="68.5,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="68.5,27.5"
+                    Point2="72.5,27.5"
+                    Point3="72.5,31.5" />
+                  <mssgle:LineSegment
+                    End="72.5,47.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15348,13 +15404,13 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="False"
-          PanelSize="301,720"
+          PanelSize="414,939"
           Size="301,43"
           Id="Package\Paso 3 - Armado de Archivo de Creacion"
-          TopLeft="170.349205157114,443.742063388748" />
+          TopLeft="170.349205157114,439.742063388748" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="320.70833240615,77">
+          TopLeft="327.70833240615,77">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -15376,30 +15432,18 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="320.4166648123,167.766666756206">
+          TopLeft="331.021823095424,167.766666756206">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="71.2103165662469,38.165872891895"
+              EndConnector="0,37.165872891895"
               Start="0,0"
-              End="71.2103165662469,30.665872891895">
+              End="0,29.665872891895">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.0829364459475" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.0829364459475"
-                    Point2="0,19.0829364459475"
-                    Point3="4,19.0829364459475" />
-                  <mssgle:LineSegment
-                    End="67.2103165662469,19.0829364459475" />
-                  <mssgle:CubicBezierSegment
-                    Point1="67.2103165662469,19.0829364459475"
-                    Point2="71.2103165662469,19.0829364459475"
-                    Point3="71.2103165662469,23.0829364459475" />
-                  <mssgle:LineSegment
-                    End="71.2103165662469,30.665872891895" />
+                    End="0,29.665872891895" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15414,14 +15458,14 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-133.916664646731,0"
+              EndConnector="-129.916664646731,0"
               Start="0,0"
-              End="-126.416664646731,0">
+              End="-122.416664646731,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-126.416664646731,0" />
+                    End="-122.416664646731,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15432,7 +15476,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="320.750000149012,331.399999979337">
+          TopLeft="325.250000149012,331.399999979337">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -15454,18 +15498,18 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="318.924602578557,405">
+          TopLeft="323.424602578557,405">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,38.742063388748"
+              EndConnector="0,34.742063388748"
               Start="0,0"
-              End="0,31.242063388748">
+              End="0,27.242063388748">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.242063388748" />
+                    End="0,27.242063388748" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15476,30 +15520,18 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="391.626981378547,2064.9325396481">
+          TopLeft="328.063490838285,247.932539648101">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-67.126981080524,-1775.53253966876"
+              EndConnector="0,41.4674603312359"
               Start="0,0"
-              End="-67.126981080524,-1768.03253966876">
+              End="0,33.9674603312359">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-883.766269834382" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-883.766269834382"
-                    Point2="0,-887.766269834382"
-                    Point3="-4,-887.766269834382" />
-                  <mssgle:LineSegment
-                    End="-63.126981080524,-887.766269834382" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-63.126981080524,-887.766269834382"
-                    Point2="-67.126981080524,-887.766269834382"
-                    Point3="-67.126981080524,-891.766269834382" />
-                  <mssgle:LineSegment
-                    End="-67.126981080524,-1768.03253966876" />
+                    End="0,33.9674603312359" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15510,18 +15542,18 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 5]"
-          TopLeft="320.25793155744,486.742063388748">
+          TopLeft="324.25793155744,482.742063388748">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,41.3912735537131"
+              EndConnector="0,45.3912735537131"
               Start="0,0"
-              End="0,33.8912735537131">
+              End="0,37.8912735537131">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.8912735537131" />
+                    End="0,37.8912735537131" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15532,18 +15564,18 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 6]"
-          TopLeft="416.166657957766,549.198811462683">
+          TopLeft="424.166657957766,549.198811462682">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="121.484134699617,0"
+              EndConnector="113.484134699617,0"
               Start="0,0"
-              End="113.984134699617,0">
+              End="105.984134699617,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="113.984134699617,0" />
+                    End="105.984134699617,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15777,7 +15809,7 @@ WHERE  Estado_auris = 'ABIERTO' and TK_AURIS &lt;&gt; ''</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="34.90552734375,43,37.6889453125,9.7978515625"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

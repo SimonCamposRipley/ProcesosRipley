@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="EXCEL - MKP"
   DTS:PackageType="5"
-  DTS:VersionBuild="309"
-  DTS:VersionGUID="{7403A2F7-FE0D-42BE-AAAA-DE38393955BD}">
+  DTS:VersionBuild="312"
+  DTS:VersionGUID="{07BC8B40-968B-489E-8425-B0011CB658F9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACraWrQhPZgmZ2lg8Jrv9aeshp31lRrJXS6mc+HiuA3zAAAAAAOgAAAAAIAACAAAABXM2RqrEiiwJiPkkH9WoJ8Q+ylScj9z6oFf4FIQbi9jiAAAAD86a9Zqto3BR75gZgvKo0m8wJ6JP4AvT/UOv8YJxkONkAAAABoWF72Uj+GIZpNdQsuZctPd+PtreUtO37/tzDxKzmvAWdXwbp6Jn72fNQANpORhZ2cf4SOsiKcRP+TkDNmLU89</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACunDaGvGviVoDN7n5pHBCLGKaZGLUjtkVgz4kvam5T/AAAAAAOgAAAAAIAACAAAABS6CL9/bEMxfFvWsnbgyjOGvzkBcByxiLpo4RazQfpPSAAAADtZAsmqypGPdJMVbPkFfTIwy1J4i8IbqXTkNniK01/SUAAAAAoCHAO1J+smw/78yZ4PjHzd22En12lrbCUeDurzwESKrIUDGOL9nE8zK6pX47I2zNKAfMfiyFGhfkWiB53sul3</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -52,6 +52,7 @@
       DTS:refId="Package\Actualiza glosas"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Contenedor de secuencias"
+      DTS:Disabled="True"
       DTS:DTSID="{9353B676-F506-4810-BD70-0D9ADA76CAC9}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -3649,7 +3650,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="190,42"
           Id="Package\Actualiza glosas\Actualiza campos fijos"
@@ -3681,9 +3682,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3705,9 +3704,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -3877,27 +3874,39 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="498,491"
-          Size="160,43"
+          Size="498,43"
           Id="Package\Crea tickets"
-          TopLeft="215,164" />
+          TopLeft="266,153" />
         <NodeLayout
           Size="263,42"
           Id="Package\Limpia tablas para proceso (truncate)"
           TopLeft="161,66" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="293.75,108">
+          TopLeft="292.5,108">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,56"
+              EndConnector="222.5,45"
               Start="0,0"
-              End="0,48.5">
+              End="222.5,37.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.5" />
+                    End="0,18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.5"
+                    Point2="0,22.5"
+                    Point3="4,22.5" />
+                  <mssgle:LineSegment
+                    End="218.5,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="218.5,22.5"
+                    Point2="222.5,22.5"
+                    Point3="222.5,26.5" />
+                  <mssgle:LineSegment
+                    End="222.5,37.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3908,18 +3917,30 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="294,207">
+          TopLeft="515,196">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,55"
+              EndConnector="-222,66"
               Start="0,0"
-              End="0,47.5">
+              End="-222,58.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,47.5" />
+                    End="0,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29"
+                    Point2="0,33"
+                    Point3="-4,33" />
+                  <mssgle:LineSegment
+                    End="-218,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-218,33"
+                    Point2="-222,33"
+                    Point3="-222,37" />
+                  <mssgle:LineSegment
+                    End="-222,58.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
