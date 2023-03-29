@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="EXCEL - MKP"
   DTS:PackageType="5"
-  DTS:VersionBuild="312"
-  DTS:VersionGUID="{07BC8B40-968B-489E-8425-B0011CB658F9}">
+  DTS:VersionBuild="314"
+  DTS:VersionGUID="{571F0302-453E-43BD-8D8C-90BD4BDBDCBA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJCKd4fgIXE+jilCpeLpuKgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACunDaGvGviVoDN7n5pHBCLGKaZGLUjtkVgz4kvam5T/AAAAAAOgAAAAAIAACAAAABS6CL9/bEMxfFvWsnbgyjOGvzkBcByxiLpo4RazQfpPSAAAADtZAsmqypGPdJMVbPkFfTIwy1J4i8IbqXTkNniK01/SUAAAAAoCHAO1J+smw/78yZ4PjHzd22En12lrbCUeDurzwESKrIUDGOL9nE8zK6pX47I2zNKAfMfiyFGhfkWiB53sul3</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGWZZR0PMDUSG7hscfOU9EwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADTiDp/JXPMfykgdWHei232w/UHfY2Hu7tG9dZoR8pXrwAAAAAOgAAAAAIAACAAAABLDf2N4DNh6wjfdHP2apcOYEVsjkLFF83BZvTynUoqCyAAAABRzekDexmqEQSuSC+K8EFqRsaKWlae0m+89tzcLFOnYEAAAACNYrl84eBI1EN3fsc9yRdmornsyDhRNDW3BN4uGGukKQ86l2jL9FYcsz7o9/SZpcgsIenABF2t4yJCfZmHDff9</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2302,7 +2302,7 @@ motivo.[mot_nummot3] as Motivo3
 FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
  left join [dbo].[campana] as campana on base.campana=campana.cam_nomcam collate SQL_Latin1_General_CP1_CI_AS
  inner join [dbo].[motivo] as motivo on campana.cam_numcam=motivo.mot_numcam 
- inner join [dbo].[recurso] as recursos on base.usuario=recursos.[rec_userna] collate SQL_Latin1_General_CP1_CI_AS
+ inner join [10.0.149.23].[AurisRip].[dbo].[RECURSO] as recursos on base.usuario=recursos.[rec_userna] collate SQL_Latin1_General_CP1_CI_AS
  
   where	base.[Motivo 1]=motivo.[mot_desmot1] collate SQL_Latin1_General_CP1_CI_AS
 	and	base.[Motivo 2]=motivo.[mot_desmot2] collate SQL_Latin1_General_CP1_CI_AS
@@ -3650,7 +3650,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="190,42"
           Id="Package\Actualiza glosas\Actualiza campos fijos"
@@ -3682,7 +3682,9 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3704,7 +3706,9 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout
@@ -3874,7 +3878,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
           HeaderHeight="43"
           IsExpanded="False"
           PanelSize="498,491"
-          Size="498,43"
+          Size="160,43"
           Id="Package\Crea tickets"
           TopLeft="266,153" />
         <NodeLayout
@@ -3887,9 +3891,9 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="222.5,45"
+              EndConnector="53.5,45"
               Start="0,0"
-              End="222.5,37.5">
+              End="53.5,37.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -3900,13 +3904,13 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                     Point2="0,22.5"
                     Point3="4,22.5" />
                   <mssgle:LineSegment
-                    End="218.5,22.5" />
+                    End="49.5,22.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="218.5,22.5"
-                    Point2="222.5,22.5"
-                    Point3="222.5,26.5" />
+                    Point1="49.5,22.5"
+                    Point2="53.5,22.5"
+                    Point3="53.5,26.5" />
                   <mssgle:LineSegment
-                    End="222.5,37.5" />
+                    End="53.5,37.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3917,13 +3921,13 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="515,196">
+          TopLeft="346,196">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-222,66"
+              EndConnector="-53,66"
               Start="0,0"
-              End="-222,58.5">
+              End="-53,58.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -3934,13 +3938,13 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
                     Point2="0,33"
                     Point3="-4,33" />
                   <mssgle:LineSegment
-                    End="-218,33" />
+                    End="-49,33" />
                   <mssgle:CubicBezierSegment
-                    Point1="-218,33"
-                    Point2="-222,33"
-                    Point3="-222,37" />
+                    Point1="-49,33"
+                    Point2="-53,33"
+                    Point3="-53,37" />
                   <mssgle:LineSegment
-                    End="-222,58.5" />
+                    End="-53,58.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4183,7 +4187,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
     design-time-name="Package\Crea tickets\Importa Datos Excel">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="164,42"
           Id="Package\Crea tickets\Importa Datos Excel\base_mkp_excel"
@@ -4223,7 +4227,9 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
