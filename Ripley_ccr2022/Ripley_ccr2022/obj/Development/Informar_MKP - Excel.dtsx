@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Informar_MKP - Excel"
   DTS:PackageType="5"
-  DTS:VersionBuild="29"
-  DTS:VersionGUID="{D96AEC62-A6BD-4B90-AF28-708C9CEF776C}">
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{21CAC980-0035-43B9-ACA6-5D808CCC15D1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmVb3teJmCESKdqsABIKhqwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABjnc2IKNgcTzg3b3r+P46VBr03lhqfDYVadiiW6efSSQAAAAAOgAAAAAIAACAAAAA+QDSOyB8q07FcYZjBq+VjikcHa9luK7Y5rXy9XqlyEyAAAABmrv2YQyHQvwNwXm1T7S45klDZotGemG7OBsZ8xVBcNkAAAABZpJxEVlMBX14PvByDgDAwBnAX9Qc+w8+7pSrXZpZurAV51heRzxqVdmoN1zboPpZgRAFl5l6mCZ4EORNxaTJs</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGWZZR0PMDUSG7hscfOU9EwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADMdcWUtp1ltHIRHoZEsYsFAMMYIkBEQv6ehifS4lg38wAAAAAOgAAAAAIAACAAAABZWsdxWgi/ZJUm+SOL2kaJJTk1TpptGzOQTenepf6OjCAAAAAfe6jgvX4dphuSn7SbquCphZ+GhAqFJQDhilGhxaSz8EAAAABLR9y6e7iGnWtIgSynMR0gQTGGQdrrDb36LYFB4P9KPFNJ3JUbz2TW5tPkR7+LpAFVWgi/eiIowX95Hz9goFF3</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -50,7 +50,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{50EA2346-E322-4752-A9C1-CAA2EC453C92}"
-          SQLTask:SqlStatementSource="truncate table informar_MKP_excel&#xA;&#xA;declare @carga nvarchar(10);&#xA;set @carga = (select top 1 [edge_data88] from [dbo].[vt_base_carga_MKP])&#xA;&#xA;insert into informar_MKP_excel&#xA;SELECT &#xA;campana.cam_codcam as Campaña,&#xA;a.dge_numcon as Numero_Ticket,&#xA;b.ges_idclie as Rut_Cliente,&#xA;b.ges_nomcli as Nombre_Cliente,&#xA;b.ges_telcom1 as Fono,&#xA;motivo.mot_desmot1 as Motivo1,&#xA;motivo.mot_desmot2 as Motivo2,&#xA;motivo.mot_desmot3 as Motivo3,&#xA;a.dge_data01+a.dge_data37 as OC,&#xA;&#xA;@carga as Numcarga&#xA;&#xA;FROM [10.0.149.23].[AurisRip].[dbo].[DATOS_GESTION] as a&#xA;left join [10.0.149.23].[AurisRip].[dbo].[GESTION] as b on a.dge_numcon=b.ges_numcon&#xA;left join [10.0.149.23].[AurisRip].[dbo].[campana] as campana on b.ges_numcag=campana.cam_numcam&#xA;left join [10.0.149.23].[AurisRip].[dbo].[motivo] as motivo on campana.cam_numcam=motivo.mot_numcam&#xA;&#xA;where&#x9;b.[ges_nummot1]=motivo.[mot_nummot1] and&#x9;b.[ges_nummot2]=motivo.[mot_nummot2] &#xA;&#x9;and b.[ges_nummot3]=motivo.[mot_nummot3] and b.ges_numcag = '176' and a.dge_data88 = @carga" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="truncate table informar_MKP_excel&#xA;&#xA;declare @carga nvarchar(10);&#xA;set @carga = (select top 1 [edge_data88] from [dbo].[vt_base_carga_MKP])&#xA;&#xA;insert into informar_MKP_excel&#xA;SELECT &#xA;campana.cam_codcam as Campaña,&#xA;a.dge_numcon as Numero_Ticket,&#xA;b.ges_idclie as Rut_Cliente,&#xA;b.ges_nomcli as Nombre_Cliente,&#xA;b.ges_telcom1 as Fono,&#xA;motivo.mot_desmot1 as Motivo1,&#xA;motivo.mot_desmot2 as Motivo2,&#xA;motivo.mot_desmot3 as Motivo3,&#xA;a.dge_data01+a.dge_data37 as OC,&#xA;@carga as Numcarga,&#xA;a.dge_data09 as SKU&#xA;&#xA;&#xA;FROM [10.0.149.23].[AurisRip].[dbo].[DATOS_GESTION] as a&#xA;left join [10.0.149.23].[AurisRip].[dbo].[GESTION] as b on a.dge_numcon=b.ges_numcon&#xA;left join [10.0.149.23].[AurisRip].[dbo].[campana] as campana on b.ges_numcag=campana.cam_numcam&#xA;left join [10.0.149.23].[AurisRip].[dbo].[motivo] as motivo on campana.cam_numcam=motivo.mot_numcam&#xA;&#xA;where&#x9;b.[ges_nummot1]=motivo.[mot_nummot1] and&#x9;b.[ges_nummot2]=motivo.[mot_nummot2] &#xA;&#x9;and b.[ges_nummot3]=motivo.[mot_nummot3] and b.ges_numcag = '176' and a.dge_data88 = @carga" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -66,7 +66,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{50EA2346-E322-4752-A9C1-CAA2EC453C92}"
-          SQLTask:SqlStatementSource="insert into bitacora_cargas_MKP_excel&#x9;&#xA;select *,cast(getdate() as smalldatetime) as fecha_creacion from informar_MKP_excel " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="insert into bitacora_cargas_MKP_excel&#x9;(Campaña, Numero_Ticket, Rut_Cliente, Nombre_Cliente, Fono, Motivo1, Motivo2, Motivo3, OC, Numcarga, fecha_creacion, SKU)&#xA;select *,cast(getdate() as smalldatetime) as fecha_creacion from informar_MKP_excel  " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>

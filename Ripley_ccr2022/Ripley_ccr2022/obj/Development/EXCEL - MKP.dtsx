@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="EXCEL - MKP"
   DTS:PackageType="5"
-  DTS:VersionBuild="313"
-  DTS:VersionGUID="{F5D70B46-0A1A-4018-9A1E-04D139E7AAF2}">
+  DTS:VersionBuild="316"
+  DTS:VersionGUID="{95B42AF9-E67B-46CF-9D18-CD62F444E93C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGWZZR0PMDUSG7hscfOU9EwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAACca4mm3P34w4U2K0o7hm9JE6DYbnkvx+RaTlUUCC1fAAAAAAOgAAAAAIAACAAAAC30sPXLkl8Xm288AXvYorxpKUy5lRuIIIRQVJxthCzJiAAAAC9fM/A/8DjiKoxfBfzvheBBLaBg0konjWF4uwOsiNxIUAAAADAq6+2JP5WGelH9q4JC0E5V8EYCeDhg0cXhxR8cmrUDfy6vGrcl6FY4OEXSN7djvWz4Bphkh8uRvOnvCWB/uQ/</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGWZZR0PMDUSG7hscfOU9EwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADpaWHtaZ0ficzjkj4uFcvIu6F9WwPCym6MYe3VHqiPsgAAAAAOgAAAAAIAACAAAACfc480aqnPS0OaWVMYDKOo02kn9839UGLHf0YP0h5heSAAAADhVAWhluHbqNxR4jgbWdTmShPzpSHhpnFBVFwx0zcI9kAAAAB55UzONOI3kiNatM2T+azpphBEQlFQrie57Mc2BJGISGd50xx0XFdZRlid2uOaVNBBB2tAl7pRcds/N4mnscFR</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -4105,7 +4105,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
     design-time-name="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="172,42"
           Id="Package\Crea tickets\Convierte Motivos, Campaña y usuario a numero\Consulta de Cruce"
@@ -4145,7 +4145,9 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4181,7 +4183,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
     design-time-name="Package\Crea tickets\Importa Datos Excel">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="164,42"
           Id="Package\Crea tickets\Importa Datos Excel\base_mkp_excel"
@@ -4221,9 +4223,7 @@ FROM [cierre_creacion_auris].[dbo].[base_mkp_excel] as base
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
