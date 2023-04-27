@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Informar_MKP - Excel"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{21CAC980-0035-43B9-ACA6-5D808CCC15D1}">
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{FF31877C-1B9D-4A9B-A847-0F2C557EC759}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGWZZR0PMDUSG7hscfOU9EwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADYGwMrI4DO2VllpOJJg0VS9YEG66qPGdMxJtJPrTTeJgAAAAAOgAAAAAIAACAAAAAdfSzV6iiQvPcH+RcC9fnrV+u108Gzy2xd8ehd2O6VCyAAAADPeRLjm4+UIHh0yZ+tESJDHPby2/uT/SoWLz+zobl+aUAAAADrxgLq3PYMCtXauHrQPdxSTyavG574aFE8WXOVse1tHvbNrp0Xpn4tGYMJDVDo/1IOJzeqiVJJxAmW2PISYCiZ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGWZZR0PMDUSG7hscfOU9EwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACuBOjQ8Prxm+g6PmMKqQ1cOC1bYMv0LBC/IRbjxhbmFwAAAAAOgAAAAAIAACAAAACFJ5UD/lyf8VIbYz9M8x6OxgYxMxS79OJp/hvEW03T/SAAAADt4CD0w1/blxw/p3ILMB+4RsnOaLUOs2yKlGt9jjvwW0AAAABolLHPUKB5+y2ygC7gmDHC/7vMJ+HCjewg/NdZkmmdGVhuT2MA8rmzlGQH3I60LsS4wCsuwxELXI5iWTkNth/b</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -66,7 +66,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{50EA2346-E322-4752-A9C1-CAA2EC453C92}"
-          SQLTask:SqlStatementSource="insert into bitacora_cargas_MKP_excel&#x9;(Campaña, Numero_Ticket, Rut_Cliente, Nombre_Cliente, Fono, Motivo1, Motivo2, Motivo3, OC, Numcarga, fecha_creacion, SKU)&#xA;select *,cast(getdate() as smalldatetime) as fecha_creacion from informar_MKP_excel  " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="insert into bitacora_cargas_MKP_excel&#x9;(Campaña, Numero_Ticket, Rut_Cliente, Nombre_Cliente, Fono, Motivo1, Motivo2, Motivo3, OC, Numcarga, SKU, fecha_creacion)&#xA;select *,cast(getdate() as smalldatetime) as fecha_creacion from informar_MKP_excel  " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
